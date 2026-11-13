@@ -1,0 +1,18 @@
+{
+  "doc_id": "D005",
+  "scenic": "颐和园",
+  "doc_type": "official",
+  "source": "颐和园官网",
+  "url": "https://www.summerpalace.net.cn/visit.html",
+  "parser": "summerpalace",
+  "role": "visitor_guide",
+  "final_url": "https://www.summerpalace.net.cn/visit.html",
+  "http_status": 200,
+  "encoding": "utf-8",
+  "content_type": "text/html",
+  "retrieved_at": "2026-11-13T08:48:26.838620+00:00",
+  "raw_path": "data/raw/pages/D005.html",
+  "bytes": 48940,
+  "sha256": "47fbe91a7949719714b3d501693b08e7feedc31d9cd7c46ab3f7b92dac9036e7",
+  "attempt": 1
+}

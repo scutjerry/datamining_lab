@@ -1,0 +1,19 @@
+{
+  "doc_id": "D303",
+  "scenic": "天坛公园",
+  "doc_type": "travelogue",
+  "source": "携程游客游记",
+  "url": "https://you.ctrip.com/travels/beijing1/3941039.html",
+  "parser": "ctrip",
+  "role": "travelogue",
+  "note": "多景区游记，正文范围须复核",
+  "final_url": "https://you.ctrip.com/travels/beijing1/3941039.html",
+  "http_status": 200,
+  "encoding": "utf-8",
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-11-13T08:48:55.760233+00:00",
+  "raw_path": "data/raw/pages/D303.html",
+  "bytes": 416701,
+  "sha256": "8a196e8d61ba317abd0f5c4fe0c8fcd8119790e236b429284e27538adba4fddb",
+  "attempt": 1
+}

@@ -1,0 +1,19 @@
+{
+  "doc_id": "D206",
+  "scenic": "颐和园",
+  "doc_type": "travelogue",
+  "source": "携程游客游记",
+  "url": "https://you.ctrip.com/travels/beijing1/4076286.html",
+  "parser": "ctrip",
+  "role": "travelogue",
+  "note": "补充有效长正文；与D201属于同作者系列，须在统计中说明来源偏差",
+  "final_url": "https://you.ctrip.com/travels/beijing1/4076286.html",
+  "http_status": 200,
+  "encoding": "utf-8",
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-11-13T08:51:36.932501+00:00",
+  "raw_path": "data/raw/pages/D206.html",
+  "bytes": 470071,
+  "sha256": "f6571b70d9d00a33950e7bd8fbc97796ec940697f3d1450b18d07c84b89a31c6",
+  "attempt": 1
+}

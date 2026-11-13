@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "documents": 21,
+  "entities_checked": 3032,
+  "scenic_counts": [
+    {
+      "scenic": "天坛公园",
+      "official": 1,
+      "travelogue": 5
+    },
+    {
+      "scenic": "故宫博物院",
+      "official": 2,
+      "travelogue": 6
+    },
+    {
+      "scenic": "颐和园",
+      "official": 2,
+      "travelogue": 5
+    }
+  ],
+  "checks": [
+    "strict entity JSON Schema",
+    "exact six-column CSV contract",
+    "global unique doc_id",
+    "cross-file joins",
+    "source/doc_type mapping",
+    "all entity offset slices",
+    "all sentence references",
+    "no entity overlap/duplicates",
+    "three scenic quotas",
+    "raw SHA256",
+    "clean content SHA256",
+    "SQLite integrity and CSV equality"
+  ]
+}

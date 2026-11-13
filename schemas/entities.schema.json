@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object", "additionalProperties": false,
+    "required": ["doc_id", "scenic", "source", "entities"],
+    "properties": {
+      "doc_id": {"type": "string", "minLength": 1},
+      "scenic": {"type": "string", "minLength": 1},
+      "source": {"enum": ["official", "travelogue"]},
+      "entities": {
+        "type": "array", "items": {
+          "type": "object", "additionalProperties": false,
+          "required": ["text", "type", "start", "end", "sentence_id"],
+          "properties": {
+            "text": {"type": "string", "minLength": 1},
+            "type": {"enum": ["POI", "TRANSPORT", "TIME"]},
+            "start": {"type": "integer", "minimum": 0},
+            "end": {"type": "integer", "minimum": 1},
+            "sentence_id": {"type": "integer", "minimum": 1}
+          }
+        }
+      }
+    }
+  }
+}

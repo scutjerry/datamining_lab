@@ -1,0 +1,18 @@
+{
+  "doc_id": "D104",
+  "scenic": "故宫博物院",
+  "doc_type": "travelogue",
+  "source": "携程游客游记",
+  "url": "https://you.ctrip.com/travels/beijing1/4048705.html",
+  "parser": "ctrip",
+  "role": "travelogue",
+  "final_url": "https://you.ctrip.com/travels/beijing1/4048705.html",
+  "http_status": 200,
+  "encoding": "utf-8",
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-11-13T08:48:37.317345+00:00",
+  "raw_path": "data/raw/pages/D104.html",
+  "bytes": 298944,
+  "sha256": "019507f4f18e528340087e714163f00d2bc9a74d8dc5ad3f209ede17621077ac",
+  "attempt": 1
+}

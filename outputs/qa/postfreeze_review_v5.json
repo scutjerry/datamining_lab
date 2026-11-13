@@ -1,0 +1,44 @@
+{
+  "seed": 20261113,
+  "samples": 18,
+  "algorithm": "v5",
+  "scope": "separately sampled after v4; reviewed failures used to develop v5; v5 is an in-sample regression score",
+  "sampling": "six sentences per scenic; length 25..140; exclude all regression-case source documents; no prediction-based selection",
+  "annotation_origin": "assistant-reviewed provisional; not confirmed by a human",
+  "limitations": "small, mostly POI/negative sample; no TRANSPORT gold mentions; not evidence of general accuracy",
+  "scores": {
+    "POI": {
+      "tp": 23,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "TRANSPORT": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "TIME": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "micro": {
+      "tp": 24,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "errors": []
+}
