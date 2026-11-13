@@ -2,6 +2,8 @@
 
 本仓库用于成员 A、B、C 协作完成景区游览指南的程序性知识挖掘。成员 A 的实现负责项目 1 数据采集与预处理、项目 2 实体识别；B、C 可以直接读取已提交的数据，无须重新爬取网页。
 
+A 部分位于独立分支 `codex/member-a-data-entities`。首次获取可运行 `git clone --branch codex/member-a-data-entities https://github.com/scutjerry/datamining_lab.git`；B、C 可在此基础上创建各自的工作分支。`main` 目前只用于初始化公共仓库。
+
 ## 成员 A 已交付内容
 
 - 三个景区：故宫博物院、颐和园、天坛公园。
