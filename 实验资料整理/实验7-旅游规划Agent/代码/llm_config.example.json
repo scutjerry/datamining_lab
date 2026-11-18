@@ -1,0 +1,6 @@
+{
+  "_说明": "复制本文件为 llm_config.local.json（同目录），把下面三个值改成自己的；llm_config.local.json 已在 .gitignore 里，不会被提交",
+  "LLM_API_KEY": "sk-你自己的key",
+  "LLM_BASE_URL": "https://api.deepseek.com/v1",
+  "LLM_MODEL": "deepseek-flash"
+}

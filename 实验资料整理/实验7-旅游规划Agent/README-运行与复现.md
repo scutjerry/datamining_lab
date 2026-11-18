@@ -42,7 +42,7 @@ Windows PowerShell 示例：
 $env:LLM_API_KEY="sk-xxxx"; $env:LLM_MODEL="deepseek-flash"
 ```
 
-**不想设环境变量的话**：在 `代码/` 目录下放一个 `llm_config.local.json`，各人填自己的 key：
+**不想设环境变量的话**：复制 `代码/llm_config.example.json` 为 `代码/llm_config.local.json`，各人填自己的 key：
 
 ```json
 { "LLM_API_KEY": "sk-你自己的key", "LLM_MODEL": "deepseek-flash" }
@@ -50,7 +50,8 @@ $env:LLM_API_KEY="sk-xxxx"; $env:LLM_MODEL="deepseek-flash"
 
 查找顺序：**环境变量 → 代码目录 `llm_config.local.json` → `~/.dsh/secrets/llm.local.json` → 默认值**。
 这两个本地文件已被 `.gitignore` 忽略（`**/llm_config.local.json`、`**/llm.local.json`），不会进仓库；
-删掉该文件即自动回到规则后端，不影响别人复现。
+删掉该文件即自动回到规则后端，不影响别人复现。模板里没改的占位符（如「你的api」）会被自动忽略，
+不会被当成有效 key 去发请求。
 
 环境变量也认常见别名：`DEEPSEEK_API_KEY` / `OPENAI_API_KEY` / `OPENAI_BASE_URL` / `OPENAI_MODEL`。
 

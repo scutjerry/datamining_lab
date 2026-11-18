@@ -7,6 +7,7 @@
     "base_url": "https://api.deepseek.com/v1",
     "api_key_set": false,
     "api_key_masked": "",
+    "api_key_note": "未配置（或仍是模板占位符），当前走规则后端",
     "calls": 0
   },
   "constraints": {
@@ -322,6 +323,6 @@
       "reason": "选 故宫5A景区游览攻略（official，共 13 步，整条估算 114 分钟），按 120 分钟预算截取前 13 步"
     }
   },
-  "started_at": "2026-11-18T20:11:53",
-  "elapsed_ms": 1
+  "started_at": "2026-11-18T20:42:31",
+  "elapsed_ms": 0
 }

@@ -53,6 +53,29 @@ _ALIASES = {
     "LLM_BASE_URL": ("OPENAI_BASE_URL", "DEEPSEEK_BASE_URL"),
     "LLM_MODEL": ("OPENAI_MODEL", "DEEPSEEK_MODEL"),
 }
+_PLACEHOLDER_WORDS = {
+    "sk-xxxx", "sk-xxx", "sk-x", "sk-你的key", "sk-你自己的key",
+    "your-key", "your_api_key", "changeme", "none", "null", "填你自己的key",
+}
+
+
+def _is_placeholder(value: str) -> bool:
+    """判断是不是模板里没改的占位符（如「你的api」/「sk-你自己的key」）。
+
+    占位符当作"没填"，否则程序会以为配好了、然后每次调用都 401。
+    """
+    if not value:
+        return True
+    if any(ord(ch) > 127 for ch in value):   # 含中文/全角，肯定是模板文字
+        return True
+    low = value.strip().lower()
+    if low in _PLACEHOLDER_WORDS:
+        return True
+    if set(low) <= set("x-*"):               # 形如 xxx / --- / ***
+        return True
+    return False
+
+
 _local_cache: dict | None = None
 
 
@@ -81,14 +104,16 @@ def _env(name: str, default: str = "") -> str:
     避免出现"本地文件里的主名"压过"环境变量里的别名"这种反直觉行为。
     """
     names = (name, *_ALIASES.get(name, ()))
+    check = name.endswith("_KEY")            # 只对 key 做占位符检查
+
     for key in names:
         value = (os.environ.get(key) or "").strip()
-        if value:
+        if value and not (check and _is_placeholder(value)):
             return value
     config = _local_config()
     for key in names:
         value = (config.get(key) or "").strip()
-        if value:
+        if value and not (check and _is_placeholder(value)):
             return value
     return default
 
@@ -107,6 +132,12 @@ class LLM:
         self.api_key = api_key if api_key is not None else _env("LLM_API_KEY")
         self.base_url = (base_url or _env("LLM_BASE_URL", DEFAULT_BASE_URL)).rstrip("/")
         self.model = model or _env("LLM_MODEL", DEFAULT_MODEL)
+        # 模板占位符兜底：抄了示例文件但没改 base_url/model 时，退回默认值而不是带着
+        # 中文占位符去发请求（那会得到一个很难懂的错误）
+        if not self.base_url.startswith("http"):
+            self.base_url = DEFAULT_BASE_URL
+        if not self.model.isascii():
+            self.model = DEFAULT_MODEL
         self.timeout = timeout
         self.temperature = temperature
         self.calls: list[dict] = []  # 记录每次真实调用，供证据留痕
@@ -129,6 +160,10 @@ class LLM:
             "base_url": self.base_url,
             "api_key_set": bool(self.api_key),
             "api_key_masked": (self.api_key[:6] + "…" + self.api_key[-4:]) if self.api_key else "",
+            "api_key_note": (
+                "未配置（或仍是模板占位符），当前走规则后端"
+                if not self.api_key else "已配置"
+            ),
             "calls": len(self.calls),
         }
 

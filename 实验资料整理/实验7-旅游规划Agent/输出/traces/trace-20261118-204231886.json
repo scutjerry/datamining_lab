@@ -7,6 +7,7 @@
     "base_url": "https://api.deepseek.com/v1",
     "api_key_set": false,
     "api_key_masked": "",
+    "api_key_note": "未配置（或仍是模板占位符），当前走规则后端",
     "calls": 0
   },
   "constraints": {
@@ -245,6 +246,6 @@
       "reason": "选 北京市公园管理中心-天坛公园暑期推出3条清凉游览路线（official，共 10 步，整条估算 87 分钟），按 90 分钟预算截取前 10 步"
     }
   },
-  "started_at": "2026-11-18T20:11:53",
+  "started_at": "2026-11-18T20:42:31",
   "elapsed_ms": 0
 }
