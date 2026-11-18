@@ -75,11 +75,19 @@ def _local_config() -> dict:
 
 
 def _env(name: str, default: str = "") -> str:
-    for key in (name, *_ALIASES.get(name, ())):
+    """两段式查找，保证"环境变量整体优先于本地文件"。
+
+    先扫完所有环境变量（主名 + 别名），再扫本地文件的所有键，
+    避免出现"本地文件里的主名"压过"环境变量里的别名"这种反直觉行为。
+    """
+    names = (name, *_ALIASES.get(name, ()))
+    for key in names:
         value = (os.environ.get(key) or "").strip()
         if value:
             return value
-        value = (_local_config().get(key) or "").strip()
+    config = _local_config()
+    for key in names:
+        value = (config.get(key) or "").strip()
         if value:
             return value
     return default
