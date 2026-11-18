@@ -30,3 +30,10 @@ secrets/
 实验资料整理/00-任务书与规范/《数据挖掘》探索性实验任务书及评分细则【Final】.docx
 实验资料整理/00-任务书与规范/《数据挖掘》课程探索性实验报告模板.docx
 实验资料整理/实验-数据采集与预处理/数据/raw/pages/
+
+# ---- 远端初始化仓库带来的规则（与本地合并）----
+.venv/
+*.pyc
+scratch/
+data/raw/discovery/
+deliverables/
