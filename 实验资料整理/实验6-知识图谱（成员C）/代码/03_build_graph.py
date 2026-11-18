@@ -323,7 +323,9 @@ for ax, sc in zip(axes, scenics):
         ax.plot([0, pos[r][0]], [0, pos[r][1]], color="#2471a3", lw=1.1, alpha=0.85, zorder=2)
 
     ax.scatter([pos[n][0] for n in pois], [pos[n][1] for n in pois],
-               s=[26 + 16 * poi_in_deg[n] for n in pois], c=COLOR["POI"],
+               s=[24 + 15 * poi_in_deg[n] for n in pois],
+               c=[COLOR["POI-HUB"] if hub_routes(n) >= HUB_THRESHOLD else "#c3ccd3"
+                  for n in pois],
                edgecolors="white", linewidths=0.5, zorder=3)
     ax.scatter([pos[n][0] for n in rts], [pos[n][1] for n in rts],
                s=[40 + 8 * len(route_seq.get(n, [])) for n in rts],
@@ -355,7 +357,7 @@ for ax, sc in zip(axes, scenics):
 legend = [Line2D([], [], marker="o", ls="", color=COLOR["ScenicArea"], ms=11, label="ScenicArea"),
           Line2D([], [], marker="s", ls="", color=COLOR["Route-OFF"], ms=9, label="Route(官方)"),
           Line2D([], [], marker="s", ls="", color=COLOR["Route-VIS"], ms=9, label="Route(游记)"),
-          Line2D([], [], marker="o", ls="", color=COLOR["POI"], ms=8, label="POI（面积∝引用次数）"),
+          Line2D([], [], marker="o", ls="", color=COLOR["POI"], ms=8, label="POI（面积∝引用次数，深色=被≥3条路线经过）"),
           Line2D([], [], color="#b0b8bf", lw=1.2, label="STEP 边"),
           Line2D([], [], color="#d7dbdf", lw=1.0, ls=(0, (2, 3)), label="LOCATED_IN")]
 fig.legend(handles=legend, loc="lower center", ncol=5, frameon=False, fontsize=10)
@@ -366,6 +368,41 @@ fig.savefig(OUT / "graph_overview.png", dpi=190, bbox_inches="tight")
 plt.close(fig)
 
 # ---------------------------------------------------------------- 7. pyvis 交互图
+# 与静态图同一套环形几何，只把三个景区并排摆：景区中心 → 路线内环 → 景点外环。
+# 坐标写死并关闭物理引擎，这样打开就是稳定布局，不会每次刷新变成另一张图；
+# 拖拽/缩放/tooltip 仍然保留（physics 关闭不影响这些交互）。
+CLUSTER_W = 1500.0        # 相邻景区中心间距（≥ 2×最外圈半径，避免两簇的点互相穿插）
+ROUTE_R = 300.0           # 路线内环半径
+
+fixed_pos = {}
+for ci, sc in enumerate(scenics):
+    cx = (ci - (len(scenics) - 1) / 2.0) * CLUSTER_W
+    sa_nodes = [n for n, d in G.nodes(data=True) if d["label"] == "ScenicArea" and d["scenic"] == sc]
+    rts_sc = sorted(n for n, d in G.nodes(data=True) if d["label"] == "Route" and d["scenic"] == sc)
+    pois_sc = sorted(n for n, d in G.nodes(data=True) if d["label"] == "POI" and d["scenic"] == sc)
+    adv_sc = sorted(n for n, d in G.nodes(data=True) if d["label"] == "Advice" and d["scenic"] == sc)
+    # 景点环半径随该景区景点数收缩：天坛只有 20 个，不必和故宫 58 个一样大
+    poi_r = min(620.0, 220.0 + 6.5 * len(pois_sc))
+    advice_r = poi_r * 0.66
+    for n in sa_nodes:
+        fixed_pos[n] = (cx, 0.0)
+    for i, r in enumerate(rts_sc):
+        ang = 2 * math.pi * i / max(len(rts_sc), 1)
+        fixed_pos[r] = (cx + ROUTE_R * math.cos(ang), ROUTE_R * math.sin(ang))
+    for j, a in enumerate(adv_sc):
+        ang = 2 * math.pi * j / max(len(adv_sc), 1) + math.pi / 3
+        fixed_pos[a] = (cx + advice_r * math.cos(ang), advice_r * math.sin(ang))
+    pois_sorted_sc = sorted(pois_sc, key=lambda n: (-hub_routes(n), -poi_in_deg[n]))
+    for i, p in enumerate(pois_sorted_sc):
+        ang = 2 * math.pi * i / max(len(pois_sorted_sc), 1) - math.pi / 2
+        rad = poi_r if i % 2 == 0 else poi_r * 1.1       # 奇偶交替半径，减轻相邻标签叠字
+        fixed_pos[p] = (cx + rad * math.cos(ang), rad * math.sin(ang))
+
+# 剩下没有 scenic 归属的节点（3 个 TimeSlot）排在整幅图底部中间一行
+_loose = [n for n, d in G.nodes(data=True) if n not in fixed_pos]
+for i, n in enumerate(sorted(_loose)):
+    fixed_pos[n] = ((i - (len(_loose) - 1) / 2.0) * 240.0, -800.0)
+
 try:
     from pyvis.network import Network
 
@@ -378,16 +415,42 @@ try:
             size = 12 + 1.6 * len(route_seq.get(n, []))
             shape = "square"
         elif lab == "POI":
-            color = COLOR["POI-HUB"] if hub_routes(n) >= HUB_THRESHOLD else COLOR["POI"]
-            size = 6 + 1.8 * poi_in_deg[n]
+            # 高频景点用深绿+名字，只被一条路线用到一次的景点退成浅灰小点当背景，
+            # 否则 61 个故宫景点在环上会和主链路抢视觉
+            if hub_routes(n) >= HUB_THRESHOLD:
+                color, size = COLOR["POI-HUB"], 6 + 1.8 * poi_in_deg[n]
+            else:
+                color, size = "#ccd3d9", 4 + 1.0 * poi_in_deg[n]
             shape = "dot"
         else:
             color, size, shape = COLOR.get(lab, "#999999"), 26, "dot"
         tip = f'{lab}｜{d["name"]}'
         if d["extra"]:
             tip += "<br>" + "<br>".join(f"{k}: {v}" for k, v in list(d["extra"].items())[:5])
-        net.add_node(n, label=d["name"][:12], title=tip, color=color, size=size,
-                     shape=shape, borderWidth=1)
+        # 标签策略：只给"能看懂图"的节点写字——景区、路线、高频景点、建议、时段。
+        # 其余 100 多个只被一条路线用到一次的景点保持为无字圆点，靠 tooltip 查看，
+        # 否则 61 个故宫景点挤在环上会糊成一片（静态图同理，只标 top10）。
+        if lab == "POI" and hub_routes(n) < HUB_THRESHOLD:
+            # 必须给一个空格而不是空串：vis.js 遇到空 label 会回退显示节点 id，
+            # 图上就会变成一片 "POI-BEIJING-TT-013"
+            label = " "
+        elif lab == "Route":
+            # 上游路线名多是"北京市公园管理中心-天坛公园暑期推出3条…"这种营销标题，
+            # 直接写图上既长又互相压字；改成"景区+官方/游记+序号"，全名留在 tooltip
+            short = {"故宫博物院": "故宫", "颐和园": "颐和园", "天坛公园": "天坛"}.get(d["scenic"], d["scenic"])
+            tag = "游记" if d["extra"].get("route_type") == "visitor" else "官方"
+            idx = sorted(n2 for n2, d2 in G.nodes(data=True)
+                         if d2["label"] == "Route" and d2["scenic"] == d["scenic"]).index(n) + 1
+            label = f"{short}{tag}{idx}"
+        elif lab == "Advice":
+            # 建议正文（"如果只是走马观花，看一看主要宫殿 → 约两个小时…"）太长，
+            # 图上只放前 8 字，完整条件与建议在 tooltip 里
+            label = d["name"][:8]
+        else:
+            label = d["name"][:12]
+        px, py = fixed_pos.get(n, (0.0, 0.0))
+        net.add_node(n, label=label, title=tip, color=color, size=size,
+                     shape=shape, borderWidth=1, x=px, y=py, physics=False)
     for u, v, k, d in G.edges(keys=True, data=True):
         if d["type"] == "STEP":
             title = (f'STEP 第{d["order"]}步' +
@@ -401,11 +464,11 @@ try:
             net.add_edge(u, v, title=d["type"], color="#2471a3" if d["type"] == "HAS_ROUTE"
                          else "#27ae60", width=1.4, arrows="to")
     net.set_options(json.dumps({
-        "physics": {"barnesHut": {"gravitationalConstant": -14000, "springLength": 130,
-                                  "springConstant": 0.03, "damping": 0.6},
-                    "stabilization": {"iterations": 320}},
-        "interaction": {"hover": True, "tooltipDelay": 120, "navigationButtons": True},
-        "nodes": {"font": {"size": 12, "face": "Microsoft YaHei"}},
+        # 坐标已按环形三簇写死，这里必须关掉物理引擎，否则一打开就被 barnesHut 拖走
+        "physics": {"enabled": False},
+        "interaction": {"hover": True, "tooltipDelay": 120, "navigationButtons": True,
+                        "dragNodes": True, "zoomView": True},
+        "nodes": {"font": {"size": 11, "face": "Microsoft YaHei"}},
         "edges": {"smooth": {"type": "continuous"}},
     }))
     # pyvis 的 write_html 内部用 open(...,'w') 走系统默认编码，中文 Windows 上是 GBK，
