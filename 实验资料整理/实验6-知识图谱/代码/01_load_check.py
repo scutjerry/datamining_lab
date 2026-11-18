@@ -14,8 +14,8 @@ ROOT = HERE
 while ROOT.name != "实验资料整理" and ROOT.parent != ROOT:
     ROOT = ROOT.parent
 
-E6 = ROOT / "实验-知识图谱" / "接口数据"
-E2 = ROOT / "实验-实体识别" / "结果"
+E6 = ROOT / "实验6-知识图谱" / "接口数据"
+E2 = ROOT / "实验2-实体识别" / "结果"
 
 def load_routes():    return json.loads((E6 / "routes.json").read_text(encoding="utf-8"))
 def load_advices():   return json.loads((E6 / "advices.json").read_text(encoding="utf-8"))

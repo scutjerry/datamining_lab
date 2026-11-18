@@ -2,7 +2,7 @@
 
 设计依据：Schema与字段规范.md v1.1（第2、3、4、6、7节）
 
-输入：接口数据/routes.json、接口数据/advices.json、实验-实体识别/结果/entities.json
+输入：接口数据/routes.json、接口数据/advices.json、实验2-实体识别/结果/entities.json
 输出：输出/nodes.csv、edges.csv、id_mapping.csv、alias_table.csv、
       poi_quarantine.csv、graph_quality_report.json
 
@@ -36,9 +36,9 @@ while ROOT.name != "实验资料整理" and ROOT.parent != ROOT:
     ROOT = ROOT.parent
 if ROOT.name != "实验资料整理":
     raise SystemExit("未找到“实验资料整理”目录，请保持项目原有目录结构后再运行")
-E6 = ROOT / "实验-知识图谱" / "接口数据"
-E2 = ROOT / "实验-实体识别" / "结果"
-OUT = ROOT / "实验-知识图谱" / "输出"
+E6 = ROOT / "实验6-知识图谱" / "接口数据"
+E2 = ROOT / "实验2-实体识别" / "结果"
+OUT = ROOT / "实验6-知识图谱" / "输出"
 
 # ---------------------------------------------------------------- 1. 编码表
 CITY = "BEIJING"                                   # 三个景区都在北京

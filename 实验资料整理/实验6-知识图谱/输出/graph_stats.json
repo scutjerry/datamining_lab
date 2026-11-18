@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T17:35:17",
+  "generated_at": "2026-11-18T20:11:50",
   "nodes": 156,
   "edges": 377,
   "by_label": {
@@ -164,12 +164,12 @@
     }
   ],
   "visualization": {
-    "html": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\数据挖掘实验\\实验资料整理\\实验-知识图谱\\输出\\graph.html",
+    "html": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\数据挖掘实验\\实验资料整理\\实验6-知识图谱\\输出\\graph.html",
     "html_ok": true,
     "html_external_script_refs": 0,
-    "png": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\数据挖掘实验\\实验资料整理\\实验-知识图谱\\输出\\graph_overview.png",
-    "gml": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\数据挖掘实验\\实验资料整理\\实验-知识图谱\\输出\\graph.gml",
-    "cypher": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\数据挖掘实验\\实验资料整理\\实验-知识图谱\\输出\\import_neo4j.cypher"
+    "png": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\数据挖掘实验\\实验资料整理\\实验6-知识图谱\\输出\\graph_overview.png",
+    "gml": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\数据挖掘实验\\实验资料整理\\实验6-知识图谱\\输出\\graph.gml",
+    "cypher": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\数据挖掘实验\\实验资料整理\\实验6-知识图谱\\输出\\import_neo4j.cypher"
   },
   "checks": {
     "errors": [],

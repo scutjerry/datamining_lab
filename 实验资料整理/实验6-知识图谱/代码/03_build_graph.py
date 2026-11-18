@@ -39,7 +39,7 @@ while ROOT.name != "实验资料整理" and ROOT.parent != ROOT:
     ROOT = ROOT.parent
 if ROOT.name != "实验资料整理":
     raise SystemExit("未找到“实验资料整理”目录，请保持项目原有目录结构后再运行")
-E6 = ROOT / "实验-知识图谱"
+E6 = ROOT / "实验6-知识图谱"
 OUT = E6 / "输出"
 NODES_CSV, EDGES_CSV = OUT / "nodes.csv", OUT / "edges.csv"
 
