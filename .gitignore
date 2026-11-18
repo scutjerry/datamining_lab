@@ -37,3 +37,6 @@ secrets/
 scratch/
 data/raw/discovery/
 deliverables/
+
+# 组内交接材料（A/B 的说明与源码副本）：只留本地，不入库
+实验资料整理/文档与交接/
