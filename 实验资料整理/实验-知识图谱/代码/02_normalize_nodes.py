@@ -2,13 +2,15 @@
 
 设计依据：Schema与字段规范.md v1.1（第2、3、4、6、7节）
 
-输入：接口数据/routes.json、接口数据/advices.json、实验2-实体识别（成员A）/结果/entities.json
+输入：接口数据/routes.json、接口数据/advices.json、实验-实体识别/结果/entities.json
 输出：输出/nodes.csv、edges.csv、id_mapping.csv、alias_table.csv、
       poi_quarantine.csv、graph_quality_report.json
 
 与旧版（v1 草稿）的差异，均在报告"Schema 落地"一节可解释：
 1. 节点/边 ID 按 Schema 第7节编码（旧版是 SA-GG / D001-CHAIN-01，与自定规范不符）
-2. 补 TimeSlot 节点（TS-AM/TS-NOON/TS-PM），Schema 要求 6 类节点
+2. 不生成 TimeSlot 节点：routes.json 的 time_slot 全为 null，建出来的 3 个节点
+   没有任何边可连，只会变成孤立点噪声。Schema 第3节保留 TimeSlot 定义，
+   注明"时段数据待实验3 补 time_slot 后启用"，本版不落地。
 3. Advice 的 name 改为「条件 → 建议」，旧版误取了 advice 字段（"就能逛完"）
 4. 增加 POI 名清洗与隔离（quarantine）：routes.json 里有大量链式提取残渣
    （整段正文、多景点并列、混入开放时间/票价、箭头残留），不清理会污染图谱；
@@ -34,9 +36,9 @@ while ROOT.name != "实验资料整理" and ROOT.parent != ROOT:
     ROOT = ROOT.parent
 if ROOT.name != "实验资料整理":
     raise SystemExit("未找到“实验资料整理”目录，请保持项目原有目录结构后再运行")
-E6 = ROOT / "实验6-知识图谱（成员C）" / "接口数据"
-E2 = ROOT / "实验2-实体识别（成员A）" / "结果"
-OUT = ROOT / "实验6-知识图谱（成员C）" / "输出"
+E6 = ROOT / "实验-知识图谱" / "接口数据"
+E2 = ROOT / "实验-实体识别" / "结果"
+OUT = ROOT / "实验-知识图谱" / "输出"
 
 # ---------------------------------------------------------------- 1. 编码表
 CITY = "BEIJING"                                   # 三个景区都在北京
@@ -226,12 +228,8 @@ for sc, code in SCENIC_CODE.items():
     nodes.append({"id": f"SA-{CITY}-{code}", "label": "ScenicArea", "name": sc,
                   "scenic": sc, "extra": json.dumps({"city": "北京"}, ensure_ascii=False)})
 
-# TimeSlot：Schema 要求固定三个。当前 routes.json 的 time_slot 全为 null，
-# 所以这三个节点暂无 STEP 边相连——保留节点以符合 Schema，缺口写进质量报告。
-for ts_id, ts_name in [("TS-AM", "上午"), ("TS-NOON", "中午"), ("TS-PM", "下午")]:
-    nodes.append({"id": ts_id, "label": "TimeSlot", "name": ts_name, "scenic": "",
-                  "extra": json.dumps({"note": "暂无路线标注时段，待实验3补 time_slot"},
-                                      ensure_ascii=False)})
+# TimeSlot 本版不建节点：routes.json 的 time_slot 全为 null，建出来度数为 0。
+# 待实验3 补上 time_slot 后，再由本脚本按 TS-AM/TS-NOON/TS-PM 生成节点并连边。
 
 # POI：按景区内名称排序编号，保证可复现
 for sc, code in SCENIC_CODE.items():
@@ -313,16 +311,20 @@ for r in routes:
                   "activity": "", "transport": "", "duration_min": "", "extra": ""})
 
 for r in routes:
-    for order, name, st in clean_steps[r["route_id"]]:
+    # 残渣步骤被隔离后原始 step 号必然留下空洞（19 条路线里 15 条不连续）。
+    # 这里按存活步骤重新紧凑编号
+    # order = 1..n，让 STEP 链路本身是连续的；原始步骤号写进 extra.original_step，
+    # 需要回溯 routes.json 的 step 下标时用它。
+    for new_order, (original_step, name, st) in enumerate(clean_steps[r["route_id"]], 1):
         edges.append({
             "source": route_id_map[r["route_id"]], "type": "STEP",
             "target": poi_id[(r["scenic"], name)],
-            "order": order,
+            "order": new_order,
             "time_slot": st.get("time_slot") or "",
             "activity": st.get("activity") or "",
             "transport": st.get("transport_to_next") or "",
             "duration_min": "" if st.get("duration_min") is None else st["duration_min"],
-            "extra": "",
+            "extra": json.dumps({"original_step": original_step}, ensure_ascii=False),
         })
 
 for a in advices:
@@ -381,6 +383,66 @@ bad_enum = [
 ]
 step_edges = [e for e in edges if e["type"] == "STEP"]
 
+
+# ---------------------------------------------------------------- 9. 示例查询
+# 报告"可视化与图谱质量验证"里要给出能跑通的真实查询结果，这里统一算一遍，
+# 数据全部来自本次生成的 nodes/edges，不写死答案，重跑后数字自动对齐。
+def _seq_of_route(old_rid):
+    """某条路线按紧凑步序排列的景点名。"""
+    return [nm for _o, nm, _st in clean_steps[old_rid]]
+
+
+_tt_routes = [r for r in routes if r["scenic"] == "天坛公园"]
+
+_yhy_route_cnt = defaultdict(set)          # 景点 -> 经过它的路线集合（颐和园）
+for _r in routes:
+    if _r["scenic"] != "颐和园":
+        continue
+    for _o, _nm, _st in clean_steps[_r["route_id"]]:
+        _yhy_route_cnt[_nm].add(route_id_map[_r["route_id"]])
+_yhy_top_name, _yhy_top_set = max(_yhy_route_cnt.items(), key=lambda kv: len(kv[1]))
+
+sample_queries = [
+    {
+        "query": "天坛公园有哪些路线？每条路线依次经过哪些景点？",
+        "params": {"scenic": "天坛公园"},
+        "result": [
+            {
+                "route_id": route_id_map[r["route_id"]],
+                "route_name": r.get("route_title") or r["route_id"],
+                "route_type": r["route_type"],
+                "step_count": len(clean_steps[r["route_id"]]),
+                "poi_sequence": _seq_of_route(r["route_id"]),
+            }
+            for r in _tt_routes
+        ],
+    },
+    {
+        "query": "颐和园里被最多条路线经过的景点是哪个？",
+        "params": {"scenic": "颐和园", "order_by": "route_count", "limit": 1},
+        "result": [{
+            "poi_id": poi_id[("颐和园", _yhy_top_name)],
+            "name": _yhy_top_name,
+            "route_count": len(_yhy_top_set),
+            "route_ids": sorted(_yhy_top_set),
+        }],
+    },
+    {
+        "query": "故宫博物院有哪些条件性游览建议？对应的条件是什么？",
+        "params": {"scenic": "故宫博物院", "condition_type": "time"},
+        "result": [
+            {
+                "advice_id": advice_id_map[a["advice_id"]],
+                "condition": ADVICE_PATCH.get(a["advice_id"], {}).get("condition", a["condition"]),
+                "advice": ADVICE_PATCH.get(a["advice_id"], {}).get("advice", a["advice"]),
+                "audience": a["audience"],
+                "patched_by": "C" if a["advice_id"] in ADVICE_PATCH else "",
+            }
+            for a in advices if a["scenic"] == "故宫博物院"
+        ],
+    },
+]
+
 report = {
     "generated_at": datetime.now().isoformat(timespec="seconds"),
     "schema_version": "Schema与字段规范 v1.1",
@@ -414,9 +476,11 @@ report = {
         "all_step_poi_resolved": len(step_edges) + len(quarantine) ==
                                  sum(len(r["steps"]) for r in routes),
     },
+    "sample_queries": sample_queries,
     "known_gaps": [
         "STEP.time_slot 全为空：routes.json 的链式路线原文无时段标注，时间层级（上午/中午/下午）"
-        "在项目6内无法落地，属实验3 待补项；TimeSlot 节点已建但暂无边。",
+        "在项目6内无法落地，属实验3 待补项；TimeSlot 节点因此不生成（建了也是孤立点），"
+        "Schema 定义保留，待时段数据到位后启用。",
         "STEP.activity 全为空、transport 仅 3 条、duration 全空：实验3 只做了链式景点序列，未解析活动与时长。",
         "PART_OF（POI 父子）与 RELATES_TO（建议→景点）无可靠来源，本版不生成，避免造边；"
         "POI 的景区归属改用 Schema v1.1 新增的 LOCATED_IN 表达。",

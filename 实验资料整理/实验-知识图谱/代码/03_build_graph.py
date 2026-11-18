@@ -39,7 +39,7 @@ while ROOT.name != "实验资料整理" and ROOT.parent != ROOT:
     ROOT = ROOT.parent
 if ROOT.name != "实验资料整理":
     raise SystemExit("未找到“实验资料整理”目录，请保持项目原有目录结构后再运行")
-E6 = ROOT / "实验6-知识图谱（成员C）"
+E6 = ROOT / "实验-知识图谱"
 OUT = E6 / "输出"
 NODES_CSV, EDGES_CSV = OUT / "nodes.csv", OUT / "edges.csv"
 
@@ -131,6 +131,7 @@ for rt in route_nodes:
 isolated = [n for n in G.nodes if G.degree(n) == 0]
 for n in isolated:
     if label_of[n] == "TimeSlot":
+        # 本版 02 已不生成 TimeSlot 节点，这里保留分支是为实验3 补时段后能再用
         add("warn", "ts_unlinked", f"{n} 无任何边（time_slot 数据缺失，属已知缺口）")
     else:
         add("error", "isolated_node", f"{n}({label_of[n]}) 是孤立节点")
@@ -398,7 +399,8 @@ for ci, sc in enumerate(scenics):
         rad = poi_r if i % 2 == 0 else poi_r * 1.1       # 奇偶交替半径，减轻相邻标签叠字
         fixed_pos[p] = (cx + rad * math.cos(ang), rad * math.sin(ang))
 
-# 剩下没有 scenic 归属的节点（3 个 TimeSlot）排在整幅图底部中间一行
+# 剩下没有 scenic 归属的节点排在整幅图底部中间一行（本版 02 不再产出 TimeSlot，
+# 这里通常为空；保留这段是为了实验3 补上 time_slot 后能自动接住新节点）
 _loose = [n for n, d in G.nodes(data=True) if n not in fixed_pos]
 for i, n in enumerate(sorted(_loose)):
     fixed_pos[n] = ((i - (len(_loose) - 1) / 2.0) * 240.0, -800.0)
@@ -473,8 +475,20 @@ try:
     }))
     # pyvis 的 write_html 内部用 open(...,'w') 走系统默认编码，中文 Windows 上是 GBK，
     # 内联的 vis.js 里有 '©' 等字符会直接抛 UnicodeEncodeError。改成自己按 UTF-8 落盘。
-    (OUT / "graph.html").write_text(net.generate_html(notebook=False), encoding="utf-8")
+    html = net.generate_html(notebook=False)
+    # pyvis 模板里还夹着两类外链，必须清掉，否则单文件拷走/断网时体验很差：
+    #   1) 一段被注释掉的 <script src="../node_modules/vis/dist/vis.js">——仓库里没有
+    #      node_modules（lib/ 也已清理），留在文件里会让人以为缺依赖而白屏；
+    #      真正的 vis-network 9.1.2 已经由 cdn_resources="in_line" 内联在下面。
+    #   2) jsdelivr 上的 bootstrap CSS/JS（模板自带的卡片样式），断网时阻塞加载。
+    html = re.sub(r"<!--.*?\.\./node_modules.*?-->", "", html, flags=re.S)
+    html = re.sub(r"<script[^>]*\bsrc=[\"'][^\"']*[\"'][^>]*>\s*</script>", "", html, flags=re.S)
+    html = re.sub(r"<link[^>]*\bhref=[\"']https?://[^\"']*[\"'][^>]*/?>", "", html, flags=re.S)
+    external_refs = len(re.findall(r"<script[^>]*\bsrc=", html))
+    (OUT / "graph.html").write_text(html, encoding="utf-8")
     html_ok = True
+    if external_refs:
+        add("warn", "html_external_script", f"graph.html 仍引用 {external_refs} 个外部脚本")
 except Exception as exc:            # 可视化失败不影响主产物
     html_ok = False
     add("warn", "pyvis", f"交互图生成失败：{exc}")
@@ -483,6 +497,7 @@ except Exception as exc:            # 可视化失败不影响主产物
 stats["visualization"] = {
     "html": str(OUT / "graph.html"),
     "html_ok": html_ok,
+    "html_external_script_refs": external_refs if html_ok else None,
     "png": str(OUT / "graph_overview.png"),
     "gml": str(OUT / "graph.gml"),
     "cypher": str(OUT / "import_neo4j.cypher"),

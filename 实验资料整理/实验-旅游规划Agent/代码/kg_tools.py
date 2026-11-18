@@ -41,7 +41,7 @@ def _find_root() -> Path:
 
 
 ROOT = _find_root()
-GRAPH_DIR = ROOT / "实验6-知识图谱（成员C）" / "输出"
+GRAPH_DIR = ROOT / "实验-知识图谱" / "输出"
 NODES_CSV = GRAPH_DIR / "nodes.csv"
 EDGES_CSV = GRAPH_DIR / "edges.csv"
 

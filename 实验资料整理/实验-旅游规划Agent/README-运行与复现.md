@@ -6,7 +6,7 @@
 ## 1. 目录
 
 ```
-实验7-旅游规划Agent（成员C）/
+实验-旅游规划Agent/
 ├─ 代码/
 │  ├─ kg_tools.py      图谱查询工具（4 个工具 + 统一返回信封 + 工具注册表）
 │  ├─ llm.py           LLM 接入层（OpenAI 兼容协议）+ 不可用时的异常
@@ -45,7 +45,7 @@ $env:LLM_API_KEY="sk-xxxx"; $env:LLM_MODEL="deepseek-flash"
 ## 4. 运行
 
 ```powershell
-cd 实验资料整理\实验7-旅游规划Agent（成员C）\代码
+cd 实验资料整理\实验-旅游规划Agent\代码
 python agent.py "我下午去故宫，只有两个小时，随便看看主要宫殿"     # 有 key 走 LLM，无 key 自动降级
 python agent.py --offline "去故宫，只有20分钟"                   # 强制规则后端
 python agent.py --json "我想去天坛，一个半小时，想祈福拍照"        # 只输出 trace JSON
@@ -112,7 +112,7 @@ python run_scenarios.py --real-llm   # 真调模型 → 输出/测试报告-真�
 
 ## 9. 与实验6 的接口
 
-只读 `实验6-知识图谱（成员C）\输出\nodes.csv`、`edges.csv`（159 节点 / 377 边）。
+只读 `实验-知识图谱\输出\nodes.csv`、`edges.csv`（159 节点 / 377 边）。
 若图谱重新生成，本目录无需改代码，重跑即可。
 
 ## 10. 产物对照（交给报告用）

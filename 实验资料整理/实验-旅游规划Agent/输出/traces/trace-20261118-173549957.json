@@ -186,49 +186,49 @@
           "transport_min": 3
         },
         {
-          "order": "7",
+          "order": "4",
           "poi_name": "迎客柏月亮门",
           "poi_id": "POI-BEIJING-TT-019",
           "est_min": 6,
           "transport_min": 3
         },
         {
-          "order": "8",
+          "order": "5",
           "poi_name": "丹陛桥西侧下面古树区",
           "poi_id": "POI-BEIJING-TT-004",
           "est_min": 6,
           "transport_min": 3
         },
         {
-          "order": "9",
+          "order": "6",
           "poi_name": "祈年殿西门",
           "poi_id": "POI-BEIJING-TT-018",
           "est_min": 6,
           "transport_min": 3
         },
         {
-          "order": "10",
+          "order": "7",
           "poi_name": "祈年殿",
           "poi_id": "POI-BEIJING-TT-016",
           "est_min": 6,
           "transport_min": 3
         },
         {
-          "order": "11",
+          "order": "8",
           "poi_name": "祈年殿东门",
           "poi_id": "POI-BEIJING-TT-017",
           "est_min": 6,
           "transport_min": 3
         },
         {
-          "order": "12",
+          "order": "9",
           "poi_name": "长廊",
           "poi_id": "POI-BEIJING-TT-020",
           "est_min": 6,
           "transport_min": 3
         },
         {
-          "order": "13",
+          "order": "10",
           "poi_name": "天坛公园东门",
           "poi_id": "POI-BEIJING-TT-008",
           "est_min": 6,
@@ -245,6 +245,6 @@
       "reason": "选 北京市公园管理中心-天坛公园暑期推出3条清凉游览路线（official，共 10 步，整条估算 87 分钟），按 90 分钟预算截取前 10 步"
     }
   },
-  "started_at": "2026-11-18T15:33:38",
-  "elapsed_ms": 0
+  "started_at": "2026-11-18T17:35:49",
+  "elapsed_ms": 1
 }

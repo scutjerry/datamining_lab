@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-11-18T17:35:15",
+  "schema_version": "Schema与字段规范 v1.1",
+  "inputs": {
+    "routes.json": 19,
+    "advices.json": 3,
+    "entities.json": 21
+  },
+  "nodes": {
+    "total": 156,
+    "by_label": {
+      "ScenicArea": 3,
+      "POI": 131,
+      "Route": 19,
+      "Advice": 3
+    }
+  },
+  "edges": {
+    "total": 377,
+    "by_type": {
+      "HAS_ROUTE": 19,
+      "STEP": 224,
+      "HAS_ADVICE": 3,
+      "LOCATED_IN": 131
+    }
+  },
+  "poi": {
+    "from_routes": 57,
+    "from_entities_freq_ge_5": 74,
+    "total": 131,
+    "quarantined_step_names": 26,
+    "repaired_step_names": 9,
+    "merged_exhibition_alias": 3
+  },
+  "step_attribute_coverage": {
+    "steps_total": 224,
+    "time_slot_non_null": 0,
+    "activity_non_empty": 0,
+    "transport_non_null": 3,
+    "duration_non_null": 0,
+    "route_duration_non_null": 9
+  },
+  "checks": {
+    "duplicate_node_ids": [],
+    "dangling_edges": 0,
+    "enum_violations": 0,
+    "all_step_poi_resolved": true
+  },
+  "sample_queries": [
+    {
+      "query": "天坛公园有哪些路线？每条路线依次经过哪些景点？",
+      "params": {
+        "scenic": "天坛公园"
+      },
+      "result": [
+        {
+          "route_id": "RT-TT-OFF-001",
+          "route_name": "北京市公园管理中心-天坛公园暑期推出3条清凉游览路线",
+          "route_type": "official",
+          "step_count": 8,
+          "poi_sequence": [
+            "天坛公园南门",
+            "迎客柏月亮门",
+            "丹陛桥西侧下面古树区",
+            "祈年殿西门",
+            "祈年殿",
+            "祈年殿东门",
+            "长廊",
+            "天坛公园东门"
+          ]
+        },
+        {
+          "route_id": "RT-TT-OFF-002",
+          "route_name": "北京市公园管理中心-天坛公园暑期推出3条清凉游览路线",
+          "route_type": "official",
+          "step_count": 7,
+          "poi_sequence": [
+            "天坛公园北门",
+            "祈年殿东门",
+            "祈年殿",
+            "祈年殿西门",
+            "丹陛桥西侧下面古树区",
+            "迎客柏月亮门",
+            "天坛公园南门"
+          ]
+        },
+        {
+          "route_id": "RT-TT-OFF-003",
+          "route_name": "北京市公园管理中心-天坛公园暑期推出3条清凉游览路线",
+          "route_type": "official",
+          "step_count": 10,
+          "poi_sequence": [
+            "天坛公园西门",
+            "斋宫",
+            "三座门",
+            "迎客柏月亮门",
+            "丹陛桥西侧下面古树区",
+            "祈年殿西门",
+            "祈年殿",
+            "祈年殿东门",
+            "长廊",
+            "天坛公园东门"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "颐和园里被最多条路线经过的景点是哪个？",
+      "params": {
+        "scenic": "颐和园",
+        "order_by": "route_count",
+        "limit": 1
+      },
+      "result": [
+        {
+          "poi_id": "POI-BEIJING-YHY-022",
+          "name": "排云殿",
+          "route_count": 11,
+          "route_ids": [
+            "RT-YHY-OFF-001",
+            "RT-YHY-OFF-002",
+            "RT-YHY-OFF-003",
+            "RT-YHY-OFF-004",
+            "RT-YHY-OFF-005",
+            "RT-YHY-OFF-006",
+            "RT-YHY-OFF-007",
+            "RT-YHY-OFF-008",
+            "RT-YHY-OFF-009",
+            "RT-YHY-OFF-010",
+            "RT-YHY-VIS-001"
+          ]
+        }
+      ]
+    },
+    {
+      "query": "故宫博物院有哪些条件性游览建议？对应的条件是什么？",
+      "params": {
+        "scenic": "故宫博物院",
+        "condition_type": "time"
+      },
+      "result": [
+        {
+          "advice_id": "AD-GG-001",
+          "condition": "如果只是走马观花，看一看主要宫殿",
+          "advice": "约两个小时就能逛完",
+          "audience": "通用",
+          "patched_by": "C"
+        },
+        {
+          "advice_id": "AD-GG-002",
+          "condition": "如果只有两个小时左右的时间",
+          "advice": "建议沿着故宫中轴线参观",
+          "audience": "通用",
+          "patched_by": ""
+        },
+        {
+          "advice_id": "AD-GG-003",
+          "condition": "如果觉得两个小时的游览不够尽兴",
+          "advice": "可以到东、西六宫的院落里逛逛，这里曾经住着紫禁城里备受恩宠的妃嫔们",
+          "audience": "通用",
+          "patched_by": ""
+        }
+      ]
+    }
+  ],
+  "known_gaps": [
+    "STEP.time_slot 全为空：routes.json 的链式路线原文无时段标注，时间层级（上午/中午/下午）在项目6内无法落地，属实验3 待补项；TimeSlot 节点因此不生成（建了也是孤立点），Schema 定义保留，待时段数据到位后启用。",
+    "STEP.activity 全为空、transport 仅 3 条、duration 全空：实验3 只做了链式景点序列，未解析活动与时长。",
+    "PART_OF（POI 父子）与 RELATES_TO（建议→景点）无可靠来源，本版不生成，避免造边；POI 的景区归属改用 Schema v1.1 新增的 LOCATED_IN 表达。",
+    "D205-CHAIN-01 实际是游记里并列的三条官方线路，被链式提取当成一条，已标 quality_flag=segmentation_suspect。",
+    "26 个步骤名被判为解析残渣并隔离（见 poi_quarantine.csv），源头是实验3 的路线段切分缺失。"
+  ]
+}
