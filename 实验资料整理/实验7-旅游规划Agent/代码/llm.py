@@ -8,6 +8,9 @@ llm.py — LLM 接入层（OpenAI 兼容协议）+ 离线规则兜底
        LLM_API_KEY   = sk-xxxx
        LLM_BASE_URL  = https://api.deepseek.com/v1   （默认值）
        LLM_MODEL     = deepseek-flash                （默认值，服务端名为 DeepSeek-V4.1-Flash）
+   不想设环境变量时，也可以在代码目录放一个 llm_config.local.json：
+       {"LLM_API_KEY": "sk-xxx", "LLM_MODEL": "deepseek-flash"}
+   该文件已被 .gitignore 忽略，不会进仓库；环境变量优先级高于它。
 2. 离线可跑：没配 key 时抛 LLMUnavailable，由 agent 切到规则后端，
    保证评审老师在没有 key 的机器上也能复现完整 ReAct 轨迹。
 3. 只用 requests（anaconda 自带），不引入 openai/langchain 这类重依赖。
@@ -23,6 +26,7 @@ import json
 import os
 import re
 import sys
+from pathlib import Path
 
 try:
     sys.stdout.reconfigure(encoding="utf-8")
@@ -37,8 +41,48 @@ class LLMUnavailable(RuntimeError):
     """没有配置 key、或依赖缺失、或服务不可达时抛出。"""
 
 
+# 本地密钥文件（不进 git，.gitignore 已忽略）：方便别人在自己的机器上填自己的 key
+# 查找顺序：环境变量 → 代码目录下 llm_config.local.json → ~/.dsh/secrets/llm.local.json → 默认值
+_LOCAL_CANDIDATES = [
+    Path(__file__).with_name("llm_config.local.json"),
+    Path.home() / ".dsh" / "secrets" / "llm.local.json",
+]
+# 同义环境变量：LLM_API_KEY 为主，也认官方 SDK 常用的别名
+_ALIASES = {
+    "LLM_API_KEY": ("DEEPSEEK_API_KEY", "OPENAI_API_KEY"),
+    "LLM_BASE_URL": ("OPENAI_BASE_URL", "DEEPSEEK_BASE_URL"),
+    "LLM_MODEL": ("OPENAI_MODEL", "DEEPSEEK_MODEL"),
+}
+_local_cache: dict | None = None
+
+
+def _local_config() -> dict:
+    """读本地密钥文件；不存在或格式坏就当没有，绝不抛异常。"""
+    global _local_cache
+    if _local_cache is None:
+        _local_cache = {}
+        for path in _LOCAL_CANDIDATES:
+            try:
+                if path.is_file():
+                    data = json.loads(path.read_text(encoding="utf-8"))
+                    if isinstance(data, dict):
+                        for k, v in data.items():
+                            if isinstance(v, str) and v.strip():
+                                _local_cache.setdefault(k, v.strip())
+            except Exception:
+                continue
+    return _local_cache
+
+
 def _env(name: str, default: str = "") -> str:
-    return (os.environ.get(name) or "").strip() or default
+    for key in (name, *_ALIASES.get(name, ())):
+        value = (os.environ.get(key) or "").strip()
+        if value:
+            return value
+        value = (_local_config().get(key) or "").strip()
+        if value:
+            return value
+    return default
 
 
 class LLM:

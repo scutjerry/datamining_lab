@@ -42,6 +42,18 @@ Windows PowerShell 示例：
 $env:LLM_API_KEY="sk-xxxx"; $env:LLM_MODEL="deepseek-flash"
 ```
 
+**不想设环境变量的话**：在 `代码/` 目录下放一个 `llm_config.local.json`，各人填自己的 key：
+
+```json
+{ "LLM_API_KEY": "sk-你自己的key", "LLM_MODEL": "deepseek-flash" }
+```
+
+查找顺序：**环境变量 → 代码目录 `llm_config.local.json` → `~/.dsh/secrets/llm.local.json` → 默认值**。
+这两个本地文件已被 `.gitignore` 忽略（`**/llm_config.local.json`、`**/llm.local.json`），不会进仓库；
+删掉该文件即自动回到规则后端，不影响别人复现。
+
+环境变量也认常见别名：`DEEPSEEK_API_KEY` / `OPENAI_API_KEY` / `OPENAI_BASE_URL` / `OPENAI_MODEL`。
+
 ## 4. 运行
 
 ```powershell
@@ -126,4 +138,4 @@ python run_scenarios.py --real-llm   # 真调模型 → 输出/测试报告-真�
 | `输出/traces/*.json` | 每次运行的原始轨迹（思考/行动/观察/耗时），测试报告里的每个结论都能追到文件 |
 | `输出/测试结果.json`、`输出/测试结果-真实LLM.json` | 机器可读的判定结果（pass/why/工具序列） |
 
-密钥安全：`LLM_API_KEY` 只通过环境变量传入，代码与产物里不落盘、不打印（`llm.status()` 只返回掩码后的前 6 位与后 4 位）。
+密钥安全：`LLM_API_KEY` 只通过环境变量或本地的 `llm_config.local.json` 传入，**代码里不硬编码、产物里不落盘**（`llm.status()` 只返回掩码后的前 6 位与后 4 位），本地配置文件已被 `.gitignore` 排除。

@@ -1,0 +1,50 @@
+{
+  "question": "我想去颐和园",
+  "backend": "llm",
+  "llm": {
+    "available": true,
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com/v1",
+    "api_key_set": true,
+    "api_key_masked": "sk-c6e…1dcb",
+    "calls": 5
+  },
+  "constraints": {
+    "raw": "我想去颐和园",
+    "scenic": "颐和园",
+    "minutes": null,
+    "audience": "通用",
+    "pace": "常规",
+    "interests": [],
+    "start_hint": null
+  },
+  "missing": [
+    "可用时长"
+  ],
+  "steps": [
+    {
+      "i": 1,
+      "thought": "用户已给出景区（颐和园），但没有可用时长，无法排路线，需要先反问。",
+      "action": "finish",
+      "action_input": {
+        "followup": "好的，颐和园可以安排。请问你这次大概有多少游览时间（比如 2 小时、半天 4 小时、还是一整天）？另外，是想走马观花看主要景点，还是深度慢逛？告诉我我就能给你排出具体路线和每段的估算时间。"
+      },
+      "observation": {
+        "ok": true,
+        "tool": "-",
+        "count": 0,
+        "note": "结束",
+        "preview": []
+      }
+    }
+  ],
+  "final": {
+    "kind": "followup",
+    "answer": "好的，颐和园可以安排。请问你这次大概有多少游览时间（比如 2 小时、半天 4 小时、还是一整天）？另外，是想走马观花看主要景点，还是深度慢逛？告诉我我就能给你排出具体路线和每段的估算时间。",
+    "followup": [
+      "好的，颐和园可以安排。请问你这次大概有多少游览时间（比如 2 小时、半天 4 小时、还是一整天）？另外，是想走马观花看主要景点，还是深度慢逛？告诉我我就能给你排出具体路线和每段的估算时间。"
+    ]
+  },
+  "started_at": "2026-11-18T20:22:02",
+  "elapsed_ms": 1432
+}

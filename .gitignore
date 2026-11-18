@@ -41,3 +41,7 @@ deliverables/
 实验资料整理/文档与交接/
 
 # 2026-11-18：交付完整版
+
+# 本地模型密钥（各人自己填，不进仓库）
+**/llm_config.local.json
+**/llm.local.json
