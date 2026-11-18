@@ -1,0 +1,52 @@
+{
+  "question": "我想去杭州西湖玩半天",
+  "backend": "llm",
+  "llm": {
+    "available": true,
+    "model": "deepseek-chat",
+    "base_url": "https://api.deepseek.com/v1",
+    "api_key_set": true,
+    "api_key_masked": "sk-2a1…eb9c",
+    "calls": 5
+  },
+  "constraints": {
+    "raw": "我想去杭州西湖玩半天",
+    "scenic": null,
+    "minutes": 240,
+    "audience": "通用",
+    "pace": "常规",
+    "interests": [
+      "园林"
+    ],
+    "start_hint": null
+  },
+  "missing": [
+    "景区"
+  ],
+  "steps": [
+    {
+      "i": 1,
+      "thought": "用户想去杭州西湖玩半天，已解析出时长240分钟、人群通用、节奏常规、兴趣园林，但景区名解析为 null。需要先确认景区名称是否为杭州西湖，才能查询图谱。",
+      "action": "finish",
+      "action_input": {
+        "followup": "您说的“杭州西湖”是指杭州西湖风景名胜区吗？确认后我就按半天（约4小时）帮您排路线。"
+      },
+      "observation": {
+        "ok": true,
+        "tool": "-",
+        "count": 0,
+        "note": "结束",
+        "preview": []
+      }
+    }
+  ],
+  "final": {
+    "kind": "followup",
+    "answer": "您说的“杭州西湖”是指杭州西湖风景名胜区吗？确认后我就按半天（约4小时）帮您排路线。",
+    "followup": [
+      "您说的“杭州西湖”是指杭州西湖风景名胜区吗？确认后我就按半天（约4小时）帮您排路线。"
+    ]
+  },
+  "started_at": "2026-11-18T15:01:59",
+  "elapsed_ms": 1168
+}

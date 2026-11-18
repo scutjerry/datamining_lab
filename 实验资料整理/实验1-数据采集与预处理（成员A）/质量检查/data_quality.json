@@ -1,0 +1,47 @@
+{
+  "raw_records": 23,
+  "accepted_records": 21,
+  "quarantined_records": 2,
+  "counts": [
+    {
+      "scenic": "天坛公园",
+      "doc_type": "official",
+      "count": 1
+    },
+    {
+      "scenic": "天坛公园",
+      "doc_type": "travelogue",
+      "count": 5
+    },
+    {
+      "scenic": "故宫博物院",
+      "doc_type": "official",
+      "count": 2
+    },
+    {
+      "scenic": "故宫博物院",
+      "doc_type": "travelogue",
+      "count": 6
+    },
+    {
+      "scenic": "颐和园",
+      "doc_type": "official",
+      "count": 2
+    },
+    {
+      "scenic": "颐和园",
+      "doc_type": "travelogue",
+      "count": 5
+    }
+  ],
+  "total_characters": 94835,
+  "duplicate_content_groups": [],
+  "rules": [
+    "site-specific main content",
+    "NFC",
+    "invisible controls removed",
+    "URLs removed",
+    "whitespace normalized",
+    "paragraph/route/time punctuation retained"
+  ]
+}

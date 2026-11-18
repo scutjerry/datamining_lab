@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-11-18T14:49:40",
+  "schema_version": "Schema与字段规范 v1.1",
+  "inputs": {
+    "routes.json": 19,
+    "advices.json": 3,
+    "entities.json": 21
+  },
+  "nodes": {
+    "total": 159,
+    "by_label": {
+      "ScenicArea": 3,
+      "TimeSlot": 3,
+      "POI": 131,
+      "Route": 19,
+      "Advice": 3
+    }
+  },
+  "edges": {
+    "total": 377,
+    "by_type": {
+      "HAS_ROUTE": 19,
+      "STEP": 224,
+      "HAS_ADVICE": 3,
+      "LOCATED_IN": 131
+    }
+  },
+  "poi": {
+    "from_routes": 57,
+    "from_entities_freq_ge_5": 74,
+    "total": 131,
+    "quarantined_step_names": 26,
+    "repaired_step_names": 9,
+    "merged_exhibition_alias": 3
+  },
+  "step_attribute_coverage": {
+    "steps_total": 224,
+    "time_slot_non_null": 0,
+    "activity_non_empty": 0,
+    "transport_non_null": 3,
+    "duration_non_null": 0,
+    "route_duration_non_null": 9
+  },
+  "checks": {
+    "duplicate_node_ids": [],
+    "dangling_edges": 0,
+    "enum_violations": 0,
+    "all_step_poi_resolved": true
+  },
+  "known_gaps": [
+    "STEP.time_slot 全为空：routes.json 的链式路线原文无时段标注，时间层级（上午/中午/下午）在项目6内无法落地，属实验3 待补项；TimeSlot 节点已建但暂无边。",
+    "STEP.activity 全为空、transport 仅 3 条、duration 全空：实验3 只做了链式景点序列，未解析活动与时长。",
+    "PART_OF（POI 父子）与 RELATES_TO（建议→景点）无可靠来源，本版不生成，避免造边；POI 的景区归属改用 Schema v1.1 新增的 LOCATED_IN 表达。",
+    "D205-CHAIN-01 实际是游记里并列的三条官方线路，被链式提取当成一条，已标 quality_flag=segmentation_suspect。",
+    "26 个步骤名被判为解析残渣并隔离（见 poi_quarantine.csv），源头是实验3 的路线段切分缺失。"
+  ]
+}

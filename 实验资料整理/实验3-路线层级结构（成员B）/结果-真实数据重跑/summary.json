@@ -1,0 +1,56 @@
+{
+  "source_records": 21,
+  "route_records": 21,
+  "route_step_mentions": 2776,
+  "source_span_integrity": {
+    "passed": true,
+    "checked_steps": 2776
+  },
+  "official_routes": 5,
+  "traveler_routes": 16,
+  "route_format_counts": {
+    "numbered": 7,
+    "arrow_chain": 2,
+    "prose": 6,
+    "time_segmented_prose": 6
+  },
+  "format_fixture_tests": [
+    {
+      "fixture_id": "fixture_arrow_route_01",
+      "expected_format": "arrow_chain",
+      "detected_formats": [
+        "arrow_chain"
+      ],
+      "expected_pois": [
+        "午门",
+        "太和门",
+        "太和殿"
+      ],
+      "actual_pois": [
+        "午门",
+        "太和门",
+        "太和殿"
+      ],
+      "passed": true
+    },
+    {
+      "fixture_id": "fixture_numbered_route_01",
+      "expected_format": "numbered",
+      "detected_formats": [
+        "numbered"
+      ],
+      "expected_pois": [
+        "午门",
+        "太和殿"
+      ],
+      "actual_pois": [
+        "午门",
+        "太和殿"
+      ],
+      "passed": true
+    }
+  ],
+  "comparison_count": 16,
+  "mean_official_coverage": 0.4646,
+  "mean_order_consistency": 0.685
+}

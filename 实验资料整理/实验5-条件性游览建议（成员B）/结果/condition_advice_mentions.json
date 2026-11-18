@@ -1,0 +1,860 @@
+[
+  {
+    "attraction": "故宫博物院",
+    "record_id": "bj_note_02",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "visitor_type",
+    "condition_text": "带父母",
+    "condition_span": {
+      "start": 0,
+      "end": 3,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "提前预约",
+    "advice_span": {
+      "start": 9,
+      "end": 13,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 19,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "带父母游故宫，最好提前预约并从午门进。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "故宫博物院",
+    "record_id": "bj_note_02",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "visitor_type",
+    "condition_text": "带父母",
+    "condition_span": {
+      "start": 0,
+      "end": 3,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "从午门进",
+    "advice_span": {
+      "start": 14,
+      "end": 18,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 19,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "带父母游故宫，最好提前预约并从午门进。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "故宫博物院",
+    "record_id": "bj_note_03",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "weather",
+    "condition_text": "下雨",
+    "condition_span": {
+      "start": 2,
+      "end": 4,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "穿防滑鞋",
+    "advice_span": {
+      "start": 7,
+      "end": 11,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 18,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "如果下雨，建议穿防滑鞋并带轻便雨衣。",
+    "rule": "explicit_conditional"
+  },
+  {
+    "attraction": "故宫博物院",
+    "record_id": "bj_note_03",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "weather",
+    "condition_text": "下雨",
+    "condition_span": {
+      "start": 2,
+      "end": 4,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "带轻便雨衣",
+    "advice_span": {
+      "start": 12,
+      "end": 17,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 18,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "如果下雨，建议穿防滑鞋并带轻便雨衣。",
+    "rule": "explicit_conditional"
+  },
+  {
+    "attraction": "故宫博物院",
+    "record_id": "bj_note_04",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "preference",
+    "condition_text": "想拍建筑",
+    "condition_span": {
+      "start": 0,
+      "end": 4,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "早点到午门",
+    "advice_span": {
+      "start": 6,
+      "end": 11,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 29,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "想拍建筑可以早点到午门，上午光线合适时先拍太和门和太和殿。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "故宫博物院",
+    "record_id": "bj_note_04",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "preference",
+    "condition_text": "想拍建筑",
+    "condition_span": {
+      "start": 0,
+      "end": 4,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "上午光线合适时先拍太和门和太和殿",
+    "advice_span": {
+      "start": 12,
+      "end": 28,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 29,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "想拍建筑可以早点到午门，上午光线合适时先拍太和门和太和殿。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "故宫博物院",
+    "record_id": "bj_note_05",
+    "text_type": "traveler_note",
+    "sentence_index": 2,
+    "condition_type": "time_constraint",
+    "condition_text": "时间紧",
+    "condition_span": {
+      "start": 34,
+      "end": 37,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "不去珍宝馆",
+    "advice_span": {
+      "start": 40,
+      "end": 45,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 34,
+      "end": 57,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "时间紧时可以不去珍宝馆，把主要时间留给中轴线。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "故宫博物院",
+    "record_id": "bj_note_05",
+    "text_type": "traveler_note",
+    "sentence_index": 2,
+    "condition_type": "time_constraint",
+    "condition_text": "时间紧",
+    "condition_span": {
+      "start": 34,
+      "end": 37,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "把主要时间留给中轴线",
+    "advice_span": {
+      "start": 46,
+      "end": 56,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 34,
+      "end": 57,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "时间紧时可以不去珍宝馆，把主要时间留给中轴线。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "杭州西湖",
+    "record_id": "hz_note_01",
+    "text_type": "traveler_note",
+    "sentence_index": 2,
+    "condition_type": "crowd_level",
+    "condition_text": "游客多",
+    "condition_span": {
+      "start": 28,
+      "end": 31,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "先往前走一段",
+    "advice_span": {
+      "start": 35,
+      "end": 41,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 20,
+      "end": 42,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "这里拍照很舒服，游客多的时候就先往前走一段。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "杭州西湖",
+    "record_id": "hz_note_02",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "visitor_type",
+    "condition_text": "带老人",
+    "condition_span": {
+      "start": 0,
+      "end": 3,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "少走路",
+    "advice_span": {
+      "start": 7,
+      "end": 10,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 33,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "带老人出游建议少走路，上午从断桥看湖景后，可以选择乘车到苏堤附近。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "杭州西湖",
+    "record_id": "hz_note_02",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "visitor_type",
+    "condition_text": "带老人",
+    "condition_span": {
+      "start": 0,
+      "end": 3,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "可以选择乘车到苏堤附近",
+    "advice_span": {
+      "start": 21,
+      "end": 32,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 33,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "带老人出游建议少走路，上午从断桥看湖景后，可以选择乘车到苏堤附近。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "杭州西湖",
+    "record_id": "hz_note_03",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "visitor_type",
+    "condition_text": "带孩子",
+    "condition_span": {
+      "start": 0,
+      "end": 3,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "先看断桥残雪",
+    "advice_span": {
+      "start": 5,
+      "end": 11,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 33,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "带孩子上午先看断桥残雪，再沿白堤走到孤山，途中可以讲讲西湖的故事。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "杭州西湖",
+    "record_id": "hz_note_03",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "visitor_type",
+    "condition_text": "带孩子",
+    "condition_span": {
+      "start": 0,
+      "end": 3,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "再沿白堤走到孤山",
+    "advice_span": {
+      "start": 12,
+      "end": 20,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 33,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "带孩子上午先看断桥残雪，再沿白堤走到孤山，途中可以讲讲西湖的故事。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "杭州西湖",
+    "record_id": "hz_note_03",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "visitor_type",
+    "condition_text": "带孩子",
+    "condition_span": {
+      "start": 0,
+      "end": 3,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "途中可以讲讲西湖的故事",
+    "advice_span": {
+      "start": 21,
+      "end": 32,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 33,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "带孩子上午先看断桥残雪，再沿白堤走到孤山，途中可以讲讲西湖的故事。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "杭州西湖",
+    "record_id": "hz_note_03",
+    "text_type": "traveler_note",
+    "sentence_index": 2,
+    "condition_type": "weather",
+    "condition_text": "天气炎热",
+    "condition_span": {
+      "start": 33,
+      "end": 37,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "减少步行",
+    "advice_span": {
+      "start": 40,
+      "end": 44,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 33,
+      "end": 56,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "天气炎热时建议减少步行，多安排室内休息或乘船。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "杭州西湖",
+    "record_id": "hz_note_03",
+    "text_type": "traveler_note",
+    "sentence_index": 2,
+    "condition_type": "weather",
+    "condition_text": "天气炎热",
+    "condition_span": {
+      "start": 33,
+      "end": 37,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "多安排室内休息",
+    "advice_span": {
+      "start": 45,
+      "end": 52,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 33,
+      "end": 56,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "天气炎热时建议减少步行，多安排室内休息或乘船。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "杭州西湖",
+    "record_id": "hz_note_03",
+    "text_type": "traveler_note",
+    "sentence_index": 2,
+    "condition_type": "weather",
+    "condition_text": "天气炎热",
+    "condition_span": {
+      "start": 33,
+      "end": 37,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "乘船",
+    "advice_span": {
+      "start": 53,
+      "end": 55,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 33,
+      "end": 56,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "天气炎热时建议减少步行，多安排室内休息或乘船。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "杭州西湖",
+    "record_id": "hz_note_04",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "weather",
+    "condition_text": "下雨",
+    "condition_span": {
+      "start": 2,
+      "end": 4,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "改成短线",
+    "advice_span": {
+      "start": 14,
+      "end": 18,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 40,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "如果下雨，我们会把长距离步行改成短线，先在楼外楼附近休息，雨小后再去断桥和白堤。",
+    "rule": "explicit_conditional"
+  },
+  {
+    "attraction": "杭州西湖",
+    "record_id": "hz_note_04",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "weather",
+    "condition_text": "下雨",
+    "condition_span": {
+      "start": 2,
+      "end": 4,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "先在楼外楼附近休息",
+    "advice_span": {
+      "start": 19,
+      "end": 28,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 40,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "如果下雨，我们会把长距离步行改成短线，先在楼外楼附近休息，雨小后再去断桥和白堤。",
+    "rule": "explicit_conditional"
+  },
+  {
+    "attraction": "杭州西湖",
+    "record_id": "hz_note_04",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "weather",
+    "condition_text": "下雨",
+    "condition_span": {
+      "start": 2,
+      "end": 4,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "雨小后再去断桥和白堤",
+    "advice_span": {
+      "start": 29,
+      "end": 39,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 40,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "如果下雨，我们会把长距离步行改成短线，先在楼外楼附近休息，雨小后再去断桥和白堤。",
+    "rule": "explicit_conditional"
+  },
+  {
+    "attraction": "杭州西湖",
+    "record_id": "hz_note_04",
+    "text_type": "traveler_note",
+    "sentence_index": 3,
+    "condition_type": "weather",
+    "condition_text": "雨势较大",
+    "condition_span": {
+      "start": 62,
+      "end": 66,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "取消户外安排",
+    "advice_span": {
+      "start": 68,
+      "end": 74,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 62,
+      "end": 83,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "雨势较大时就取消户外安排，改天再去雷峰塔。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "杭州西湖",
+    "record_id": "hz_note_04",
+    "text_type": "traveler_note",
+    "sentence_index": 3,
+    "condition_type": "weather",
+    "condition_text": "雨势较大",
+    "condition_span": {
+      "start": 62,
+      "end": 66,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "改天再去雷峰塔",
+    "advice_span": {
+      "start": 75,
+      "end": 82,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 62,
+      "end": 83,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "雨势较大时就取消户外安排，改天再去雷峰塔。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "杭州西湖",
+    "record_id": "hz_note_05",
+    "text_type": "traveler_note",
+    "sentence_index": 3,
+    "condition_type": "time_constraint",
+    "condition_text": "想看夕阳",
+    "condition_span": {
+      "start": 44,
+      "end": 48,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "把雷峰塔安排在傍晚",
+    "advice_span": {
+      "start": 52,
+      "end": 61,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 44,
+      "end": 62,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "想看夕阳的话最好把雷峰塔安排在傍晚。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "上海迪士尼度假区",
+    "record_id": "sh_note_02",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "crowd_level",
+    "condition_text": "想少排队",
+    "condition_span": {
+      "start": 0,
+      "end": 4,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "尽量早到迪士尼地铁站",
+    "advice_span": {
+      "start": 5,
+      "end": 15,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 29,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "想少排队就尽量早到迪士尼地铁站，入园后先查看项目等候时间。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "上海迪士尼度假区",
+    "record_id": "sh_note_02",
+    "text_type": "traveler_note",
+    "sentence_index": 2,
+    "condition_type": "crowd_level",
+    "condition_text": "人多",
+    "condition_span": {
+      "start": 29,
+      "end": 31,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "先去创极速光轮",
+    "advice_span": {
+      "start": 32,
+      "end": 39,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 29,
+      "end": 49,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "人多时先去创极速光轮，再安排玩具总动员。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "上海迪士尼度假区",
+    "record_id": "sh_note_02",
+    "text_type": "traveler_note",
+    "sentence_index": 2,
+    "condition_type": "crowd_level",
+    "condition_text": "人多",
+    "condition_span": {
+      "start": 29,
+      "end": 31,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "再安排玩具总动员",
+    "advice_span": {
+      "start": 40,
+      "end": 48,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 29,
+      "end": 49,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "人多时先去创极速光轮，再安排玩具总动员。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "上海迪士尼度假区",
+    "record_id": "sh_note_03",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "visitor_type",
+    "condition_text": "带父母",
+    "condition_span": {
+      "start": 0,
+      "end": 3,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "减少刺激项目",
+    "advice_span": {
+      "start": 9,
+      "end": 15,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 36,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "带父母去迪士尼可以减少刺激项目，上午在星愿公园和奇幻童话城堡附近慢慢走。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "上海迪士尼度假区",
+    "record_id": "sh_note_03",
+    "text_type": "traveler_note",
+    "sentence_index": 3,
+    "condition_type": "weather",
+    "condition_text": "天气热",
+    "condition_span": {
+      "start": 65,
+      "end": 68,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "多找阴凉处休息",
+    "advice_span": {
+      "start": 69,
+      "end": 76,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 65,
+      "end": 92,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "天气热时多找阴凉处休息，晚上看烟花要提前确认散场交通。",
+    "rule": "implicit_condition_with_recommendation"
+  },
+  {
+    "attraction": "上海迪士尼度假区",
+    "record_id": "sh_note_04",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "weather",
+    "condition_text": "下雨",
+    "condition_span": {
+      "start": 2,
+      "end": 4,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "先确认户外项目是否开放",
+    "advice_span": {
+      "start": 7,
+      "end": 18,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 39,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "如果下雨，建议先确认户外项目是否开放，再优先安排室内的加勒比海盗和玩具总动员。",
+    "rule": "explicit_conditional"
+  },
+  {
+    "attraction": "上海迪士尼度假区",
+    "record_id": "sh_note_04",
+    "text_type": "traveler_note",
+    "sentence_index": 1,
+    "condition_type": "weather",
+    "condition_text": "下雨",
+    "condition_span": {
+      "start": 2,
+      "end": 4,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "再优先安排室内的加勒比海盗和玩具总动员",
+    "advice_span": {
+      "start": 19,
+      "end": 38,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 0,
+      "end": 39,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "如果下雨，建议先确认户外项目是否开放，再优先安排室内的加勒比海盗和玩具总动员。",
+    "rule": "explicit_conditional"
+  },
+  {
+    "attraction": "上海迪士尼度假区",
+    "record_id": "sh_note_04",
+    "text_type": "traveler_note",
+    "sentence_index": 3,
+    "condition_type": "weather",
+    "condition_text": "天气一直不好",
+    "condition_span": {
+      "start": 63,
+      "end": 69,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "取消烟花前的室外等待",
+    "advice_span": {
+      "start": 71,
+      "end": 81,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 62,
+      "end": 90,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "若天气一直不好，就取消烟花前的室外等待，早点回酒店休息。",
+    "rule": "explicit_conditional"
+  },
+  {
+    "attraction": "上海迪士尼度假区",
+    "record_id": "sh_note_04",
+    "text_type": "traveler_note",
+    "sentence_index": 3,
+    "condition_type": "weather",
+    "condition_text": "天气一直不好",
+    "condition_span": {
+      "start": 63,
+      "end": 69,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "早点回酒店休息",
+    "advice_span": {
+      "start": 82,
+      "end": 89,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 62,
+      "end": 90,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "若天气一直不好，就取消烟花前的室外等待，早点回酒店休息。",
+    "rule": "explicit_conditional"
+  },
+  {
+    "attraction": "上海迪士尼度假区",
+    "record_id": "sh_note_05",
+    "text_type": "traveler_note",
+    "sentence_index": 3,
+    "condition_type": "time_constraint",
+    "condition_text": "想看烟花",
+    "condition_span": {
+      "start": 55,
+      "end": 59,
+      "unit": "unicode_codepoint"
+    },
+    "advice_text": "提前到奇幻童话城堡前占位",
+    "advice_span": {
+      "start": 62,
+      "end": 74,
+      "unit": "unicode_codepoint"
+    },
+    "sentence_span": {
+      "start": 55,
+      "end": 89,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_sentence": "想看烟花时最好提前到奇幻童话城堡前占位，晚上散场后跟着指引去地铁站。",
+    "rule": "implicit_condition_with_recommendation"
+  }
+]

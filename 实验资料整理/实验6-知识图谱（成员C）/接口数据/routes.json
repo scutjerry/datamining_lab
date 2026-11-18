@@ -1,0 +1,2192 @@
+[
+  {
+    "route_id": "D001-CHAIN-01",
+    "scenic": "故宫博物院",
+    "route_type": "official",
+    "source_doc_id": "D001",
+    "route_title": "故宫5A景区游览攻略",
+    "route_duration_min": null,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "午门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "太和门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "弘义阁（皇朝礼乐展",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "太和殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "中和殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "保和殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "乾清门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "乾清宫",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "交泰殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 10,
+        "time_slot": null,
+        "poi_name": "坤宁宫",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 11,
+        "time_slot": null,
+        "poi_name": "御花园",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 12,
+        "time_slot": null,
+        "poi_name": "神武门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D001-CHAIN-02",
+    "scenic": "故宫博物院",
+    "route_type": "official",
+    "source_doc_id": "D001",
+    "route_title": "故宫5A景区游览攻略",
+    "route_duration_min": null,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "午门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "太和门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "太和殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "保和殿西庑（天府永藏展",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "保和殿东庑（宫阙述往展",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "中和殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "保和殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "乾清门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "乾清宫",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 10,
+        "time_slot": null,
+        "poi_name": "交泰殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 11,
+        "time_slot": null,
+        "poi_name": "坤宁宫",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 12,
+        "time_slot": null,
+        "poi_name": "御花园",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 13,
+        "time_slot": null,
+        "poi_name": "神武门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D001-CHAIN-03",
+    "scenic": "故宫博物院",
+    "route_type": "official",
+    "source_doc_id": "D001",
+    "route_title": "故宫5A景区游览攻略",
+    "route_duration_min": null,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "午门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "文华殿（陶瓷馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "太和门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "太和殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "中和殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "保和殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "奉先殿（钟表馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "乾清宫",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "交泰殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 10,
+        "time_slot": null,
+        "poi_name": "坤宁宫",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 11,
+        "time_slot": null,
+        "poi_name": "养心殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 12,
+        "time_slot": null,
+        "poi_name": "西六宫区",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 13,
+        "time_slot": null,
+        "poi_name": "御花园",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 14,
+        "time_slot": null,
+        "poi_name": "神武门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D001-CHAIN-04",
+    "scenic": "故宫博物院",
+    "route_type": "official",
+    "source_doc_id": "D001",
+    "route_title": "故宫5A景区游览攻略",
+    "route_duration_min": null,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "午门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "武英殿（书画馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "太和门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "太和殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "中和殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "保和殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "乾清宫",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "交泰殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "坤宁宫",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 10,
+        "time_slot": null,
+        "poi_name": "东六宫区",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 11,
+        "time_slot": null,
+        "poi_name": "斋宫",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 12,
+        "time_slot": null,
+        "poi_name": "宁寿宫区前朝（珍宝、石鼓二馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 13,
+        "time_slot": null,
+        "poi_name": "宁寿宫区后寝（珍宝、戏曲二馆和珍妃井",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 14,
+        "time_slot": null,
+        "poi_name": "神武门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D001-CHAIN-05",
+    "scenic": "故宫博物院",
+    "route_type": "official",
+    "source_doc_id": "D001",
+    "route_title": "故宫5A景区游览攻略",
+    "route_duration_min": null,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "午门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "武英殿（书画馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "文华殿（陶瓷馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "太和门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "太和殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "中和殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "保和殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "乾清宫",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "交泰殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 10,
+        "time_slot": null,
+        "poi_name": "坤宁宫",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 11,
+        "time_slot": null,
+        "poi_name": "养心殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 12,
+        "time_slot": null,
+        "poi_name": "西六宫区",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 13,
+        "time_slot": null,
+        "poi_name": "御花园",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 14,
+        "time_slot": null,
+        "poi_name": "东六宫区",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 15,
+        "time_slot": null,
+        "poi_name": "奉先殿（钟表馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 16,
+        "time_slot": null,
+        "poi_name": "宁寿宫区（珍宝馆、戏曲馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 17,
+        "time_slot": null,
+        "poi_name": "神武门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D002-CHAIN-01",
+    "scenic": "颐和园",
+    "route_type": "official",
+    "source_doc_id": "D002",
+    "route_title": "颐和园",
+    "route_duration_min": 180,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "东宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "仁寿殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "文昌院",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "玉澜堂、宜芸馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "乐寿堂",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "长廊",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "排云殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "佛香阁",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "石舫",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 10,
+        "time_slot": null,
+        "poi_name": "耕织图景区",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 11,
+        "time_slot": null,
+        "poi_name": "如意门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D002-CHAIN-02",
+    "scenic": "颐和园",
+    "route_type": "official",
+    "source_doc_id": "D002",
+    "route_title": "颐和园",
+    "route_duration_min": 150,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "东宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "仁寿殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "文昌院",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "玉澜堂、宜芸馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "乐寿堂",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "长廊",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "排云殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "佛香阁",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "石舫",
+        "activity": "",
+        "transport_to_next": "乘船",
+        "duration_min": null
+      },
+      {
+        "step": 10,
+        "time_slot": null,
+        "poi_name": "南湖岛",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 11,
+        "time_slot": null,
+        "poi_name": "十七孔桥",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 12,
+        "time_slot": null,
+        "poi_name": "铜牛",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 13,
+        "time_slot": null,
+        "poi_name": "新建宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D002-CHAIN-03",
+    "scenic": "颐和园",
+    "route_type": "official",
+    "source_doc_id": "D002",
+    "route_title": "颐和园",
+    "route_duration_min": 120,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "东宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "仁寿殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "文昌院",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "玉澜堂、宜芸馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "乐寿堂",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "长廊",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "排云殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "佛香阁",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "苏州街",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 10,
+        "time_slot": null,
+        "poi_name": "北宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D002-CHAIN-04",
+    "scenic": "颐和园",
+    "route_type": "official",
+    "source_doc_id": "D002",
+    "route_title": "颐和园",
+    "route_duration_min": 150,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "东宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "仁寿殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "文昌院",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "玉澜堂、宜芸馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "乐寿堂",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "长廊",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "排云殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "佛香阁",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "苏州街",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 10,
+        "time_slot": null,
+        "poi_name": "澹宁堂",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 11,
+        "time_slot": null,
+        "poi_name": "谐趣园",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 12,
+        "time_slot": null,
+        "poi_name": "东宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D002-CHAIN-05",
+    "scenic": "颐和园",
+    "route_type": "official",
+    "source_doc_id": "D002",
+    "route_title": "颐和园",
+    "route_duration_min": 180,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "北宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "苏州街",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "四大部洲",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "佛香阁",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "排云殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "长廊",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "石舫",
+        "activity": "",
+        "transport_to_next": "乘船",
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "南湖岛",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "十七孔桥",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 10,
+        "time_slot": null,
+        "poi_name": "铜牛",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 11,
+        "time_slot": null,
+        "poi_name": "昆明湖东堤",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 12,
+        "time_slot": null,
+        "poi_name": "文昌院",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 13,
+        "time_slot": null,
+        "poi_name": "玉澜堂、宜芸馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 14,
+        "time_slot": null,
+        "poi_name": "乐寿堂",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 15,
+        "time_slot": null,
+        "poi_name": "仁寿殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 16,
+        "time_slot": null,
+        "poi_name": "东宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D002-CHAIN-06",
+    "scenic": "颐和园",
+    "route_type": "official",
+    "source_doc_id": "D002",
+    "route_title": "颐和园",
+    "route_duration_min": 150,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "北宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "苏州街",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "澹宁堂",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "谐趣园",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "仁寿殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "玉澜堂、宜芸馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "文昌院",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "乐寿堂",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "长廊",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 10,
+        "time_slot": null,
+        "poi_name": "排云殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 11,
+        "time_slot": null,
+        "poi_name": "佛香阁",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 12,
+        "time_slot": null,
+        "poi_name": "石舫",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 13,
+        "time_slot": null,
+        "poi_name": "耕织图景区",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 14,
+        "time_slot": null,
+        "poi_name": "如意门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D002-CHAIN-07",
+    "scenic": "颐和园",
+    "route_type": "official",
+    "source_doc_id": "D002",
+    "route_title": "颐和园",
+    "route_duration_min": 120,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "北宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "苏州街",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "石舫",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "长廊",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "排云殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "佛香阁",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "乐寿堂",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "文昌院",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "仁寿殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 10,
+        "time_slot": null,
+        "poi_name": "东宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D002-CHAIN-08",
+    "scenic": "颐和园",
+    "route_type": "official",
+    "source_doc_id": "D002",
+    "route_title": "颐和园",
+    "route_duration_min": 150,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "新建宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "昆明湖东堤",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "文昌院",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "仁寿殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "玉澜堂、宜芸馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "乐寿堂",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "长廊",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "排云殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "佛香阁",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 10,
+        "time_slot": null,
+        "poi_name": "苏州街",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 11,
+        "time_slot": null,
+        "poi_name": "北宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D002-CHAIN-09",
+    "scenic": "颐和园",
+    "route_type": "official",
+    "source_doc_id": "D002",
+    "route_title": "颐和园",
+    "route_duration_min": 180,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "新建宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "南湖岛",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "十七孔桥",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "铜牛",
+        "activity": "",
+        "transport_to_next": "乘船",
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "石舫",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "耕织图景区",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "苏州街",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "佛香阁",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "排云殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 10,
+        "time_slot": null,
+        "poi_name": "长廊",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 11,
+        "time_slot": null,
+        "poi_name": "乐寿堂",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 12,
+        "time_slot": null,
+        "poi_name": "玉澜堂、宜芸馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 13,
+        "time_slot": null,
+        "poi_name": "文昌院",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 14,
+        "time_slot": null,
+        "poi_name": "仁寿殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 15,
+        "time_slot": null,
+        "poi_name": "东宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D002-CHAIN-10",
+    "scenic": "颐和园",
+    "route_type": "official",
+    "source_doc_id": "D002",
+    "route_title": "颐和园",
+    "route_duration_min": null,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "排云殿←",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "南湖岛;石舫←",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "南湖岛;铜牛←",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "石舫",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D003-CHAIN-01",
+    "scenic": "天坛公园",
+    "route_type": "official",
+    "source_doc_id": "D003",
+    "route_title": "北京市公园管理中心-天坛公园暑期推出3条清凉游览路线",
+    "route_duration_min": null,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "天坛公园南门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "圜丘、回音壁景点",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "回音壁西侧闸机",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "迎客柏月亮门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "丹陛桥西侧下面古树区",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "祈年殿西门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "祈年殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "祈年殿东门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "长廊",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 10,
+        "time_slot": null,
+        "poi_name": "天坛公园东门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D003-CHAIN-02",
+    "scenic": "天坛公园",
+    "route_type": "official",
+    "source_doc_id": "D003",
+    "route_title": "北京市公园管理中心-天坛公园暑期推出3条清凉游览路线",
+    "route_duration_min": null,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "天坛公园北门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "祈年殿东门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "祈年殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "祈年殿西门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "丹陛桥西侧下面古树区",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "迎客柏月亮门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "回音壁西侧闸机",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "回音壁、圜丘景点",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "天坛公园南门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D003-CHAIN-03",
+    "scenic": "天坛公园",
+    "route_type": "official",
+    "source_doc_id": "D003",
+    "route_title": "北京市公园管理中心-天坛公园暑期推出3条清凉游览路线",
+    "route_duration_min": null,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "天坛公园西门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "斋宫",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "三座门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "回音壁西侧闸机",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "圜丘、回音壁景点",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "回音壁西侧闸机",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "迎客柏月亮门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "丹陛桥西侧下面古树区",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "祈年殿西门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 10,
+        "time_slot": null,
+        "poi_name": "祈年殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 11,
+        "time_slot": null,
+        "poi_name": "祈年殿东门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 12,
+        "time_slot": null,
+        "poi_name": "长廊",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 13,
+        "time_slot": null,
+        "poi_name": "天坛公园东门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  },
+  {
+    "route_id": "D205-CHAIN-01",
+    "scenic": "颐和园",
+    "route_type": "visitor",
+    "source_doc_id": "D205",
+    "route_title": "【老梆菜】一篇游记游遍皇家园林颐和园",
+    "route_duration_min": null,
+    "steps": [
+      {
+        "step": 1,
+        "time_slot": null,
+        "poi_name": "颐和园的园林主要由万寿山和昆明湖两部分组成，园内建筑以佛香阁为中心，园中有景点建筑物百余座、大小院落20余处，3555古建筑，面积70000多平方米，共有亭、台、楼、阁、廊、榭等不同形式的建筑3000多间。古树名木1600余株。其中佛香阁、长廊、石舫、苏州街、十七孔桥、谐趣园、大戏台等都已成为家喻户晓的代表性建筑。自然间形成了典型的“乐人、乐山、乐水”的线路的举世罕见的园林艺术。乐人线可以沿着慈禧、光绪政治和生活的轨迹，欣赏昔日的皇家园林和今日百姓乐园的时代变迁；乐山线则是围绕万寿山展开，从排云殿到佛香阁，从铜亭到转轮藏，再加上山脚处的谐趣园，一一探寻揭秘其中的玄妙；而乐水线是以昆明湖和周边的景点为线路，欣赏以昆明湖为代表的北京水文化。详细的旅游路线可以按照进入的宫门大致可以分为三条：1、东宫门线路：东宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 2,
+        "time_slot": null,
+        "poi_name": "》仁寿殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 3,
+        "time_slot": null,
+        "poi_name": "》德和园",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 4,
+        "time_slot": null,
+        "poi_name": "》玉澜堂",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 5,
+        "time_slot": null,
+        "poi_name": "》宜芸馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 6,
+        "time_slot": null,
+        "poi_name": "》乐寿堂",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 7,
+        "time_slot": null,
+        "poi_name": "》长廊",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 8,
+        "time_slot": null,
+        "poi_name": "》排云殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 9,
+        "time_slot": null,
+        "poi_name": "》佛香阁",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 10,
+        "time_slot": null,
+        "poi_name": "》苏州街2、北宫门线路：北宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 11,
+        "time_slot": null,
+        "poi_name": "》苏州街",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 12,
+        "time_slot": null,
+        "poi_name": "》佛香阁",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 13,
+        "time_slot": null,
+        "poi_name": "》排云殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 14,
+        "time_slot": null,
+        "poi_name": "》长廊",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 15,
+        "time_slot": null,
+        "poi_name": "》乐寿堂",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 16,
+        "time_slot": null,
+        "poi_name": "》宜芸馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 17,
+        "time_slot": null,
+        "poi_name": "》玉澜堂",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 18,
+        "time_slot": null,
+        "poi_name": "》德和园",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 19,
+        "time_slot": null,
+        "poi_name": "》仁寿殿3、新建宫门线路：新建宫门",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 20,
+        "time_slot": null,
+        "poi_name": "》铜牛",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 21,
+        "time_slot": null,
+        "poi_name": "》文昌阁",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 22,
+        "time_slot": null,
+        "poi_name": "》仁寿殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 23,
+        "time_slot": null,
+        "poi_name": "》德和园",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 24,
+        "time_slot": null,
+        "poi_name": "》玉澜堂",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 25,
+        "time_slot": null,
+        "poi_name": "》宜芸馆",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 26,
+        "time_slot": null,
+        "poi_name": "》乐寿堂",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 27,
+        "time_slot": null,
+        "poi_name": "》长廊",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 28,
+        "time_slot": null,
+        "poi_name": "》排云殿",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 29,
+        "time_slot": null,
+        "poi_name": "》佛香阁",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 30,
+        "time_slot": null,
+        "poi_name": "》苏州街开放时间： 旺季（每年4月1日至10月31日）：开放时间：6：30——18：00，园中园开放时间：8：30——17：00 淡季（每年11月1日至3月31日）：开放时间：7：00——17： 00，园中园开放时间：9：00——16：00门票价格： 门票：30元/张（旺季），20元/张（淡季）。 联票：60元/张（旺季），50元/张（淡季）。 联票包括颐和园门票和园中园门票（园中园包括文昌院、德和园、佛香阁和苏州街）。画舫摆渡：石丈亭",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 31,
+        "time_slot": null,
+        "poi_name": "铜牛，宿云檐",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      },
+      {
+        "step": 32,
+        "time_slot": null,
+        "poi_name": "十七孔桥，营业时间：8：30——16：30，单程30元/人",
+        "activity": "",
+        "transport_to_next": null,
+        "duration_min": null
+      }
+    ]
+  }
+]

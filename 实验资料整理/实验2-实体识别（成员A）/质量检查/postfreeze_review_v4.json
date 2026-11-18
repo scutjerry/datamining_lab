@@ -1,0 +1,145 @@
+{
+  "seed": 20261113,
+  "samples": 18,
+  "algorithm": "v4",
+  "scope": "separately sampled after v4; reviewed failures used to develop v5; v5 is an in-sample regression score",
+  "sampling": "six sentences per scenic; length 25..140; exclude all regression-case source documents; no prediction-based selection",
+  "annotation_origin": "assistant-reviewed provisional; not confirmed by a human",
+  "limitations": "small, mostly POI/negative sample; no TRANSPORT gold mentions; not evidence of general accuracy",
+  "scores": {
+    "POI": {
+      "tp": 12,
+      "fp": 2,
+      "fn": 11,
+      "precision": 0.8571428571428571,
+      "recall": 0.5217391304347826,
+      "f1": 0.6486486486486487
+    },
+    "TRANSPORT": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "TIME": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "micro": {
+      "tp": 13,
+      "fp": 2,
+      "fn": 11,
+      "precision": 0.8666666666666667,
+      "recall": 0.5416666666666666,
+      "f1": 0.6666666666666666
+    }
+  },
+  "errors": [
+    {
+      "sample_id": "R002",
+      "doc_id": "D301",
+      "text": "列入世界遗产的北京天坛公园里的祈年殿前身是大享殿建于嘉靖二十四年（1545年）。",
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "text": "大享殿",
+          "type": "POI"
+        }
+      ]
+    },
+    {
+      "sample_id": "R005",
+      "doc_id": "D301",
+      "text": "对祈年殿有兴趣，两侧大殿里有祈年殿大展和遇见天坛展览，很值得细细看看。",
+      "false_positives": [
+        {
+          "text": "祈年殿",
+          "type": "POI"
+        },
+        {
+          "text": "天坛",
+          "type": "POI"
+        }
+      ],
+      "false_negatives": []
+    },
+    {
+      "sample_id": "R007",
+      "doc_id": "D105",
+      "text": "清乾隆十一年（公元1746年），这里建成了现在的南三所，正式官名还叫撷（念邪）芳殿。",
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "text": "南三所",
+          "type": "POI"
+        },
+        {
+          "text": "撷（念邪）芳殿",
+          "type": "POI"
+        }
+      ]
+    },
+    {
+      "sample_id": "R013",
+      "doc_id": "D205",
+      "text": "园内东南角有一石桥，桥头石坊上有乾隆题写的“知鱼桥”三字额，是引用了庄子和惠子在“秋水濠上”的争论而来的。\n",
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "text": "知鱼桥",
+          "type": "POI"
+        }
+      ]
+    },
+    {
+      "sample_id": "R014",
+      "doc_id": "D202",
+      "text": "三山是指万寿山、香山、玉泉山，五园是指清漪园、静宜园、静明园、畅春园和圆明园。",
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "text": "香山",
+          "type": "POI"
+        },
+        {
+          "text": "玉泉山",
+          "type": "POI"
+        },
+        {
+          "text": "清漪园",
+          "type": "POI"
+        },
+        {
+          "text": "静宜园",
+          "type": "POI"
+        },
+        {
+          "text": "静明园",
+          "type": "POI"
+        },
+        {
+          "text": "畅春园",
+          "type": "POI"
+        }
+      ]
+    },
+    {
+      "sample_id": "R017",
+      "doc_id": "D206",
+      "text": "据说，李莲英为了讨好老佛爷，特意从畅春园弄来这十二块石头，分别排列在排云门外的两侧，象征全国百姓都在向老佛爷祝寿。",
+      "false_positives": [],
+      "false_negatives": [
+        {
+          "text": "畅春园",
+          "type": "POI"
+        }
+      ]
+    }
+  ]
+}

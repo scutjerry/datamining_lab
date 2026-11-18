@@ -1,0 +1,18 @@
+{
+  "doc_id": "D004",
+  "scenic": "故宫博物院",
+  "doc_type": "official",
+  "source": "故宫博物院官网",
+  "url": "https://www.dpm.org.cn/Visit.html",
+  "parser": "dpm",
+  "role": "visitor_guide",
+  "final_url": "https://www.dpm.org.cn/Visit.html",
+  "http_status": 200,
+  "encoding": "utf-8",
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-11-13T08:48:25.079271+00:00",
+  "raw_path": "data/raw/pages/D004.html",
+  "bytes": 215502,
+  "sha256": "035cb2b212f5243bf88ece9a540c2fcacab0471101e25d0b91ac2add170600c7",
+  "attempt": 1
+}

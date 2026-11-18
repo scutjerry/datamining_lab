@@ -1,0 +1,32 @@
+[
+  {
+    "advice_id": "AD-D001-001",
+    "scenic": "故宫博物院",
+    "condition_type": "time",
+    "condition": "如果只是走马观花，看一看主要宫殿，约两个小时",
+    "advice": "就能逛完",
+    "audience": "通用",
+    "source": "D001",
+    "extraction": "fallback_by_C"
+  },
+  {
+    "advice_id": "AD-D001-002",
+    "scenic": "故宫博物院",
+    "condition_type": "time",
+    "condition": "如果只有两个小时左右的时间",
+    "advice": "建议沿着故宫中轴线参观",
+    "audience": "通用",
+    "source": "D001",
+    "extraction": "fallback_by_C"
+  },
+  {
+    "advice_id": "AD-D001-003",
+    "scenic": "故宫博物院",
+    "condition_type": "time",
+    "condition": "如果觉得两个小时的游览不够尽兴",
+    "advice": "可以到东、西六宫的院落里逛逛，这里曾经住着紫禁城里备受恩宠的妃嫔们",
+    "audience": "通用",
+    "source": "D001",
+    "extraction": "fallback_by_C"
+  }
+]

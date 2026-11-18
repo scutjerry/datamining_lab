@@ -1,0 +1,2531 @@
+[
+  {
+    "mapping_id": "map_0001",
+    "attraction": "天坛公园",
+    "condition_type": "other",
+    "condition": {
+      "text": "两个桃尖",
+      "normalized": "两个桃尖"
+    },
+    "advice": {
+      "text": "取意“和合、吉祥、长寿”之意",
+      "normalized": "取意“和合、吉祥、长寿”之意"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D302"
+    ],
+    "evidence": [
+      {
+        "attraction": "天坛公园",
+        "record_id": "D302",
+        "text_type": "traveler_note",
+        "sentence_index": 31,
+        "condition_type": "other",
+        "condition_text": "两个桃尖",
+        "condition_span": {
+          "start": 981,
+          "end": 985,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "取意“和合、吉祥、长寿”之意",
+        "advice_span": {
+          "start": 986,
+          "end": 1000,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 964,
+          "end": 1001,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "平面形状寓意一对寿桃，亭前台阶形若两个桃尖，取意“和合、吉祥、长寿”之意。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0002",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "不下马",
+      "normalized": "不下马"
+    },
+    "advice": {
+      "text": "它的面积比北京皇宫还要大十万平方米",
+      "normalized": "它的面积比北京皇宫还要大十万平方米"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D103"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D103",
+        "text_type": "traveler_note",
+        "sentence_index": 178,
+        "condition_type": "other",
+        "condition_text": "不下马",
+        "condition_span": {
+          "start": 5594,
+          "end": 5597,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "它的面积比北京皇宫还要大十万平方米",
+        "advice_span": {
+          "start": 5598,
+          "end": 5615,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 5588,
+          "end": 5616,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "这个工程如果不下马，它的面积比北京皇宫还要大十万平方米。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0003",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "不看屋顶",
+      "normalized": "不看屋顶"
+    },
+    "advice": {
+      "text": "是一座民间建筑",
+      "normalized": "是一座民间建筑"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D102"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D102",
+        "text_type": "traveler_note",
+        "sentence_index": 139,
+        "condition_type": "other",
+        "condition_text": "不看屋顶",
+        "condition_span": {
+          "start": 4134,
+          "end": 4138,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "是一座民间建筑",
+        "advice_span": {
+          "start": 4141,
+          "end": 4148,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 4132,
+          "end": 4149,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果不看屋顶，这就是一座民间建筑。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0004",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "不知道在哪里",
+      "normalized": "不知道在哪里"
+    },
+    "advice": {
+      "text": "一定会有游人丙指给你看",
+      "normalized": "一定会有游人丙指给你看"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D105"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D105",
+        "text_type": "traveler_note",
+        "sentence_index": 187,
+        "condition_type": "other",
+        "condition_text": "不知道在哪里",
+        "condition_span": {
+          "start": 5599,
+          "end": 5605,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "一定会有游人丙指给你看",
+        "advice_span": {
+          "start": 5606,
+          "end": 5617,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 5571,
+          "end": 5618,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "现在每天走到这座九龙壁前的游人甲乙都要来看这段木头，如果不知道在哪里，一定会有游人丙指给你看。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0005",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "你有富裕钱",
+      "normalized": "你有富裕钱"
+    },
+    "advice": {
+      "text": "使钱把这好东西请回家",
+      "normalized": "使钱把这好东西请回家"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D103"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D103",
+        "text_type": "traveler_note",
+        "sentence_index": 430,
+        "condition_type": "other",
+        "condition_text": "你有富裕钱",
+        "condition_span": {
+          "start": 13370,
+          "end": 13375,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "使钱把这好东西请回家",
+        "advice_span": {
+          "start": 13379,
+          "end": 13389,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 13338,
+          "end": 13390,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "那排平房现在是文化创意体验馆，展览根据故宫文物创作的好东西，如果你有富裕钱，也可以使钱把这好东西请回家。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0006",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "再加上每面三条围脊共十二条",
+      "normalized": "再加上每面三条围脊共十二条"
+    },
+    "advice": {
+      "text": "那每座角楼能数出来七十二条脊",
+      "normalized": "那每座角楼能数出来七十二条脊"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D103"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D103",
+        "text_type": "traveler_note",
+        "sentence_index": 418,
+        "condition_type": "other",
+        "condition_text": "再加上每面三条围脊共十二条",
+        "condition_span": {
+          "start": 13065,
+          "end": 13078,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "那每座角楼能数出来七十二条脊",
+        "advice_span": {
+          "start": 13079,
+          "end": 13093,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 13063,
+          "end": 13094,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果再加上每面三条围脊共十二条，那每座角楼能数出来七十二条脊。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0007",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "半截迁都的也算上",
+      "normalized": "半截迁都的也算上"
+    },
+    "advice": {
+      "text": "要从金中都开始算",
+      "normalized": "要从金中都开始算"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D103"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D103",
+        "text_type": "traveler_note",
+        "sentence_index": 48,
+        "condition_type": "other",
+        "condition_text": "半截迁都的也算上",
+        "condition_span": {
+          "start": 1536,
+          "end": 1544,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "要从金中都开始算",
+        "advice_span": {
+          "start": 1547,
+          "end": 1555,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 1534,
+          "end": 1556,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果半截迁都的也算上，那就要从金中都开始算。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0008",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "只是走马观花",
+      "normalized": "只是走马观花"
+    },
+    "advice": {
+      "text": "能逛完",
+      "normalized": "能逛完"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D001"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D001",
+        "text_type": "official_route",
+        "sentence_index": 17,
+        "condition_type": "other",
+        "condition_text": "只是走马观花",
+        "condition_span": {
+          "start": 461,
+          "end": 467,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "能逛完",
+        "advice_span": {
+          "start": 482,
+          "end": 485,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 459,
+          "end": 486,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果只是走马观花，看一看主要宫殿，约两个小时就能逛完。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0009",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "只有两个小时左右的时间",
+      "normalized": "只有两个小时左右的时间"
+    },
+    "advice": {
+      "text": "沿着故宫中轴线参观",
+      "normalized": "沿着故宫中轴线参观"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D001"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D001",
+        "text_type": "official_route",
+        "sentence_index": 19,
+        "condition_type": "other",
+        "condition_text": "只有两个小时左右的时间",
+        "condition_span": {
+          "start": 499,
+          "end": 510,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "沿着故宫中轴线参观",
+        "advice_span": {
+          "start": 513,
+          "end": 522,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 497,
+          "end": 523,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果只有两个小时左右的时间，建议沿着故宫中轴线参观。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0010",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "处处盘桓流连",
+      "normalized": "处处盘桓流连"
+    },
+    "advice": {
+      "text": "一天的时间恐怕也不足以尽览胜景",
+      "normalized": "一天的时间恐怕也不足以尽览胜景"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D001"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D001",
+        "text_type": "official_route",
+        "sentence_index": 30,
+        "condition_type": "other",
+        "condition_text": "处处盘桓流连",
+        "condition_span": {
+          "start": 993,
+          "end": 999,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "一天的时间恐怕也不足以尽览胜景",
+        "advice_span": {
+          "start": 1000,
+          "end": 1015,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 992,
+          "end": 1016,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "若处处盘桓流连，一天的时间恐怕也不足以尽览胜景。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0011",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "夏皇后有子",
+      "normalized": "夏皇后有子"
+    },
+    "advice": {
+      "text": "哪里轮得到他来当皇上",
+      "normalized": "哪里轮得到他来当皇上"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D103"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D103",
+        "text_type": "traveler_note",
+        "sentence_index": 384,
+        "condition_type": "other",
+        "condition_text": "夏皇后有子",
+        "condition_span": {
+          "start": 12269,
+          "end": 12274,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "哪里轮得到他来当皇上",
+        "advice_span": {
+          "start": 12275,
+          "end": 12285,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 12254,
+          "end": 12286,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "其实朱厚熜应该感谢夏皇后，如果夏皇后有子，哪里轮得到他来当皇上？",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0012",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "宫里女眷奉旨见亲戚",
+      "normalized": "宫里女眷奉旨见亲戚"
+    },
+    "advice": {
+      "text": "从神武门进来在这个顺贞门庭院里见宫中女眷",
+      "normalized": "从神武门进来在这个顺贞门庭院里见宫中女眷"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D102"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D102",
+        "text_type": "traveler_note",
+        "sentence_index": 348,
+        "condition_type": "other",
+        "condition_text": "宫里女眷奉旨见亲戚",
+        "condition_span": {
+          "start": 9914,
+          "end": 9923,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "从神武门进来在这个顺贞门庭院里见宫中女眷",
+        "advice_span": {
+          "start": 9935,
+          "end": 9955,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 9912,
+          "end": 9956,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果宫里女眷奉旨见亲戚，只开顺贞门，亲戚们可以从神武门进来在这个顺贞门庭院里见宫中女眷。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0013",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "干",
+      "normalized": "干"
+    },
+    "advice": {
+      "text": "便死活要讨来吃三颗",
+      "normalized": "便死活要讨来吃三颗"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D104"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D104",
+        "text_type": "traveler_note",
+        "sentence_index": 291,
+        "condition_type": "other",
+        "condition_text": "干",
+        "condition_span": {
+          "start": 8512,
+          "end": 8513,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "便死活要讨来吃三颗",
+        "advice_span": {
+          "start": 8514,
+          "end": 8523,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 8474,
+          "end": 8524,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "他听说相当于现在礼宾司长鸿胪寺丞的李可灼有神药，是早年从峨眉山得来红色药丸若干，便死活要讨来吃三颗。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0014",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "干天后",
+      "normalized": "干天后"
+    },
+    "advice": {
+      "text": "躺在梓宫里从这座东华门出去",
+      "normalized": "躺在梓宫里从这座东华门出去"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D103"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D103",
+        "text_type": "traveler_note",
+        "sentence_index": 359,
+        "condition_type": "other",
+        "condition_text": "干天后",
+        "condition_span": {
+          "start": 11445,
+          "end": 11448,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "躺在梓宫里从这座东华门出去",
+        "advice_span": {
+          "start": 11456,
+          "end": 11469,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 11414,
+          "end": 11470,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "也不能说是凉皇上，当今皇上驾崩之后就是大行皇帝，在乾清宫停灵若干天后，要趁尸骨未寒就躺在梓宫里从这座东华门出去。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0015",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "干次",
+      "normalized": "干次"
+    },
+    "advice": {
+      "text": "而它的功能也是从皇上寝政两用殿",
+      "normalized": "而它的功能也是从皇上寝政两用殿"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D104"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D104",
+        "text_type": "traveler_note",
+        "sentence_index": 334,
+        "condition_type": "other",
+        "condition_text": "干次",
+        "condition_span": {
+          "start": 9881,
+          "end": 9883,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "而它的功能也是从皇上寝政两用殿",
+        "advice_span": {
+          "start": 9884,
+          "end": 9899,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 9863,
+          "end": 9915,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "你看，乾清宫自盖好至帝灭，被焚盖了若干次，而它的功能也是从皇上寝政两用殿，最终成了皇上处理日常政务之殿。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0016",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "您与亲友在参观中走失",
+      "normalized": "您与亲友在参观中走失"
+    },
+    "advice": {
+      "text": "到景运门内西南侧的广播室通知他们",
+      "normalized": "到景运门内西南侧的广播室通知他们"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D004"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D004",
+        "text_type": "official_route",
+        "sentence_index": 61,
+        "condition_type": "other",
+        "condition_text": "您与亲友在参观中走失",
+        "condition_span": {
+          "start": 1215,
+          "end": 1225,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "到景运门内西南侧的广播室通知他们",
+        "advice_span": {
+          "start": 1227,
+          "end": 1243,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 1213,
+          "end": 1244,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果您与亲友在参观中走失，可到景运门内西南侧的广播室通知他们。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0017",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "您在参观中遇到紧急情况",
+      "normalized": "您在参观中遇到紧急情况"
+    },
+    "advice": {
+      "text": "近寻求我院工作人员的帮助",
+      "normalized": "近寻求我院工作人员的帮助"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D004"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D004",
+        "text_type": "official_route",
+        "sentence_index": 59,
+        "condition_type": "other",
+        "condition_text": "您在参观中遇到紧急情况",
+        "condition_span": {
+          "start": 1172,
+          "end": 1183,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "近寻求我院工作人员的帮助",
+        "advice_span": {
+          "start": 1185,
+          "end": 1197,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 1170,
+          "end": 1197,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果您在参观中遇到紧急情况，就近寻求我院工作人员的帮助",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0018",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "我大清亿万斯年",
+      "normalized": "我大清亿万斯年"
+    },
+    "advice": {
+      "text": "宁寿宫仍作太上皇之居”",
+      "normalized": "宁寿宫仍作太上皇之居”"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D105"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D105",
+        "text_type": "traveler_note",
+        "sentence_index": 229,
+        "condition_type": "other",
+        "condition_text": "我大清亿万斯年",
+        "condition_span": {
+          "start": 6925,
+          "end": 6932,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "宁寿宫仍作太上皇之居”",
+        "advice_span": {
+          "start": 6957,
+          "end": 6968,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 6913,
+          "end": 6978,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "他乾大爷还下了一道谕“若我大清亿万斯年，我子孙仰膺昊眷，亦能如朕之享国日久，寿届期颐，则宁寿宫仍作太上皇之居”，这道谕变成了祖制。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0019",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "我将来有做得不对的地方",
+      "normalized": "我将来有做得不对的地方"
+    },
+    "advice": {
+      "text": "不要怪我",
+      "normalized": "不要怪我"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D101"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D101",
+        "text_type": "traveler_note",
+        "sentence_index": 272,
+        "condition_type": "other",
+        "condition_text": "我将来有做得不对的地方",
+        "condition_span": {
+          "start": 8216,
+          "end": 8227,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "不要怪我",
+        "advice_span": {
+          "start": 8247,
+          "end": 8251,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 8214,
+          "end": 8252,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果我将来有做得不对的地方，那都是他们给教坏的，你一定要惩罚他们，不要怪我。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0020",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "我将来有做得不对的地方",
+      "normalized": "我将来有做得不对的地方"
+    },
+    "advice": {
+      "text": "那都是他们给教坏的",
+      "normalized": "那都是他们给教坏的"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D101"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D101",
+        "text_type": "traveler_note",
+        "sentence_index": 272,
+        "condition_type": "other",
+        "condition_text": "我将来有做得不对的地方",
+        "condition_span": {
+          "start": 8216,
+          "end": 8227,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "那都是他们给教坏的",
+        "advice_span": {
+          "start": 8228,
+          "end": 8237,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 8214,
+          "end": 8252,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果我将来有做得不对的地方，那都是他们给教坏的，你一定要惩罚他们，不要怪我。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0021",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "拆了明皇宫",
+      "normalized": "拆了明皇宫"
+    },
+    "advice": {
+      "text": "只能盖出来山寨",
+      "normalized": "只能盖出来山寨"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D103"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D103",
+        "text_type": "traveler_note",
+        "sentence_index": 184,
+        "condition_type": "other",
+        "condition_text": "拆了明皇宫",
+        "condition_span": {
+          "start": 5763,
+          "end": 5768,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "只能盖出来山寨",
+        "advice_span": {
+          "start": 5771,
+          "end": 5778,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 5761,
+          "end": 5779,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果拆了明皇宫，他就只能盖出来山寨。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0022",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "是搬迁坤宁宫神位",
+      "normalized": "是搬迁坤宁宫神位"
+    },
+    "advice": {
+      "text": "那在岗的子孙后代去哪里祀神",
+      "normalized": "那在岗的子孙后代去哪里祀神"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D105"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D105",
+        "text_type": "traveler_note",
+        "sentence_index": 282,
+        "condition_type": "other",
+        "condition_text": "是搬迁坤宁宫神位",
+        "condition_span": {
+          "start": 8617,
+          "end": 8625,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "那在岗的子孙后代去哪里祀神",
+        "advice_span": {
+          "start": 8626,
+          "end": 8639,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 8615,
+          "end": 8640,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果是搬迁坤宁宫神位，那在岗的子孙后代去哪里祀神？",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0023",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "有宫人亡故",
+      "normalized": "有宫人亡故"
+    },
+    "advice": {
+      "text": "棺材从顺贞门的西门洞出去",
+      "normalized": "棺材从顺贞门的西门洞出去"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D102"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D102",
+        "text_type": "traveler_note",
+        "sentence_index": 349,
+        "condition_type": "other",
+        "condition_text": "有宫人亡故",
+        "condition_span": {
+          "start": 9959,
+          "end": 9964,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "棺材从顺贞门的西门洞出去",
+        "advice_span": {
+          "start": 9965,
+          "end": 9977,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 9956,
+          "end": 9978,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "明代若有宫人亡故，棺材从顺贞门的西门洞出去。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0024",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "有建储密匣的话",
+      "normalized": "有建储密匣的话"
+    },
+    "advice": {
+      "text": "肯定是和这匾同归于尽了",
+      "normalized": "肯定是和这匾同归于尽了"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D104"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D104",
+        "text_type": "traveler_note",
+        "sentence_index": 344,
+        "condition_type": "other",
+        "condition_text": "有建储密匣的话",
+        "condition_span": {
+          "start": 10219,
+          "end": 10226,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "肯定是和这匾同归于尽了",
+        "advice_span": {
+          "start": 10227,
+          "end": 10238,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 10196,
+          "end": 10239,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "嘉庆二年乾清宫大火，正大光明匾被焚，它后面如果有建储密匣的话，肯定是和这匾同归于尽了。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0025",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "有难愈之病",
+      "normalized": "有难愈之病"
+    },
+    "advice": {
+      "text": "病退",
+      "normalized": "病退"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D102"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D102",
+        "text_type": "traveler_note",
+        "sentence_index": 324,
+        "condition_type": "other",
+        "condition_text": "有难愈之病",
+        "condition_span": {
+          "start": 9358,
+          "end": 9363,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "病退",
+        "advice_span": {
+          "start": 9367,
+          "end": 9369,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 9356,
+          "end": 9378,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果有难愈之病，还可以病退，不需等到二十岁。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0026",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "未被皇上临幸",
+      "normalized": "未被皇上临幸"
+    },
+    "advice": {
+      "text": "二十多岁便可退休出宫",
+      "normalized": "二十多岁便可退休出宫"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D102"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D102",
+        "text_type": "traveler_note",
+        "sentence_index": 323,
+        "condition_type": "other",
+        "condition_text": "未被皇上临幸",
+        "condition_span": {
+          "start": 9337,
+          "end": 9343,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "二十多岁便可退休出宫",
+        "advice_span": {
+          "start": 9345,
+          "end": 9355,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 9320,
+          "end": 9356,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "清代宫女有退休制度，宫女在宫里如果未被皇上临幸，则二十多岁便可退休出宫。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0027",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "注意",
+      "normalized": "注意"
+    },
+    "advice": {
+      "text": "发现丹陛石上有六条龙",
+      "normalized": "发现丹陛石上有六条龙"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D102"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D102",
+        "text_type": "traveler_note",
+        "sentence_index": 80,
+        "condition_type": "other",
+        "condition_text": "注意",
+        "condition_span": {
+          "start": 2345,
+          "end": 2347,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "发现丹陛石上有六条龙",
+        "advice_span": {
+          "start": 2350,
+          "end": 2360,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 2342,
+          "end": 2361,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "你如果注意，可以发现丹陛石上有六条龙。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0028",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "注意",
+      "normalized": "注意"
+    },
+    "advice": {
+      "text": "故宫里的房子多数都是这样",
+      "normalized": "故宫里的房子多数都是这样"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D102"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D102",
+        "text_type": "traveler_note",
+        "sentence_index": 98,
+        "condition_type": "other",
+        "condition_text": "注意",
+        "condition_span": {
+          "start": 2870,
+          "end": 2872,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "故宫里的房子多数都是这样",
+        "advice_span": {
+          "start": 2873,
+          "end": 2885,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 2867,
+          "end": 2909,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "你如果注意，故宫里的房子多数都是这样，檐下枋梁以上都是绿色或者蓝色，柱窗门都是红色。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0029",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "特指",
+      "normalized": "特指"
+    },
+    "advice": {
+      "text": "没有一定之规",
+      "normalized": "没有一定之规"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D104"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D104",
+        "text_type": "traveler_note",
+        "sentence_index": 123,
+        "condition_type": "other",
+        "condition_text": "特指",
+        "condition_span": {
+          "start": 3435,
+          "end": 3437,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "没有一定之规",
+        "advice_span": {
+          "start": 3439,
+          "end": 3445,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 3433,
+          "end": 3504,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果特指，就没有一定之规，但是通常会包括都察院、大理寺、太常寺、光禄寺、鸿胪寺、太仆寺、通政使司、宗人府和銮仪卫的首席长官，比如“太常寺卿”。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0030",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "用白绫",
+      "normalized": "用白绫"
+    },
+    "advice": {
+      "text": "悬了",
+      "normalized": "悬了"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D104"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D104",
+        "text_type": "traveler_note",
+        "sentence_index": 287,
+        "condition_type": "other",
+        "condition_text": "用白绫",
+        "condition_span": {
+          "start": 8349,
+          "end": 8352,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "悬了",
+        "advice_span": {
+          "start": 8359,
+          "end": 8361,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 8329,
+          "end": 8362,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "第二是黄绫没有白绫效果好，当时宫女们如果用白绫，嘉靖帝恐怕就悬了。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0031",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "皇上在城楼上一高兴",
+      "normalized": "皇上在城楼上一高兴"
+    },
+    "advice": {
+      "text": "大喊一声“赦”",
+      "normalized": "大喊一声“赦”"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D103"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D103",
+        "text_type": "traveler_note",
+        "sentence_index": 245,
+        "condition_type": "other",
+        "condition_text": "皇上在城楼上一高兴",
+        "condition_span": {
+          "start": 7657,
+          "end": 7666,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "大喊一声“赦”",
+        "advice_span": {
+          "start": 7667,
+          "end": 7674,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 7655,
+          "end": 7693,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果皇上在城楼上一高兴，大喊一声“赦”，门外那些战俘便麻溜地跳起来跑没影了。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0032",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "站了很多人",
+      "normalized": "站了很多人"
+    },
+    "advice": {
+      "text": "称作“门庭若市”",
+      "normalized": "称作“门庭若市”"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D102"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D102",
+        "text_type": "traveler_note",
+        "sentence_index": 340,
+        "condition_type": "other",
+        "condition_text": "站了很多人",
+        "condition_span": {
+          "start": 9737,
+          "end": 9742,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "称作“门庭若市”",
+        "advice_span": {
+          "start": 9744,
+          "end": 9752,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 9714,
+          "end": 9753,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "顺贞门后的庭院当然就是它的门庭，这个庭院里如果站了很多人，就称作“门庭若市”。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0033",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "范公之心",
+      "normalized": "范公之心"
+    },
+    "advice": {
+      "text": "其正大光明",
+      "normalized": "其正大光明"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D104"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D104",
+        "text_type": "traveler_note",
+        "sentence_index": 266,
+        "condition_type": "other",
+        "condition_text": "范公之心",
+        "condition_span": {
+          "start": 7577,
+          "end": 7581,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "其正大光明",
+        "advice_span": {
+          "start": 7583,
+          "end": 7588,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 7563,
+          "end": 7606,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "正大光明出自宋人朱熹的“至若范公之心，则其正大光明，固无宿怨，而惓惓之义，实在国家”。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0034",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "觉得两个小时的游览不够尽兴",
+      "normalized": "觉得两个小时的游览不够尽兴"
+    },
+    "advice": {
+      "text": "到东、西六宫的院落里逛逛",
+      "normalized": "到东、西六宫的院落里逛逛"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D001"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D001",
+        "text_type": "official_route",
+        "sentence_index": 24,
+        "condition_type": "other",
+        "condition_text": "觉得两个小时的游览不够尽兴",
+        "condition_span": {
+          "start": 689,
+          "end": 702,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "到东、西六宫的院落里逛逛",
+        "advice_span": {
+          "start": 707,
+          "end": 719,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 687,
+          "end": 739,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果觉得两个小时的游览不够尽兴，你还可以到东、西六宫的院落里逛逛，这里曾经住着紫禁城里备受恩宠的妃嫔们。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0035",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "遇到重大活动或特殊情况",
+      "normalized": "遇到重大活动或特殊情况"
+    },
+    "advice": {
+      "text": "开放时间如有改变",
+      "normalized": "开放时间如有改变"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D004"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D004",
+        "text_type": "official_route",
+        "sentence_index": 3,
+        "condition_type": "other",
+        "condition_text": "遇到重大活动或特殊情况",
+        "condition_span": {
+          "start": 63,
+          "end": 74,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "开放时间如有改变",
+        "advice_span": {
+          "start": 75,
+          "end": 83,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 61,
+          "end": 96,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果遇到重大活动或特殊情况，开放时间如有改变，故宫网站将特别发布公告。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0036",
+    "attraction": "故宫博物院",
+    "condition_type": "other",
+    "condition": {
+      "text": "钟上带有西洋仕女图",
+      "normalized": "钟上带有西洋仕女图"
+    },
+    "advice": {
+      "text": "风格",
+      "normalized": "风格"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D105"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D105",
+        "text_type": "traveler_note",
+        "sentence_index": 108,
+        "condition_type": "other",
+        "condition_text": "钟上带有西洋仕女图",
+        "condition_span": {
+          "start": 3288,
+          "end": 3297,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "风格",
+        "advice_span": {
+          "start": 3311,
+          "end": 3313,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 3286,
+          "end": 3314,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果钟上带有西洋仕女图，也都是布歇那种香艳的洛可可风格。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0037",
+    "attraction": "故宫博物院",
+    "condition_type": "time_constraint",
+    "condition": {
+      "text": "一天",
+      "normalized": "一天"
+    },
+    "advice": {
+      "text": "先生所书",
+      "normalized": "先生所书"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D103"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D103",
+        "text_type": "traveler_note",
+        "sentence_index": 300,
+        "condition_type": "time_constraint",
+        "condition_text": "一天",
+        "condition_span": {
+          "start": 9338,
+          "end": 9340,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "先生所书",
+        "advice_span": {
+          "start": 9379,
+          "end": 9383,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 9337,
+          "end": 9413,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "那一天挂在神武门这里的“故宫博物院”门匾是晚清书法家王法亮的书法学生李煜瀛（念玉赢）先生所书，他当时是“清室善后委员会”的委员长，就是故宫博物院的前身。",
+        "rule": "implicit_condition_with_recommendation"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0038",
+    "attraction": "故宫博物院",
+    "condition_type": "time_constraint",
+    "condition": {
+      "text": "半天",
+      "normalized": "半天"
+    },
+    "advice": {
+      "text": "过了八分钟",
+      "normalized": "过了八分钟"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D106"
+    ],
+    "evidence": [
+      {
+        "attraction": "故宫博物院",
+        "record_id": "D106",
+        "text_type": "traveler_note",
+        "sentence_index": 56,
+        "condition_type": "time_constraint",
+        "condition_text": "半天",
+        "condition_span": {
+          "start": 1276,
+          "end": 1278,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "过了八分钟",
+        "advice_span": {
+          "start": 1294,
+          "end": 1299,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 1274,
+          "end": 1304,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "折腾半天，9：58分了，赶紧约下午茶，就过了八分钟，没号了。",
+        "rule": "implicit_condition_with_recommendation"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0039",
+    "attraction": "颐和园",
+    "condition_type": "other",
+    "condition": {
+      "text": "从造景上看",
+      "normalized": "从造景上看"
+    },
+    "advice": {
+      "text": "修建治镜阁是为了营造“一水三山”之仙境",
+      "normalized": "修建治镜阁是为了营造“一水三山”之仙境"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D201"
+    ],
+    "evidence": [
+      {
+        "attraction": "颐和园",
+        "record_id": "D201",
+        "text_type": "traveler_note",
+        "sentence_index": 67,
+        "condition_type": "other",
+        "condition_text": "从造景上看",
+        "condition_span": {
+          "start": 2352,
+          "end": 2357,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "修建治镜阁是为了营造“一水三山”之仙境",
+        "advice_span": {
+          "start": 2358,
+          "end": 2377,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 2350,
+          "end": 2378,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果从造景上看，修建治镜阁是为了营造“一水三山”之仙境。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0040",
+    "attraction": "颐和园",
+    "condition_type": "other",
+    "condition": {
+      "text": "作为游客想在听鹂馆吃顿饭",
+      "normalized": "作为游客想在听鹂馆吃顿饭"
+    },
+    "advice": {
+      "text": "我了解的情况是：目前只有每位168元的套餐",
+      "normalized": "我了解的情况是：目前只有每位168元的套餐"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D206"
+    ],
+    "evidence": [
+      {
+        "attraction": "颐和园",
+        "record_id": "D206",
+        "text_type": "traveler_note",
+        "sentence_index": 146,
+        "condition_type": "other",
+        "condition_text": "作为游客想在听鹂馆吃顿饭",
+        "condition_span": {
+          "start": 4928,
+          "end": 4940,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "我了解的情况是：目前只有每位168元的套餐",
+        "advice_span": {
+          "start": 4941,
+          "end": 4962,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 4926,
+          "end": 4963,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果作为游客想在听鹂馆吃顿饭，我了解的情况是：目前只有每位168元的套餐。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0041",
+    "attraction": "颐和园",
+    "condition_type": "other",
+    "condition": {
+      "text": "您来颐和园",
+      "normalized": "您来颐和园"
+    },
+    "advice": {
+      "text": "是什么",
+      "normalized": "是什么"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D206"
+    ],
+    "evidence": [
+      {
+        "attraction": "颐和园",
+        "record_id": "D206",
+        "text_type": "traveler_note",
+        "sentence_index": 132,
+        "condition_type": "other",
+        "condition_text": "您来颐和园",
+        "condition_span": {
+          "start": 4418,
+          "end": 4423,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "是什么",
+        "advice_span": {
+          "start": 4458,
+          "end": 4461,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 4416,
+          "end": 4462,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "如果您来颐和园，一定细看看这几块石头，分别像那个生肖，好像没有标准答案，您看像什么就是什么。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0042",
+    "attraction": "颐和园",
+    "condition_type": "other",
+    "condition": {
+      "text": "时间充裕体力较好的话",
+      "normalized": "时间充裕体力较好的话"
+    },
+    "advice": {
+      "text": "买联票",
+      "normalized": "买联票"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D205"
+    ],
+    "evidence": [
+      {
+        "attraction": "颐和园",
+        "record_id": "D205",
+        "text_type": "traveler_note",
+        "sentence_index": 66,
+        "condition_type": "other",
+        "condition_text": "时间充裕体力较好的话",
+        "condition_span": {
+          "start": 2574,
+          "end": 2584,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "买联票",
+        "advice_span": {
+          "start": 2587,
+          "end": 2590,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 2563,
+          "end": 2609,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "门票不算贵，在这里如果时间充裕体力较好的话，可以买联票，如果只是半天时间，买个普通门票即可。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0043",
+    "attraction": "颐和园",
+    "condition_type": "other",
+    "condition": {
+      "text": "玉带",
+      "normalized": "玉带"
+    },
+    "advice": {
+      "text": "半圆的桥洞与水中的倒影",
+      "normalized": "半圆的桥洞与水中的倒影"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D206"
+    ],
+    "evidence": [
+      {
+        "attraction": "颐和园",
+        "record_id": "D206",
+        "text_type": "traveler_note",
+        "sentence_index": 193,
+        "condition_type": "other",
+        "condition_text": "玉带",
+        "condition_span": {
+          "start": 6617,
+          "end": 6619,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "半圆的桥洞与水中的倒影",
+        "advice_span": {
+          "start": 6620,
+          "end": 6631,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 6612,
+          "end": 6639,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "玉带桥形若玉带，半圆的桥洞与水中的倒影，构成一轮圆月。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0044",
+    "attraction": "颐和园",
+    "condition_type": "other",
+    "condition": {
+      "text": "细看的话",
+      "normalized": "细看的话"
+    },
+    "advice": {
+      "text": "估计得花上几天的功夫",
+      "normalized": "估计得花上几天的功夫"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D206"
+    ],
+    "evidence": [
+      {
+        "attraction": "颐和园",
+        "record_id": "D206",
+        "text_type": "traveler_note",
+        "sentence_index": 109,
+        "condition_type": "other",
+        "condition_text": "细看的话",
+        "condition_span": {
+          "start": 3673,
+          "end": 3677,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "估计得花上几天的功夫",
+        "advice_span": {
+          "start": 3678,
+          "end": 3688,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 3649,
+          "end": 3689,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "这些彩绘有人物故事、瑞兽花鸟，无不精彩生动，如果细看的话，估计得花上几天的功夫。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0045",
+    "attraction": "颐和园",
+    "condition_type": "other",
+    "condition": {
+      "text": "细细看的话",
+      "normalized": "细细看的话"
+    },
+    "advice": {
+      "text": "能十天半月也未必能看完",
+      "normalized": "能十天半月也未必能看完"
+    },
+    "evidence_count": 2,
+    "source_record_ids": [
+      "D201",
+      "D206"
+    ],
+    "evidence": [
+      {
+        "attraction": "颐和园",
+        "record_id": "D201",
+        "text_type": "traveler_note",
+        "sentence_index": 17,
+        "condition_type": "other",
+        "condition_text": "细细看的话",
+        "condition_span": {
+          "start": 638,
+          "end": 643,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "能十天半月也未必能看完",
+        "advice_span": {
+          "start": 645,
+          "end": 656,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 621,
+          "end": 657,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "里面可玩、可看的东西实在太多，如果细细看的话，可能十天半月也未必能看完。",
+        "rule": "explicit_conditional"
+      },
+      {
+        "attraction": "颐和园",
+        "record_id": "D206",
+        "text_type": "traveler_note",
+        "sentence_index": 17,
+        "condition_type": "other",
+        "condition_text": "细细看的话",
+        "condition_span": {
+          "start": 633,
+          "end": 638,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "能十天半月也未必能看完",
+        "advice_span": {
+          "start": 640,
+          "end": 651,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 616,
+          "end": 652,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "里面可玩、可看的东西实在太多，如果细细看的话，可能十天半月也未必能看完。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0046",
+    "attraction": "颐和园",
+    "condition_type": "time_constraint",
+    "condition": {
+      "text": "一天",
+      "normalized": "一天"
+    },
+    "advice": {
+      "text": "也就是沿昆明湖逆时针转一圈",
+      "normalized": "也就是沿昆明湖逆时针转一圈"
+    },
+    "evidence_count": 2,
+    "source_record_ids": [
+      "D201",
+      "D206"
+    ],
+    "evidence": [
+      {
+        "attraction": "颐和园",
+        "record_id": "D201",
+        "text_type": "traveler_note",
+        "sentence_index": 19,
+        "condition_type": "time_constraint",
+        "condition_text": "一天",
+        "condition_span": {
+          "start": 709,
+          "end": 711,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "也就是沿昆明湖逆时针转一圈",
+        "advice_span": {
+          "start": 793,
+          "end": 806,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 708,
+          "end": 807,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "第一天，新建宫门进，沿昆明湖逆时针也就是北行，昆仑石碑、文昌阁、知春亭、藕香榭、乐寿宫、长廊、云辉玉宇牌楼、石舫、宿云檐城关、半壁桥、界湖桥、西堤、绣漪桥、廊如亭、铜牛，也就是沿昆明湖逆时针转一圈。",
+        "rule": "implicit_condition_with_recommendation"
+      },
+      {
+        "attraction": "颐和园",
+        "record_id": "D206",
+        "text_type": "traveler_note",
+        "sentence_index": 19,
+        "condition_type": "time_constraint",
+        "condition_text": "一天",
+        "condition_span": {
+          "start": 704,
+          "end": 706,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "也就是沿昆明湖逆时针转一圈",
+        "advice_span": {
+          "start": 788,
+          "end": 801,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 703,
+          "end": 802,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "第一天，新建宫门进，沿昆明湖逆时针也就是北行，昆仑石碑、文昌阁、知春亭、藕香榭、乐寿宫、长廊、云辉玉宇牌楼、石舫、宿云檐城关、半壁桥、界湖桥、西堤、绣漪桥、廊如亭、铜牛，也就是沿昆明湖逆时针转一圈。",
+        "rule": "implicit_condition_with_recommendation"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0047",
+    "attraction": "颐和园",
+    "condition_type": "time_constraint",
+    "condition": {
+      "text": "一天",
+      "normalized": "一天"
+    },
+    "advice": {
+      "text": "是北行",
+      "normalized": "是北行"
+    },
+    "evidence_count": 2,
+    "source_record_ids": [
+      "D201",
+      "D206"
+    ],
+    "evidence": [
+      {
+        "attraction": "颐和园",
+        "record_id": "D201",
+        "text_type": "traveler_note",
+        "sentence_index": 19,
+        "condition_type": "time_constraint",
+        "condition_text": "一天",
+        "condition_span": {
+          "start": 709,
+          "end": 711,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "是北行",
+        "advice_span": {
+          "start": 727,
+          "end": 730,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 708,
+          "end": 807,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "第一天，新建宫门进，沿昆明湖逆时针也就是北行，昆仑石碑、文昌阁、知春亭、藕香榭、乐寿宫、长廊、云辉玉宇牌楼、石舫、宿云檐城关、半壁桥、界湖桥、西堤、绣漪桥、廊如亭、铜牛，也就是沿昆明湖逆时针转一圈。",
+        "rule": "implicit_condition_with_recommendation"
+      },
+      {
+        "attraction": "颐和园",
+        "record_id": "D206",
+        "text_type": "traveler_note",
+        "sentence_index": 19,
+        "condition_type": "time_constraint",
+        "condition_text": "一天",
+        "condition_span": {
+          "start": 704,
+          "end": 706,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "是北行",
+        "advice_span": {
+          "start": 722,
+          "end": 725,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 703,
+          "end": 802,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "第一天，新建宫门进，沿昆明湖逆时针也就是北行，昆仑石碑、文昌阁、知春亭、藕香榭、乐寿宫、长廊、云辉玉宇牌楼、石舫、宿云檐城关、半壁桥、界湖桥、西堤、绣漪桥、廊如亭、铜牛，也就是沿昆明湖逆时针转一圈。",
+        "rule": "implicit_condition_with_recommendation"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  },
+  {
+    "mapping_id": "map_0048",
+    "attraction": "颐和园",
+    "condition_type": "time_constraint",
+    "condition": {
+      "text": "一天游玩全部景点",
+      "normalized": "一天游玩全部景点"
+    },
+    "advice": {
+      "text": "花费的时间不说",
+      "normalized": "花费的时间不说"
+    },
+    "evidence_count": 1,
+    "source_record_ids": [
+      "D205"
+    ],
+    "evidence": [
+      {
+        "attraction": "颐和园",
+        "record_id": "D205",
+        "text_type": "traveler_note",
+        "sentence_index": 4,
+        "condition_type": "time_constraint",
+        "condition_text": "一天游玩全部景点",
+        "condition_span": {
+          "start": 155,
+          "end": 163,
+          "unit": "unicode_codepoint"
+        },
+        "advice_text": "花费的时间不说",
+        "advice_span": {
+          "start": 164,
+          "end": 171,
+          "unit": "unicode_codepoint"
+        },
+        "sentence_span": {
+          "start": 151,
+          "end": 226,
+          "unit": "unicode_codepoint"
+        },
+        "evidence_sentence": "另外如果一天游玩全部景点，花费的时间不说，耗费的体力实在是很大，所以老梆菜的照片也并非是一次游玩拍摄的，而是从一年四季多次去颐和园中选择的照片，见谅。",
+        "rule": "explicit_conditional"
+      }
+    ],
+    "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+    "student_review": {
+      "status": "pending_student_confirmation",
+      "suggested_note": null,
+      "review_scope": "not_in_precheck_sample"
+    }
+  }
+]

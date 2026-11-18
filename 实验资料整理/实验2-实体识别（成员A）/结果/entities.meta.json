@@ -1,0 +1,32 @@
+{
+  "schema_version": "member-c-v1.0",
+  "algorithm_version": "v5",
+  "text_source": "data/processed/documents.csv:content",
+  "offsets": "zero-based Unicode code point offsets; [start,end); not UTF-8 bytes or UTF-16 units",
+  "sentence_id": "one-based; sentence ends at Chinese punctuation, ; or newline; see sentences.json",
+  "source": "official or travelogue, deliberately mapped from documents.doc_type per member C example",
+  "normalization": "entity text is unchanged content slice; alias merging reserved for member C",
+  "content_sha256": {
+    "D001": "a0d63be03f388a407fefbee5ccc163fd60ae235fdefe2571603c147a05142c07",
+    "D002": "b6477591e00c91651fc957f337f1823330ec453c4a0e9513a4ac48a07b561c19",
+    "D003": "98cdcde2f5dc0321d016da80ec146ae767a2d72f2dc0ff8dc78c2f4d36299f51",
+    "D004": "4f056b22c8fa6eead84d2d142cf26b501bd9a4ccee066e25446bdc9799069acd",
+    "D005": "575ae8e5b970e5eb5d2c3c1803694e7e2f44eff678b9172b8f9033455ae8898e",
+    "D101": "54eaa675b71bdc094ae14327a5c6d2df66bf362fe6da7fe011a0032ee0b4a748",
+    "D102": "68435aab56e8b8e1489ae5a030ddc9adc34a1e7e0a4460d2c3a7d53fd9970fa3",
+    "D103": "a25bb098bdb6846c5f9bdef14f0dd1b105ccc33c5663ec8b5148f9616620dfc0",
+    "D104": "5da4f6f12c350b130bbcdce5d5613e0edb70e1750645e02d781a186068182008",
+    "D105": "aaa213a74d64110e3ae42ff1435f44ccec770e3aaee17b47d715a0dd05c6597e",
+    "D201": "659ff7f46b2fceabe699e26358d4990d5e77ff6ed11493690ba2c61820b48777",
+    "D202": "24eca8479c1f164ca55eb4fcceab8ba25a3ae0ac1b39edcd31eb29e8668024fc",
+    "D203": "79124793ac45ba515180ad654813a2814cd43b9e94f6992005706e83d0408bb1",
+    "D205": "e6ce4ad6f3272382979a3d976a15aea4880ba0f32453d86814f0004ee4e0443c",
+    "D301": "856bd8e1262edcc25ef83dee00bf60cb91d589312f5499ced49176bad99f4348",
+    "D302": "f3469076fde8363b537e3cd8cf59b0c22aeda884e143e35ee4667eb5989b6585",
+    "D303": "e0b62e1c19e8b5c2cf7d2f4d76e77dbe4218c586bb6455ce6d4a3068dcebf21a",
+    "D304": "fc3ffb4c92d7a0ea55d62016c7bb2917b0d969dcb7b1b39f0921feae06fae315",
+    "D305": "6fabf229a15e5b2908af51cb3b3709bf9d5ce8cefe07b063a09c10dc30066c02",
+    "D106": "92ba4e6584d261b83766b832fd33e854f0f73e242b07820dfa7fbee0562201d1",
+    "D206": "47cf16cf60b8f92f22709ddb12610daccb53eebea61860f4b9a344973cd74d7f"
+  }
+}

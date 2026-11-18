@@ -1,0 +1,702 @@
+[
+  {
+    "comparison_id": "cmp_bj_official_01__bj_note_01",
+    "attraction": "故宫博物院",
+    "official_route_id": "bj_official_01",
+    "traveler_route_id": "bj_note_01",
+    "official_poi_sequence": [
+      "午门",
+      "太和门",
+      "太和殿",
+      "中和殿",
+      "保和殿",
+      "东六宫",
+      "珍宝馆",
+      "九龙壁",
+      "神武门"
+    ],
+    "traveler_poi_sequence": [
+      "午门",
+      "太和殿",
+      "中和殿",
+      "保和殿",
+      "东六宫",
+      "珍宝馆",
+      "九龙壁",
+      "神武门"
+    ],
+    "shared_pois": [
+      "午门",
+      "太和殿",
+      "中和殿",
+      "保和殿",
+      "东六宫",
+      "珍宝馆",
+      "九龙壁",
+      "神武门"
+    ],
+    "official_coverage": 0.8889,
+    "sequence_lcs_similarity": 0.8889,
+    "order_consistency": 1.0,
+    "official_time_share": {
+      "上午": 0.5556,
+      "下午": 0.3333,
+      "中午": 0.1111
+    },
+    "traveler_time_share": {
+      "上午": 0.5,
+      "下午": 0.375,
+      "中午": 0.125
+    },
+    "time_distribution_total_variation": 0.0556,
+    "interpretation": "官方节点覆盖率为 0.89；游客路线未包含 太和门；时间层分布相对接近。"
+  },
+  {
+    "comparison_id": "cmp_bj_official_01__bj_note_02",
+    "attraction": "故宫博物院",
+    "official_route_id": "bj_official_01",
+    "traveler_route_id": "bj_note_02",
+    "official_poi_sequence": [
+      "午门",
+      "太和门",
+      "太和殿",
+      "中和殿",
+      "保和殿",
+      "东六宫",
+      "珍宝馆",
+      "九龙壁",
+      "神武门"
+    ],
+    "traveler_poi_sequence": [
+      "午门",
+      "太和门",
+      "太和殿",
+      "中和殿",
+      "珍宝馆",
+      "九龙壁"
+    ],
+    "shared_pois": [
+      "午门",
+      "太和门",
+      "太和殿",
+      "中和殿",
+      "珍宝馆",
+      "九龙壁"
+    ],
+    "official_coverage": 0.6667,
+    "sequence_lcs_similarity": 0.6667,
+    "order_consistency": 1.0,
+    "official_time_share": {
+      "上午": 0.5556,
+      "下午": 0.3333,
+      "中午": 0.1111
+    },
+    "traveler_time_share": {
+      "上午": 0.5,
+      "下午": 0.3333,
+      "未标注时段": 0.1667
+    },
+    "time_distribution_total_variation": 0.1667,
+    "interpretation": "官方节点覆盖率为 0.67；游客路线未包含 保和殿、东六宫、神武门；时间层分布相对接近。"
+  },
+  {
+    "comparison_id": "cmp_bj_official_01__bj_note_03",
+    "attraction": "故宫博物院",
+    "official_route_id": "bj_official_01",
+    "traveler_route_id": "bj_note_03",
+    "official_poi_sequence": [
+      "午门",
+      "太和门",
+      "太和殿",
+      "中和殿",
+      "保和殿",
+      "东六宫",
+      "珍宝馆",
+      "九龙壁",
+      "神武门"
+    ],
+    "traveler_poi_sequence": [
+      "午门",
+      "太和殿",
+      "保和殿",
+      "珍宝馆"
+    ],
+    "shared_pois": [
+      "午门",
+      "太和殿",
+      "保和殿",
+      "珍宝馆"
+    ],
+    "official_coverage": 0.4444,
+    "sequence_lcs_similarity": 0.4444,
+    "order_consistency": 1.0,
+    "official_time_share": {
+      "上午": 0.5556,
+      "下午": 0.3333,
+      "中午": 0.1111
+    },
+    "traveler_time_share": {
+      "上午": 0.25,
+      "下午": 0.25,
+      "中午": 0.5
+    },
+    "time_distribution_total_variation": 0.3889,
+    "interpretation": "官方节点覆盖率为 0.44；游客路线未包含 太和门、中和殿、东六宫、九龙壁；时间层分布差异较大。"
+  },
+  {
+    "comparison_id": "cmp_bj_official_01__bj_note_04",
+    "attraction": "故宫博物院",
+    "official_route_id": "bj_official_01",
+    "traveler_route_id": "bj_note_04",
+    "official_poi_sequence": [
+      "午门",
+      "太和门",
+      "太和殿",
+      "中和殿",
+      "保和殿",
+      "东六宫",
+      "珍宝馆",
+      "九龙壁",
+      "神武门"
+    ],
+    "traveler_poi_sequence": [
+      "午门",
+      "太和门",
+      "太和殿",
+      "东六宫",
+      "九龙壁",
+      "珍宝馆",
+      "神武门"
+    ],
+    "shared_pois": [
+      "午门",
+      "太和门",
+      "太和殿",
+      "东六宫",
+      "珍宝馆",
+      "九龙壁",
+      "神武门"
+    ],
+    "official_coverage": 0.7778,
+    "sequence_lcs_similarity": 0.6667,
+    "order_consistency": 0.9524,
+    "official_time_share": {
+      "上午": 0.5556,
+      "下午": 0.3333,
+      "中午": 0.1111
+    },
+    "traveler_time_share": {
+      "上午": 0.4286,
+      "下午": 0.2857,
+      "中午": 0.1429,
+      "全天": 0.1429
+    },
+    "time_distribution_total_variation": 0.1746,
+    "interpretation": "官方节点覆盖率为 0.78；游客路线未包含 中和殿、保和殿；时间层分布相对接近。"
+  },
+  {
+    "comparison_id": "cmp_bj_official_01__bj_note_05",
+    "attraction": "故宫博物院",
+    "official_route_id": "bj_official_01",
+    "traveler_route_id": "bj_note_05",
+    "official_poi_sequence": [
+      "午门",
+      "太和门",
+      "太和殿",
+      "中和殿",
+      "保和殿",
+      "东六宫",
+      "珍宝馆",
+      "九龙壁",
+      "神武门"
+    ],
+    "traveler_poi_sequence": [
+      "午门",
+      "太和殿",
+      "中和殿",
+      "保和殿",
+      "珍宝馆",
+      "九龙壁",
+      "神武门"
+    ],
+    "shared_pois": [
+      "午门",
+      "太和殿",
+      "中和殿",
+      "保和殿",
+      "珍宝馆",
+      "九龙壁",
+      "神武门"
+    ],
+    "official_coverage": 0.7778,
+    "sequence_lcs_similarity": 0.7778,
+    "order_consistency": 1.0,
+    "official_time_share": {
+      "上午": 0.5556,
+      "下午": 0.3333,
+      "中午": 0.1111
+    },
+    "traveler_time_share": {
+      "未标注时段": 1.0
+    },
+    "time_distribution_total_variation": 1.0,
+    "interpretation": "官方节点覆盖率为 0.78；游客路线未包含 太和门、东六宫；时间层分布差异较大。"
+  },
+  {
+    "comparison_id": "cmp_hz_official_01__hz_note_01",
+    "attraction": "杭州西湖",
+    "official_route_id": "hz_official_01",
+    "traveler_route_id": "hz_note_01",
+    "official_poi_sequence": [
+      "断桥",
+      "白堤",
+      "孤山",
+      "楼外楼",
+      "西湖游船",
+      "三潭印月",
+      "花港观鱼",
+      "雷峰塔"
+    ],
+    "traveler_poi_sequence": [
+      "断桥",
+      "白堤",
+      "孤山",
+      "楼外楼",
+      "西湖游船",
+      "三潭印月",
+      "雷峰塔"
+    ],
+    "shared_pois": [
+      "断桥",
+      "白堤",
+      "孤山",
+      "楼外楼",
+      "西湖游船",
+      "三潭印月",
+      "雷峰塔"
+    ],
+    "official_coverage": 0.875,
+    "sequence_lcs_similarity": 0.875,
+    "order_consistency": 1.0,
+    "official_time_share": {
+      "上午": 0.375,
+      "下午": 0.5,
+      "中午": 0.125
+    },
+    "traveler_time_share": {
+      "上午": 0.4286,
+      "下午": 0.5714
+    },
+    "time_distribution_total_variation": 0.125,
+    "interpretation": "官方节点覆盖率为 0.88；游客路线未包含 花港观鱼；时间层分布相对接近。"
+  },
+  {
+    "comparison_id": "cmp_hz_official_01__hz_note_02",
+    "attraction": "杭州西湖",
+    "official_route_id": "hz_official_01",
+    "traveler_route_id": "hz_note_02",
+    "official_poi_sequence": [
+      "断桥",
+      "白堤",
+      "孤山",
+      "楼外楼",
+      "西湖游船",
+      "三潭印月",
+      "花港观鱼",
+      "雷峰塔"
+    ],
+    "traveler_poi_sequence": [
+      "断桥",
+      "苏堤",
+      "楼外楼",
+      "西湖游船",
+      "三潭印月",
+      "雷峰塔"
+    ],
+    "shared_pois": [
+      "断桥",
+      "楼外楼",
+      "西湖游船",
+      "三潭印月",
+      "雷峰塔"
+    ],
+    "official_coverage": 0.625,
+    "sequence_lcs_similarity": 0.5556,
+    "order_consistency": 1.0,
+    "official_time_share": {
+      "上午": 0.375,
+      "下午": 0.5,
+      "中午": 0.125
+    },
+    "traveler_time_share": {
+      "上午": 0.3333,
+      "下午": 0.5,
+      "中午": 0.1667
+    },
+    "time_distribution_total_variation": 0.0417,
+    "interpretation": "官方节点覆盖率为 0.62；游客路线未包含 白堤、孤山、花港观鱼；游客文本额外提到 苏堤；时间层分布相对接近。"
+  },
+  {
+    "comparison_id": "cmp_hz_official_01__hz_note_03",
+    "attraction": "杭州西湖",
+    "official_route_id": "hz_official_01",
+    "traveler_route_id": "hz_note_03",
+    "official_poi_sequence": [
+      "断桥",
+      "白堤",
+      "孤山",
+      "楼外楼",
+      "西湖游船",
+      "三潭印月",
+      "花港观鱼",
+      "雷峰塔"
+    ],
+    "traveler_poi_sequence": [
+      "断桥",
+      "白堤",
+      "孤山",
+      "花港观鱼",
+      "音乐喷泉"
+    ],
+    "shared_pois": [
+      "断桥",
+      "白堤",
+      "孤山",
+      "花港观鱼"
+    ],
+    "official_coverage": 0.5,
+    "sequence_lcs_similarity": 0.4444,
+    "order_consistency": 1.0,
+    "official_time_share": {
+      "上午": 0.375,
+      "下午": 0.5,
+      "中午": 0.125
+    },
+    "traveler_time_share": {
+      "上午": 0.6,
+      "下午": 0.2,
+      "中午": 0.2
+    },
+    "time_distribution_total_variation": 0.3,
+    "interpretation": "官方节点覆盖率为 0.50；游客路线未包含 楼外楼、西湖游船、三潭印月、雷峰塔；游客文本额外提到 音乐喷泉；时间层分布相对接近。"
+  },
+  {
+    "comparison_id": "cmp_hz_official_01__hz_note_04",
+    "attraction": "杭州西湖",
+    "official_route_id": "hz_official_01",
+    "traveler_route_id": "hz_note_04",
+    "official_poi_sequence": [
+      "断桥",
+      "白堤",
+      "孤山",
+      "楼外楼",
+      "西湖游船",
+      "三潭印月",
+      "花港观鱼",
+      "雷峰塔"
+    ],
+    "traveler_poi_sequence": [
+      "楼外楼",
+      "断桥",
+      "白堤",
+      "西湖游船",
+      "雷峰塔"
+    ],
+    "shared_pois": [
+      "断桥",
+      "白堤",
+      "楼外楼",
+      "西湖游船",
+      "雷峰塔"
+    ],
+    "official_coverage": 0.625,
+    "sequence_lcs_similarity": 0.5,
+    "order_consistency": 0.8,
+    "official_time_share": {
+      "上午": 0.375,
+      "下午": 0.5,
+      "中午": 0.125
+    },
+    "traveler_time_share": {
+      "下午": 0.4,
+      "未标注时段": 0.6
+    },
+    "time_distribution_total_variation": 0.6,
+    "interpretation": "官方节点覆盖率为 0.62；游客路线未包含 孤山、三潭印月、花港观鱼；时间层分布差异较大。"
+  },
+  {
+    "comparison_id": "cmp_hz_official_01__hz_note_05",
+    "attraction": "杭州西湖",
+    "official_route_id": "hz_official_01",
+    "traveler_route_id": "hz_note_05",
+    "official_poi_sequence": [
+      "断桥",
+      "白堤",
+      "孤山",
+      "楼外楼",
+      "西湖游船",
+      "三潭印月",
+      "花港观鱼",
+      "雷峰塔"
+    ],
+    "traveler_poi_sequence": [
+      "断桥",
+      "苏堤",
+      "花港观鱼",
+      "西湖游船",
+      "三潭印月",
+      "雷峰塔"
+    ],
+    "shared_pois": [
+      "断桥",
+      "西湖游船",
+      "三潭印月",
+      "花港观鱼",
+      "雷峰塔"
+    ],
+    "official_coverage": 0.625,
+    "sequence_lcs_similarity": 0.4444,
+    "order_consistency": 0.8,
+    "official_time_share": {
+      "上午": 0.375,
+      "下午": 0.5,
+      "中午": 0.125
+    },
+    "traveler_time_share": {
+      "上午": 0.5,
+      "下午": 0.5
+    },
+    "time_distribution_total_variation": 0.125,
+    "interpretation": "官方节点覆盖率为 0.62；游客路线未包含 白堤、孤山、楼外楼；游客文本额外提到 苏堤；时间层分布相对接近。"
+  },
+  {
+    "comparison_id": "cmp_sh_official_01__sh_note_01",
+    "attraction": "上海迪士尼度假区",
+    "official_route_id": "sh_official_01",
+    "traveler_route_id": "sh_note_01",
+    "official_poi_sequence": [
+      "迪士尼地铁站",
+      "创极速光轮",
+      "玩具总动员",
+      "宝藏湾",
+      "加勒比海盗",
+      "花车巡游",
+      "奇幻童话城堡"
+    ],
+    "traveler_poi_sequence": [
+      "迪士尼地铁站",
+      "玩具总动员",
+      "创极速光轮",
+      "宝藏湾",
+      "加勒比海盗",
+      "花车巡游",
+      "奇幻童话城堡"
+    ],
+    "shared_pois": [
+      "迪士尼地铁站",
+      "创极速光轮",
+      "玩具总动员",
+      "宝藏湾",
+      "加勒比海盗",
+      "花车巡游",
+      "奇幻童话城堡"
+    ],
+    "official_coverage": 1.0,
+    "sequence_lcs_similarity": 0.8571,
+    "order_consistency": 0.9524,
+    "official_time_share": {
+      "上午": 0.4286,
+      "下午": 0.1429,
+      "中午": 0.1429,
+      "晚上": 0.2857
+    },
+    "traveler_time_share": {
+      "上午": 0.4286,
+      "下午": 0.1429,
+      "中午": 0.1429,
+      "晚上": 0.2857
+    },
+    "time_distribution_total_variation": 0.0,
+    "interpretation": "官方节点覆盖率为 1.00；时间层分布相对接近。"
+  },
+  {
+    "comparison_id": "cmp_sh_official_01__sh_note_02",
+    "attraction": "上海迪士尼度假区",
+    "official_route_id": "sh_official_01",
+    "traveler_route_id": "sh_note_02",
+    "official_poi_sequence": [
+      "迪士尼地铁站",
+      "创极速光轮",
+      "玩具总动员",
+      "宝藏湾",
+      "加勒比海盗",
+      "花车巡游",
+      "奇幻童话城堡"
+    ],
+    "traveler_poi_sequence": [
+      "迪士尼地铁站",
+      "创极速光轮",
+      "玩具总动员",
+      "宝藏湾",
+      "加勒比海盗"
+    ],
+    "shared_pois": [
+      "迪士尼地铁站",
+      "创极速光轮",
+      "玩具总动员",
+      "宝藏湾",
+      "加勒比海盗"
+    ],
+    "official_coverage": 0.7143,
+    "sequence_lcs_similarity": 0.7143,
+    "order_consistency": 1.0,
+    "official_time_share": {
+      "上午": 0.4286,
+      "下午": 0.1429,
+      "中午": 0.1429,
+      "晚上": 0.2857
+    },
+    "traveler_time_share": {
+      "下午": 0.2,
+      "中午": 0.2,
+      "未标注时段": 0.6
+    },
+    "time_distribution_total_variation": 0.7143,
+    "interpretation": "官方节点覆盖率为 0.71；游客路线未包含 花车巡游、奇幻童话城堡；时间层分布差异较大。"
+  },
+  {
+    "comparison_id": "cmp_sh_official_01__sh_note_03",
+    "attraction": "上海迪士尼度假区",
+    "official_route_id": "sh_official_01",
+    "traveler_route_id": "sh_note_03",
+    "official_poi_sequence": [
+      "迪士尼地铁站",
+      "创极速光轮",
+      "玩具总动员",
+      "宝藏湾",
+      "加勒比海盗",
+      "花车巡游",
+      "奇幻童话城堡"
+    ],
+    "traveler_poi_sequence": [
+      "星愿公园",
+      "奇幻童话城堡",
+      "宝藏湾",
+      "加勒比海盗",
+      "花车巡游",
+      "阴凉处"
+    ],
+    "shared_pois": [
+      "宝藏湾",
+      "加勒比海盗",
+      "花车巡游",
+      "奇幻童话城堡"
+    ],
+    "official_coverage": 0.5714,
+    "sequence_lcs_similarity": 0.3333,
+    "order_consistency": 0.5,
+    "official_time_share": {
+      "上午": 0.4286,
+      "下午": 0.1429,
+      "中午": 0.1429,
+      "晚上": 0.2857
+    },
+    "traveler_time_share": {
+      "上午": 0.3333,
+      "下午": 0.3333,
+      "中午": 0.1667,
+      "晚上": 0.1667
+    },
+    "time_distribution_total_variation": 0.2142,
+    "interpretation": "官方节点覆盖率为 0.57；游客路线未包含 迪士尼地铁站、创极速光轮、玩具总动员；游客文本额外提到 星愿公园、阴凉处；时间层分布相对接近。"
+  },
+  {
+    "comparison_id": "cmp_sh_official_01__sh_note_04",
+    "attraction": "上海迪士尼度假区",
+    "official_route_id": "sh_official_01",
+    "traveler_route_id": "sh_note_04",
+    "official_poi_sequence": [
+      "迪士尼地铁站",
+      "创极速光轮",
+      "玩具总动员",
+      "宝藏湾",
+      "加勒比海盗",
+      "花车巡游",
+      "奇幻童话城堡"
+    ],
+    "traveler_poi_sequence": [
+      "加勒比海盗",
+      "玩具总动员",
+      "花车巡游"
+    ],
+    "shared_pois": [
+      "玩具总动员",
+      "加勒比海盗",
+      "花车巡游"
+    ],
+    "official_coverage": 0.4286,
+    "sequence_lcs_similarity": 0.2857,
+    "order_consistency": 0.6667,
+    "official_time_share": {
+      "上午": 0.4286,
+      "下午": 0.1429,
+      "中午": 0.1429,
+      "晚上": 0.2857
+    },
+    "traveler_time_share": {
+      "未标注时段": 1.0
+    },
+    "time_distribution_total_variation": 1.0,
+    "interpretation": "官方节点覆盖率为 0.43；游客路线未包含 迪士尼地铁站、创极速光轮、宝藏湾、奇幻童话城堡；时间层分布差异较大。"
+  },
+  {
+    "comparison_id": "cmp_sh_official_01__sh_note_05",
+    "attraction": "上海迪士尼度假区",
+    "official_route_id": "sh_official_01",
+    "traveler_route_id": "sh_note_05",
+    "official_poi_sequence": [
+      "迪士尼地铁站",
+      "创极速光轮",
+      "玩具总动员",
+      "宝藏湾",
+      "加勒比海盗",
+      "花车巡游",
+      "奇幻童话城堡"
+    ],
+    "traveler_poi_sequence": [
+      "迪士尼地铁站",
+      "创极速光轮",
+      "玩具总动员",
+      "宝藏湾",
+      "加勒比海盗",
+      "花车巡游",
+      "奇幻童话城堡"
+    ],
+    "shared_pois": [
+      "迪士尼地铁站",
+      "创极速光轮",
+      "玩具总动员",
+      "宝藏湾",
+      "加勒比海盗",
+      "花车巡游",
+      "奇幻童话城堡"
+    ],
+    "official_coverage": 1.0,
+    "sequence_lcs_similarity": 1.0,
+    "order_consistency": 1.0,
+    "official_time_share": {
+      "上午": 0.4286,
+      "下午": 0.1429,
+      "中午": 0.1429,
+      "晚上": 0.2857
+    },
+    "traveler_time_share": {
+      "上午": 0.1429,
+      "下午": 0.2857,
+      "中午": 0.4286,
+      "晚上": 0.1429
+    },
+    "time_distribution_total_variation": 0.4285,
+    "interpretation": "官方节点覆盖率为 1.00；时间层分布差异较大。"
+  }
+]

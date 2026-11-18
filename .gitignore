@@ -1,0 +1,24 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# ---- 工具/会话缓存 ----
+.memsearch/
+.vscode/
+.idea/
+
+# ---- 系统文件 ----
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---- 本地密钥（永不提交）----
+.env
+*.env
+secrets/
+!*secrets*.example
+
+# ---- 与 实验1/实验2 完全重复的副本（已逐文件哈希核对一致，节省 11 MB）----
+实验资料整理/原始材料/成员A-完整分支/

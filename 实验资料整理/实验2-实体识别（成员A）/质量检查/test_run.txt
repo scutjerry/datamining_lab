@@ -1,0 +1,12 @@
+{'passed': True, 'documents': 21, 'entities_checked': 3032, 'scenic_counts': [{'scenic': '天坛公园', 'official': 1, 'travelogue': 5}, {'scenic': '故宫博物院', 'official': 2, 'travelogue': 6}, {'scenic': '颐和园', 'official': 2, 'travelogue': 5}], 'checks': ['strict entity JSON Schema', 'exact six-column CSV contract', 'global unique doc_id', 'cross-file joins', 'source/doc_type mapping', 'all entity offset slices', 'all sentence references', 'no entity overlap/duplicates', 'three scenic quotas', 'raw SHA256', 'clean content SHA256', 'SQLite integrity and CSV equality']}
+test_all_delivered_data_interfaces (test_member_a.PipelineTests.test_all_delivered_data_interfaces) ... ok
+test_ambiguous_time_and_full_duration_range (test_member_a.PipelineTests.test_ambiguous_time_and_full_duration_range) ... ok
+test_gate_station_and_surface_form (test_member_a.PipelineTests.test_gate_station_and_surface_form) ... ok
+test_inline_entities_survive_html_extraction (test_member_a.PipelineTests.test_inline_entities_survive_html_extraction) ... ok
+test_no_route_or_conditional_information_removed (test_member_a.PipelineTests.test_no_route_or_conditional_information_removed) ... ok
+test_repeated_mentions_and_unicode_offsets (test_member_a.PipelineTests.test_repeated_mentions_and_unicode_offsets) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.120s
+
+OK

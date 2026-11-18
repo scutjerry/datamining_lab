@@ -1,0 +1,238 @@
+{
+  "question": "我想去天坛，只有一个半小时，想祈福拍照",
+  "backend": "llm",
+  "llm": {
+    "available": true,
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com/v1",
+    "api_key_set": true,
+    "api_key_masked": "sk-2a1…eb9c",
+    "calls": 12
+  },
+  "constraints": {
+    "raw": "我想去天坛，只有一个半小时，想祈福拍照",
+    "scenic": "天坛公园",
+    "minutes": 90,
+    "audience": "通用",
+    "pace": "常规",
+    "interests": [
+      "拍照",
+      "祈福"
+    ],
+    "start_hint": null
+  },
+  "missing": [],
+  "steps": [
+    {
+      "i": 1,
+      "thought": "景区、时长、兴趣都齐了，先看天坛有哪些候选路线",
+      "action": "query_route",
+      "action_input": {
+        "scenic": "天坛公园",
+        "with_steps": false
+      },
+      "observation": {
+        "ok": true,
+        "tool": "query_route",
+        "count": 3,
+        "note": "",
+        "preview": [
+          {
+            "route_id": "RT-TT-OFF-001",
+            "name": "北京市公园管理中心-天坛公园暑期推出3条清凉游览路线",
+            "step_count": 8
+          },
+          {
+            "route_id": "RT-TT-OFF-002",
+            "name": "北京市公园管理中心-天坛公园暑期推出3条清凉游览路线",
+            "step_count": 7
+          },
+          {
+            "route_id": "RT-TT-OFF-003",
+            "name": "北京市公园管理中心-天坛公园暑期推出3条清凉游览路线",
+            "step_count": 10
+          }
+        ]
+      }
+    },
+    {
+      "i": 2,
+      "thought": "有三条官方路线但没有时长，先查天坛“时间不够怎么取舍”的条件建议",
+      "action": "query_advices",
+      "action_input": {
+        "scenic": "天坛公园",
+        "condition_type": "time"
+      },
+      "observation": {
+        "ok": true,
+        "tool": "query_advices",
+        "count": 0,
+        "note": "该景区/条件下没有抽到建议；实验5 一共只产出 3 条（故宫 时间类），不要编造",
+        "preview": []
+      }
+    },
+    {
+      "i": 3,
+      "thought": "天坛没有条件建议数据，直接用 route_plan 按 90 分钟排行程",
+      "action": "route_plan",
+      "action_input": {
+        "scenic": "天坛公园",
+        "minutes": 90,
+        "audience": "通用",
+        "pace": "常规"
+      },
+      "observation": {
+        "ok": true,
+        "tool": "route_plan",
+        "count": 10,
+        "note": "选 北京市公园管理中心-天坛公园暑期推出3条清凉游览路线（official，共 10 步，整条估算 87 分钟），按 90 分钟预算截取前 10 步",
+        "preview": [
+          {
+            "minutes_used": 87
+          }
+        ]
+      }
+    },
+    {
+      "i": 5,
+      "thought": "路线与步骤已够，直接给结论、行程清单和注意事项",
+      "action": "finish",
+      "action_input": {
+        "answer": "【结论】走官方路线 RT-TT-OFF-003（北京市公园管理中心“天坛公园暑期清凉游览路线”之一），共 10 站，整条**估算**约 87 分钟，你只有 90 分钟，刚好在预算内、剩余约 3 分钟余量。这条线由西门进、东门出，路线中途正好经过祈年殿，祈福和拍照的核心点都能覆盖。\n\n【行程清单（顺序 + 估算时长）】\n1. 天坛公园西门（约 6 分钟，起点）\n2. 斋宫（约 6 分钟，转场 3 分钟）\n3. 三座门（约 6 分钟，转场 3 分钟）\n4. 迎客柏月亮门（约 6 分钟，转场 3 分钟）— 适合拍照\n5. 丹陛桥西侧下面古树区（约 6 分钟，转场 3 分钟）— 古树＋桥体取景\n6. 祈年殿西门（约 6 分钟，转场 3 分钟）\n7. 祈年殿（约 6 分钟，转场 3 分钟）— 祈福与拍照的主目标，建议在此多停留\n8. 祈年殿东门（约 6 分钟，转场 3 分钟）\n9. 长廊（约 6 分钟，转场 3 分钟）— 红柱长廊很出片\n10. 天坛公园东门（约 6 分钟，终点，转场 3 分钟）\n\n【取舍建议】\n- 若你更想慢慢拍，可换成 RT-TT-OFF-001（8 站，估算约 69 分钟）或 RT-TT-OFF-002（7 站，估算约 60 分钟），能空出 20 分钟以上给祈年殿拍照；代价是少走几个点。\n- RT-TT-OFF-003 本身已是最长的一条，我按 90 分钟截取了全部 10 步，没有截断景点。\n\n【注意事项】\n- 上面的时长都是**估算值**（每景点按 6 分钟、每次转场按 3 分钟计），图谱里该景区的实际游览时长字段为空，不是实测数据；祈福、拍照排队会额外耗时。\n- 图谱里没有“老人/亲子”等人群标签（均为通用），如需无障碍或带娃节奏，属常识性补充建议，不是图谱事实。\n- 我查了天坛的“时间不够怎么取舍”类条件建议，图谱里没有收录（该实验仅采到故宫的时间类建议），因此本回答的取舍理由来自路线时长比较，而非现成建议条目。\n- 开放时间图谱未提供，出发前请自行确认祈年殿等殿宇的当日开放时段。"
+      },
+      "observation": {
+        "ok": true,
+        "tool": "-",
+        "count": 0,
+        "note": "结束",
+        "preview": []
+      }
+    }
+  ],
+  "final": {
+    "kind": "llm_answer",
+    "answer": "【结论】走官方路线 RT-TT-OFF-003（北京市公园管理中心“天坛公园暑期清凉游览路线”之一），共 10 站，整条**估算**约 87 分钟，你只有 90 分钟，刚好在预算内、剩余约 3 分钟余量。这条线由西门进、东门出，路线中途正好经过祈年殿，祈福和拍照的核心点都能覆盖。\n\n【行程清单（顺序 + 估算时长）】\n1. 天坛公园西门（约 6 分钟，起点）\n2. 斋宫（约 6 分钟，转场 3 分钟）\n3. 三座门（约 6 分钟，转场 3 分钟）\n4. 迎客柏月亮门（约 6 分钟，转场 3 分钟）— 适合拍照\n5. 丹陛桥西侧下面古树区（约 6 分钟，转场 3 分钟）— 古树＋桥体取景\n6. 祈年殿西门（约 6 分钟，转场 3 分钟）\n7. 祈年殿（约 6 分钟，转场 3 分钟）— 祈福与拍照的主目标，建议在此多停留\n8. 祈年殿东门（约 6 分钟，转场 3 分钟）\n9. 长廊（约 6 分钟，转场 3 分钟）— 红柱长廊很出片\n10. 天坛公园东门（约 6 分钟，终点，转场 3 分钟）\n\n【取舍建议】\n- 若你更想慢慢拍，可换成 RT-TT-OFF-001（8 站，估算约 69 分钟）或 RT-TT-OFF-002（7 站，估算约 60 分钟），能空出 20 分钟以上给祈年殿拍照；代价是少走几个点。\n- RT-TT-OFF-003 本身已是最长的一条，我按 90 分钟截取了全部 10 步，没有截断景点。\n\n【注意事项】\n- 上面的时长都是**估算值**（每景点按 6 分钟、每次转场按 3 分钟计），图谱里该景区的实际游览时长字段为空，不是实测数据；祈福、拍照排队会额外耗时。\n- 图谱里没有“老人/亲子”等人群标签（均为通用），如需无障碍或带娃节奏，属常识性补充建议，不是图谱事实。\n- 我查了天坛的“时间不够怎么取舍”类条件建议，图谱里没有收录（该实验仅采到故宫的时间类建议），因此本回答的取舍理由来自路线时长比较，而非现成建议条目。\n- 开放时间图谱未提供，出发前请自行确认祈年殿等殿宇的当日开放时段。"
+  },
+  "started_at": "2026-11-18T15:10:34",
+  "plan": {
+    "ok": true,
+    "scenic": "天坛公园",
+    "audience": "通用",
+    "pace": "常规",
+    "minutes": 90,
+    "candidates": [
+      {
+        "route_id": "RT-TT-OFF-003",
+        "name": "北京市公园管理中心-天坛公园暑期推出3条清凉游览路线",
+        "route_type": "official",
+        "step_count": 10,
+        "full_minutes": 87,
+        "over_budget": 0
+      },
+      {
+        "route_id": "RT-TT-OFF-001",
+        "name": "北京市公园管理中心-天坛公园暑期推出3条清凉游览路线",
+        "route_type": "official",
+        "step_count": 8,
+        "full_minutes": 69,
+        "over_budget": 0
+      },
+      {
+        "route_id": "RT-TT-OFF-002",
+        "name": "北京市公园管理中心-天坛公园暑期推出3条清凉游览路线",
+        "route_type": "official",
+        "step_count": 7,
+        "full_minutes": 60,
+        "over_budget": 0
+      }
+    ],
+    "route": {
+      "route_id": "RT-TT-OFF-003",
+      "name": "北京市公园管理中心-天坛公园暑期推出3条清凉游览路线",
+      "route_type": "official",
+      "step_count": 10,
+      "full_minutes": 87
+    },
+    "steps": [
+      {
+        "order": "1",
+        "poi_name": "天坛公园西门",
+        "poi_id": "POI-BEIJING-TT-011",
+        "est_min": 6,
+        "transport_min": 0
+      },
+      {
+        "order": "2",
+        "poi_name": "斋宫",
+        "poi_id": "POI-BEIJING-TT-013",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "3",
+        "poi_name": "三座门",
+        "poi_id": "POI-BEIJING-TT-001",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "7",
+        "poi_name": "迎客柏月亮门",
+        "poi_id": "POI-BEIJING-TT-019",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "8",
+        "poi_name": "丹陛桥西侧下面古树区",
+        "poi_id": "POI-BEIJING-TT-004",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "9",
+        "poi_name": "祈年殿西门",
+        "poi_id": "POI-BEIJING-TT-018",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "10",
+        "poi_name": "祈年殿",
+        "poi_id": "POI-BEIJING-TT-016",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "11",
+        "poi_name": "祈年殿东门",
+        "poi_id": "POI-BEIJING-TT-017",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "12",
+        "poi_name": "长廊",
+        "poi_id": "POI-BEIJING-TT-020",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "13",
+        "poi_name": "天坛公园东门",
+        "poi_id": "POI-BEIJING-TT-008",
+        "est_min": 6,
+        "transport_min": 3
+      }
+    ],
+    "minutes_used": 87,
+    "leftover": 3,
+    "advices": [],
+    "caveats": [
+      "整条路线在预算内，可以完整走完",
+      "时间来自估算（每景点 6 分钟、转场 3 分钟），图谱里 time_slot/duration_min 上游为空，不是实测"
+    ],
+    "reason": "选 北京市公园管理中心-天坛公园暑期推出3条清凉游览路线（official，共 10 步，整条估算 87 分钟），按 90 分钟预算截取前 10 步"
+  },
+  "elapsed_ms": 9509
+}

@@ -1,0 +1,3509 @@
+[
+  {
+    "step_id": "bj_official_01_step_001",
+    "route_id": "bj_official_01",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "8:30",
+    "poi_surface": "午门",
+    "poi_canonical": "午门",
+    "activity": [
+      {
+        "type": "enter",
+        "text": "入馆"
+      },
+      {
+        "type": "walk",
+        "text": "沿"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 9,
+      "end": 11,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 38,
+      "text": "上午 8:30 从午门入馆，沿中轴线依次参观太和门、太和殿、中和殿和保和殿。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_official_01_step_002",
+    "route_id": "bj_official_01",
+    "step_index": 2,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "8:30",
+    "poi_surface": "太和门",
+    "poi_canonical": "太和门",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "参观"
+      },
+      {
+        "type": "walk",
+        "text": "沿"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 22,
+      "end": 25,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 38,
+      "text": "上午 8:30 从午门入馆，沿中轴线依次参观太和门、太和殿、中和殿和保和殿。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_official_01_step_003",
+    "route_id": "bj_official_01",
+    "step_index": 3,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "8:30",
+    "poi_surface": "太和殿",
+    "poi_canonical": "太和殿",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "参观"
+      },
+      {
+        "type": "walk",
+        "text": "沿"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 26,
+      "end": 29,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 38,
+      "text": "上午 8:30 从午门入馆，沿中轴线依次参观太和门、太和殿、中和殿和保和殿。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_official_01_step_004",
+    "route_id": "bj_official_01",
+    "step_index": 4,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "8:30",
+    "poi_surface": "中和殿",
+    "poi_canonical": "中和殿",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "参观"
+      },
+      {
+        "type": "walk",
+        "text": "沿"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 30,
+      "end": 33,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 38,
+      "text": "上午 8:30 从午门入馆，沿中轴线依次参观太和门、太和殿、中和殿和保和殿。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_official_01_step_005",
+    "route_id": "bj_official_01",
+    "step_index": 5,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "8:30",
+    "poi_surface": "保和殿",
+    "poi_canonical": "保和殿",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "参观"
+      },
+      {
+        "type": "walk",
+        "text": "沿"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 34,
+      "end": 37,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 2,
+      "end": 38,
+      "text": " 8:30 从午门入馆，沿中轴线依次参观太和门、太和殿、中和殿和保和殿。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_official_01_step_006",
+    "route_id": "bj_official_01",
+    "step_index": 6,
+    "time_block_index": 2,
+    "time_bucket": "中午",
+    "time_evidence": "中午",
+    "poi_surface": "东六宫",
+    "poi_canonical": "东六宫",
+    "activity": [
+      {
+        "type": "rest",
+        "text": "休息"
+      },
+      {
+        "type": "eat",
+        "text": "用餐"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 42,
+      "end": 45,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 38,
+      "end": 52,
+      "text": "中午可在东六宫附近休息用餐。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_official_01_step_007",
+    "route_id": "bj_official_01",
+    "step_index": 7,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "珍宝馆",
+    "poi_canonical": "珍宝馆",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "参观"
+      },
+      {
+        "type": "walk",
+        "text": "步行"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 56,
+      "end": 59,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 52,
+      "end": 86,
+      "text": "下午参观珍宝馆和九龙壁，之后步行至神武门出馆，建议预留约 6 小时。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_official_01_step_008",
+    "route_id": "bj_official_01",
+    "step_index": 8,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "九龙壁",
+    "poi_canonical": "九龙壁",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "参观"
+      },
+      {
+        "type": "walk",
+        "text": "步行"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 60,
+      "end": 63,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 52,
+      "end": 86,
+      "text": "下午参观珍宝馆和九龙壁，之后步行至神武门出馆，建议预留约 6 小时。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_official_01_step_009",
+    "route_id": "bj_official_01",
+    "step_index": 9,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "神武门",
+    "poi_canonical": "神武门",
+    "activity": [
+      {
+        "type": "walk",
+        "text": "步行"
+      },
+      {
+        "type": "exit",
+        "text": "出馆"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 69,
+      "end": 72,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 52,
+      "end": 86,
+      "text": "下午参观珍宝馆和九龙壁，之后步行至神武门出馆，建议预留约 6 小时。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_01_step_001",
+    "route_id": "bj_note_01",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "8:20",
+    "poi_surface": "午门",
+    "poi_canonical": "午门",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "到"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 11,
+      "end": 13,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 25,
+      "text": "我们早上 8:20 到午门，孩子一路问宫殿的名字。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_01_step_002",
+    "route_id": "bj_note_01",
+    "step_index": 2,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "8:20",
+    "poi_surface": "太和殿",
+    "poi_canonical": "太和殿",
+    "activity": [
+      {
+        "type": "view",
+        "text": "看"
+      },
+      {
+        "type": "walk",
+        "text": "沿"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 31,
+      "end": 34,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 25,
+      "end": 45,
+      "text": "先沿中轴线看太和殿，再去中和殿和保和殿。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_01_step_003",
+    "route_id": "bj_note_01",
+    "step_index": 3,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "8:20",
+    "poi_surface": "中和殿",
+    "poi_canonical": "中和殿",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "去"
+      },
+      {
+        "type": "view",
+        "text": "看"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 37,
+      "end": 40,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 25,
+      "end": 45,
+      "text": "先沿中轴线看太和殿，再去中和殿和保和殿。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_01_step_004",
+    "route_id": "bj_note_01",
+    "step_index": 4,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "8:20",
+    "poi_surface": "保和殿",
+    "poi_canonical": "保和殿",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "去"
+      },
+      {
+        "type": "view",
+        "text": "看"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 41,
+      "end": 44,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 25,
+      "end": 45,
+      "text": "先沿中轴线看太和殿，再去中和殿和保和殿。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_01_step_005",
+    "route_id": "bj_note_01",
+    "step_index": 5,
+    "time_block_index": 2,
+    "time_bucket": "中午",
+    "time_evidence": "中午",
+    "poi_surface": "东六宫",
+    "poi_canonical": "东六宫",
+    "activity": [
+      {
+        "type": "eat",
+        "text": "吃饭"
+      },
+      {
+        "type": "rest",
+        "text": "休息"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 48,
+      "end": 51,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 45,
+      "end": 78,
+      "text": "中午在东六宫附近吃饭休息，下午看珍宝馆和九龙壁，最后从神武门出来。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_01_step_006",
+    "route_id": "bj_note_01",
+    "step_index": 6,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "珍宝馆",
+    "poi_canonical": "珍宝馆",
+    "activity": [
+      {
+        "type": "view",
+        "text": "看"
+      },
+      {
+        "type": "rest",
+        "text": "休息"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 61,
+      "end": 64,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 45,
+      "end": 78,
+      "text": "中午在东六宫附近吃饭休息，下午看珍宝馆和九龙壁，最后从神武门出来。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_01_step_007",
+    "route_id": "bj_note_01",
+    "step_index": 7,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "九龙壁",
+    "poi_canonical": "九龙壁",
+    "activity": [
+      {
+        "type": "view",
+        "text": "看"
+      },
+      {
+        "type": "rest",
+        "text": "休息"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 65,
+      "end": 68,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 45,
+      "end": 78,
+      "text": "中午在东六宫附近吃饭休息，下午看珍宝馆和九龙壁，最后从神武门出来。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_01_step_008",
+    "route_id": "bj_note_01",
+    "step_index": 8,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "神武门",
+    "poi_canonical": "神武门",
+    "activity": [
+      {
+        "type": "view",
+        "text": "看"
+      },
+      {
+        "type": "rest",
+        "text": "休息"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 72,
+      "end": 75,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 45,
+      "end": 78,
+      "text": "中午在东六宫附近吃饭休息，下午看珍宝馆和九龙壁，最后从神武门出来。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_02_step_001",
+    "route_id": "bj_note_02",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "未标注时段",
+    "time_evidence": null,
+    "poi_surface": "午门",
+    "poi_canonical": "午门",
+    "activity": [],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 15,
+      "end": 17,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 19,
+      "text": "带父母游故宫，最好提前预约并从午门进。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_02_step_002",
+    "route_id": "bj_note_02",
+    "step_index": 2,
+    "time_block_index": 2,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "太和门",
+    "poi_canonical": "太和门",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "参观"
+      },
+      {
+        "type": "transport",
+        "text": "坐"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 23,
+      "end": 26,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 19,
+      "end": 43,
+      "text": "上午参观太和门和太和殿后，在中和殿附近坐一会儿。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_02_step_003",
+    "route_id": "bj_note_02",
+    "step_index": 3,
+    "time_block_index": 2,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "太和殿",
+    "poi_canonical": "太和殿",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "参观"
+      },
+      {
+        "type": "transport",
+        "text": "坐"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 27,
+      "end": 30,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 19,
+      "end": 43,
+      "text": "上午参观太和门和太和殿后，在中和殿附近坐一会儿。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_02_step_004",
+    "route_id": "bj_note_02",
+    "step_index": 4,
+    "time_block_index": 2,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "中和殿",
+    "poi_canonical": "中和殿",
+    "activity": [
+      {
+        "type": "transport",
+        "text": "坐"
+      },
+      {
+        "type": "visit",
+        "text": "参观"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 33,
+      "end": 36,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 19,
+      "end": 43,
+      "text": "上午参观太和门和太和殿后，在中和殿附近坐一会儿。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_02_step_005",
+    "route_id": "bj_note_02",
+    "step_index": 5,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "珍宝馆",
+    "poi_canonical": "珍宝馆",
+    "activity": [],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 64,
+      "end": 67,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 60,
+      "end": 93,
+      "text": "下午选择珍宝馆和九龙壁，累了就减少停留，不必追求把所有宫殿都看完。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_02_step_006",
+    "route_id": "bj_note_02",
+    "step_index": 6,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "九龙壁",
+    "poi_canonical": "九龙壁",
+    "activity": [
+      {
+        "type": "view",
+        "text": "看"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 68,
+      "end": 71,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 60,
+      "end": 93,
+      "text": "下午选择珍宝馆和九龙壁，累了就减少停留，不必追求把所有宫殿都看完。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_03_step_001",
+    "route_id": "bj_note_03",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "午门",
+    "poi_canonical": "午门",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "经过"
+      },
+      {
+        "type": "rest",
+        "text": "休息"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 23,
+      "end": 25,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 18,
+      "end": 48,
+      "text": "我们上午从午门进，经过太和殿和保和殿，中午在室内找地方休息。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_03_step_002",
+    "route_id": "bj_note_03",
+    "step_index": 2,
+    "time_block_index": 2,
+    "time_bucket": "中午",
+    "time_evidence": "中午",
+    "poi_surface": "太和殿",
+    "poi_canonical": "太和殿",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "经过"
+      },
+      {
+        "type": "rest",
+        "text": "休息"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 29,
+      "end": 32,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 18,
+      "end": 48,
+      "text": "我们上午从午门进，经过太和殿和保和殿，中午在室内找地方休息。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_03_step_003",
+    "route_id": "bj_note_03",
+    "step_index": 3,
+    "time_block_index": 2,
+    "time_bucket": "中午",
+    "time_evidence": "中午",
+    "poi_surface": "保和殿",
+    "poi_canonical": "保和殿",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "经过"
+      },
+      {
+        "type": "rest",
+        "text": "休息"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 33,
+      "end": 36,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 18,
+      "end": 48,
+      "text": "我们上午从午门进，经过太和殿和保和殿，中午在室内找地方休息。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_03_step_004",
+    "route_id": "bj_note_03",
+    "step_index": 4,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "珍宝馆",
+    "poi_canonical": "珍宝馆",
+    "activity": [
+      {
+        "type": "view",
+        "text": "看"
+      },
+      {
+        "type": "photo",
+        "text": "拍"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 53,
+      "end": 56,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 48,
+      "end": 66,
+      "text": "下午主要看珍宝馆，室外拍照就取消了。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_04_step_001",
+    "route_id": "bj_note_04",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "午门",
+    "poi_canonical": "午门",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "到"
+      },
+      {
+        "type": "photo",
+        "text": "拍"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 9,
+      "end": 11,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 29,
+      "text": "想拍建筑可以早点到午门，上午光线合适时先拍太和门和太和殿。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_04_step_002",
+    "route_id": "bj_note_04",
+    "step_index": 2,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "太和门",
+    "poi_canonical": "太和门",
+    "activity": [
+      {
+        "type": "photo",
+        "text": "拍"
+      },
+      {
+        "type": "visit",
+        "text": "到"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 21,
+      "end": 24,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 29,
+      "text": "想拍建筑可以早点到午门，上午光线合适时先拍太和门和太和殿。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_04_step_003",
+    "route_id": "bj_note_04",
+    "step_index": 3,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "太和殿",
+    "poi_canonical": "太和殿",
+    "activity": [
+      {
+        "type": "photo",
+        "text": "拍"
+      },
+      {
+        "type": "visit",
+        "text": "到"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 25,
+      "end": 28,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 29,
+      "text": "想拍建筑可以早点到午门，上午光线合适时先拍太和门和太和殿。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_04_step_004",
+    "route_id": "bj_note_04",
+    "step_index": 4,
+    "time_block_index": 2,
+    "time_bucket": "中午",
+    "time_evidence": "中午",
+    "poi_surface": "东六宫",
+    "poi_canonical": "东六宫",
+    "activity": [
+      {
+        "type": "rest",
+        "text": "休息"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 37,
+      "end": 40,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 29,
+      "end": 45,
+      "text": "中午避开人流，在东六宫周边休息。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_04_step_005",
+    "route_id": "bj_note_04",
+    "step_index": 5,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "九龙壁",
+    "poi_canonical": "九龙壁",
+    "activity": [
+      {
+        "type": "walk",
+        "text": "走到"
+      },
+      {
+        "type": "visit",
+        "text": "到"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 49,
+      "end": 52,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 45,
+      "end": 70,
+      "text": "下午走到九龙壁和珍宝馆，那里细节很多，值得慢慢看。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_04_step_006",
+    "route_id": "bj_note_04",
+    "step_index": 6,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "珍宝馆",
+    "poi_canonical": "珍宝馆",
+    "activity": [
+      {
+        "type": "walk",
+        "text": "走到"
+      },
+      {
+        "type": "visit",
+        "text": "到"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 53,
+      "end": 56,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 45,
+      "end": 70,
+      "text": "下午走到九龙壁和珍宝馆，那里细节很多，值得慢慢看。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_04_step_007",
+    "route_id": "bj_note_04",
+    "step_index": 7,
+    "time_block_index": 4,
+    "time_bucket": "全天",
+    "time_evidence": "全天",
+    "poi_surface": "神武门",
+    "poi_canonical": "神武门",
+    "activity": [
+      {
+        "type": "walk",
+        "text": "步行"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 75,
+      "end": 78,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 70,
+      "end": 89,
+      "text": "我们最后从神武门出，全天步行距离不短。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_05_step_001",
+    "route_id": "bj_note_05",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "未标注时段",
+    "time_evidence": null,
+    "poi_surface": "午门",
+    "poi_canonical": "午门",
+    "activity": [],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 10,
+      "end": 12,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 34,
+      "text": "只有半天的话，我们从午门进后直奔太和殿和中和殿，再在保和殿附近停留。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_05_step_002",
+    "route_id": "bj_note_05",
+    "step_index": 2,
+    "time_block_index": 1,
+    "time_bucket": "未标注时段",
+    "time_evidence": null,
+    "poi_surface": "太和殿",
+    "poi_canonical": "太和殿",
+    "activity": [],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 16,
+      "end": 19,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 34,
+      "text": "只有半天的话，我们从午门进后直奔太和殿和中和殿，再在保和殿附近停留。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_05_step_003",
+    "route_id": "bj_note_05",
+    "step_index": 3,
+    "time_block_index": 1,
+    "time_bucket": "未标注时段",
+    "time_evidence": null,
+    "poi_surface": "中和殿",
+    "poi_canonical": "中和殿",
+    "activity": [],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 20,
+      "end": 23,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 34,
+      "text": "只有半天的话，我们从午门进后直奔太和殿和中和殿，再在保和殿附近停留。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_05_step_004",
+    "route_id": "bj_note_05",
+    "step_index": 4,
+    "time_block_index": 1,
+    "time_bucket": "未标注时段",
+    "time_evidence": null,
+    "poi_surface": "保和殿",
+    "poi_canonical": "保和殿",
+    "activity": [],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 26,
+      "end": 29,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 34,
+      "text": "只有半天的话，我们从午门进后直奔太和殿和中和殿，再在保和殿附近停留。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_05_step_005",
+    "route_id": "bj_note_05",
+    "step_index": 5,
+    "time_block_index": 1,
+    "time_bucket": "未标注时段",
+    "time_evidence": null,
+    "poi_surface": "珍宝馆",
+    "poi_canonical": "珍宝馆",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "去"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 42,
+      "end": 45,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 34,
+      "end": 57,
+      "text": "时间紧时可以不去珍宝馆，把主要时间留给中轴线。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_05_step_006",
+    "route_id": "bj_note_05",
+    "step_index": 6,
+    "time_block_index": 1,
+    "time_bucket": "未标注时段",
+    "time_evidence": null,
+    "poi_surface": "九龙壁",
+    "poi_canonical": "九龙壁",
+    "activity": [
+      {
+        "type": "view",
+        "text": "看"
+      },
+      {
+        "type": "exit",
+        "text": "出馆"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 64,
+      "end": 67,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 57,
+      "end": 77,
+      "text": "出馆前看了一眼九龙壁，最后从神武门离开。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "bj_note_05_step_007",
+    "route_id": "bj_note_05",
+    "step_index": 7,
+    "time_block_index": 1,
+    "time_bucket": "未标注时段",
+    "time_evidence": null,
+    "poi_surface": "神武门",
+    "poi_canonical": "神武门",
+    "activity": [
+      {
+        "type": "exit",
+        "text": "离开"
+      },
+      {
+        "type": "view",
+        "text": "看"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 71,
+      "end": 74,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 57,
+      "end": 77,
+      "text": "出馆前看了一眼九龙壁，最后从神武门离开。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_official_01_step_001",
+    "route_id": "hz_official_01",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "断桥残雪",
+    "poi_canonical": "断桥",
+    "activity": [
+      {
+        "type": "walk",
+        "text": "沿"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 3,
+      "end": 7,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 19,
+      "text": "上午从断桥残雪出发，沿白堤步行至孤山。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_official_01_step_002",
+    "route_id": "hz_official_01",
+    "step_index": 2,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "白堤",
+    "poi_canonical": "白堤",
+    "activity": [
+      {
+        "type": "walk",
+        "text": "沿"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 11,
+      "end": 13,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 19,
+      "text": "上午从断桥残雪出发，沿白堤步行至孤山。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_official_01_step_003",
+    "route_id": "hz_official_01",
+    "step_index": 3,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "孤山",
+    "poi_canonical": "孤山",
+    "activity": [
+      {
+        "type": "walk",
+        "text": "步行"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 16,
+      "end": 18,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 19,
+      "text": "上午从断桥残雪出发，沿白堤步行至孤山。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_official_01_step_004",
+    "route_id": "hz_official_01",
+    "step_index": 4,
+    "time_block_index": 2,
+    "time_bucket": "中午",
+    "time_evidence": "中午",
+    "poi_surface": "楼外楼",
+    "poi_canonical": "楼外楼",
+    "activity": [
+      {
+        "type": "eat",
+        "text": "用餐"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 22,
+      "end": 25,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 19,
+      "end": 30,
+      "text": "中午在楼外楼附近用餐。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_official_01_step_005",
+    "route_id": "hz_official_01",
+    "step_index": 5,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "西湖游船",
+    "poi_canonical": "西湖游船",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "前往"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 33,
+      "end": 37,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 30,
+      "end": 66,
+      "text": "下午乘西湖游船前往三潭印月，再到花港观鱼和雷峰塔游览，傍晚返回湖滨区域。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_official_01_step_006",
+    "route_id": "hz_official_01",
+    "step_index": 6,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "三潭印月",
+    "poi_canonical": "三潭印月",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "前往"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 39,
+      "end": 43,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 30,
+      "end": 66,
+      "text": "下午乘西湖游船前往三潭印月，再到花港观鱼和雷峰塔游览，傍晚返回湖滨区域。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_official_01_step_007",
+    "route_id": "hz_official_01",
+    "step_index": 7,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "傍晚",
+    "poi_surface": "花港观鱼",
+    "poi_canonical": "花港观鱼",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "到"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 46,
+      "end": 50,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 30,
+      "end": 66,
+      "text": "下午乘西湖游船前往三潭印月，再到花港观鱼和雷峰塔游览，傍晚返回湖滨区域。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_official_01_step_008",
+    "route_id": "hz_official_01",
+    "step_index": 8,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "傍晚",
+    "poi_surface": "雷峰塔",
+    "poi_canonical": "雷峰塔",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "游览"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 51,
+      "end": 54,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 30,
+      "end": 66,
+      "text": "下午乘西湖游船前往三潭印月，再到花港观鱼和雷峰塔游览，傍晚返回湖滨区域。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_official_01_step_009",
+    "route_id": "hz_official_01",
+    "step_index": 9,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "傍晚",
+    "poi_surface": "湖滨",
+    "poi_canonical": "湖滨",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "游览"
+      }
+    ],
+    "event_kind": "return",
+    "source_span": {
+      "start": 61,
+      "end": 63,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 30,
+      "end": 66,
+      "text": "下午乘西湖游船前往三潭印月，再到花港观鱼和雷峰塔游览，傍晚返回湖滨区域。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_01_step_001",
+    "route_id": "hz_note_01",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "早上",
+    "poi_surface": "断桥",
+    "poi_canonical": "断桥",
+    "activity": [
+      {
+        "type": "walk",
+        "text": "沿"
+      },
+      {
+        "type": "visit",
+        "text": "到"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 5,
+      "end": 7,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 20,
+      "text": "早上我们从断桥出发，沿白堤慢慢走到孤山。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_01_step_002",
+    "route_id": "hz_note_01",
+    "step_index": 2,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "早上",
+    "poi_surface": "白堤",
+    "poi_canonical": "白堤",
+    "activity": [
+      {
+        "type": "walk",
+        "text": "沿"
+      },
+      {
+        "type": "visit",
+        "text": "到"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 11,
+      "end": 13,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 20,
+      "text": "早上我们从断桥出发，沿白堤慢慢走到孤山。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_01_step_003",
+    "route_id": "hz_note_01",
+    "step_index": 3,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "早上",
+    "poi_surface": "孤山",
+    "poi_canonical": "孤山",
+    "activity": [
+      {
+        "type": "walk",
+        "text": "走到"
+      },
+      {
+        "type": "visit",
+        "text": "到"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 17,
+      "end": 19,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 20,
+      "text": "早上我们从断桥出发，沿白堤慢慢走到孤山。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_01_step_004",
+    "route_id": "hz_note_01",
+    "step_index": 4,
+    "time_block_index": 2,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "楼外楼",
+    "poi_canonical": "楼外楼",
+    "activity": [
+      {
+        "type": "eat",
+        "text": "午餐"
+      },
+      {
+        "type": "transport",
+        "text": "坐"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 45,
+      "end": 48,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 42,
+      "end": 76,
+      "text": "午餐在楼外楼附近解决，下午坐西湖游船去三潭印月，之后到雷峰塔看夕阳。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_01_step_005",
+    "route_id": "hz_note_01",
+    "step_index": 5,
+    "time_block_index": 2,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "西湖游船",
+    "poi_canonical": "西湖游船",
+    "activity": [
+      {
+        "type": "transport",
+        "text": "坐"
+      },
+      {
+        "type": "visit",
+        "text": "去"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 56,
+      "end": 60,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 42,
+      "end": 76,
+      "text": "午餐在楼外楼附近解决，下午坐西湖游船去三潭印月，之后到雷峰塔看夕阳。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_01_step_006",
+    "route_id": "hz_note_01",
+    "step_index": 6,
+    "time_block_index": 2,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "三潭印月",
+    "poi_canonical": "三潭印月",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "去"
+      },
+      {
+        "type": "transport",
+        "text": "坐"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 61,
+      "end": 65,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 42,
+      "end": 76,
+      "text": "午餐在楼外楼附近解决，下午坐西湖游船去三潭印月，之后到雷峰塔看夕阳。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_01_step_007",
+    "route_id": "hz_note_01",
+    "step_index": 7,
+    "time_block_index": 2,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "雷峰塔",
+    "poi_canonical": "雷峰塔",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "到"
+      },
+      {
+        "type": "view",
+        "text": "看"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 69,
+      "end": 72,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 42,
+      "end": 76,
+      "text": "午餐在楼外楼附近解决，下午坐西湖游船去三潭印月，之后到雷峰塔看夕阳。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_02_step_001",
+    "route_id": "hz_note_02",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "断桥",
+    "poi_canonical": "断桥",
+    "activity": [
+      {
+        "type": "view",
+        "text": "看"
+      },
+      {
+        "type": "transport",
+        "text": "乘车"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 14,
+      "end": 16,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 33,
+      "text": "带老人出游建议少走路，上午从断桥看湖景后，可以选择乘车到苏堤附近。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_02_step_002",
+    "route_id": "hz_note_02",
+    "step_index": 2,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "苏堤",
+    "poi_canonical": "苏堤",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "到"
+      },
+      {
+        "type": "transport",
+        "text": "乘车"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 28,
+      "end": 30,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 33,
+      "text": "带老人出游建议少走路，上午从断桥看湖景后，可以选择乘车到苏堤附近。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_02_step_003",
+    "route_id": "hz_note_02",
+    "step_index": 3,
+    "time_block_index": 2,
+    "time_bucket": "中午",
+    "time_evidence": "中午",
+    "poi_surface": "楼外楼",
+    "poi_canonical": "楼外楼",
+    "activity": [
+      {
+        "type": "rest",
+        "text": "休息"
+      },
+      {
+        "type": "transport",
+        "text": "坐"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 36,
+      "end": 39,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 33,
+      "end": 55,
+      "text": "中午在楼外楼休息，下午坐西湖游船到三潭印月。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_02_step_004",
+    "route_id": "hz_note_02",
+    "step_index": 4,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "西湖游船",
+    "poi_canonical": "西湖游船",
+    "activity": [
+      {
+        "type": "transport",
+        "text": "坐"
+      },
+      {
+        "type": "rest",
+        "text": "休息"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 45,
+      "end": 49,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 33,
+      "end": 55,
+      "text": "中午在楼外楼休息，下午坐西湖游船到三潭印月。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_02_step_005",
+    "route_id": "hz_note_02",
+    "step_index": 5,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "三潭印月",
+    "poi_canonical": "三潭印月",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "到"
+      },
+      {
+        "type": "transport",
+        "text": "坐"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 50,
+      "end": 54,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 33,
+      "end": 55,
+      "text": "中午在楼外楼休息，下午坐西湖游船到三潭印月。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_02_step_006",
+    "route_id": "hz_note_02",
+    "step_index": 6,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "雷峰塔",
+    "poi_canonical": "雷峰塔",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "去"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 74,
+      "end": 77,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 68,
+      "end": 91,
+      "text": "体力允许再去雷峰塔，不需要把环湖路线一次走完。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_03_step_001",
+    "route_id": "hz_note_03",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "断桥残雪",
+    "poi_canonical": "断桥",
+    "activity": [
+      {
+        "type": "view",
+        "text": "看"
+      },
+      {
+        "type": "walk",
+        "text": "沿"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 7,
+      "end": 11,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 33,
+      "text": "带孩子上午先看断桥残雪，再沿白堤走到孤山，途中可以讲讲西湖的故事。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_03_step_002",
+    "route_id": "hz_note_03",
+    "step_index": 2,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "白堤",
+    "poi_canonical": "白堤",
+    "activity": [
+      {
+        "type": "walk",
+        "text": "沿"
+      },
+      {
+        "type": "visit",
+        "text": "到"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 14,
+      "end": 16,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 33,
+      "text": "带孩子上午先看断桥残雪，再沿白堤走到孤山，途中可以讲讲西湖的故事。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_03_step_003",
+    "route_id": "hz_note_03",
+    "step_index": 3,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "孤山",
+    "poi_canonical": "孤山",
+    "activity": [
+      {
+        "type": "walk",
+        "text": "走到"
+      },
+      {
+        "type": "visit",
+        "text": "到"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 18,
+      "end": 20,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 33,
+      "text": "带孩子上午先看断桥残雪，再沿白堤走到孤山，途中可以讲讲西湖的故事。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_03_step_004",
+    "route_id": "hz_note_03",
+    "step_index": 4,
+    "time_block_index": 2,
+    "time_bucket": "中午",
+    "time_evidence": "中午",
+    "poi_surface": "花港观鱼",
+    "poi_canonical": "花港观鱼",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "去"
+      },
+      {
+        "type": "view",
+        "text": "看"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 63,
+      "end": 67,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 56,
+      "end": 76,
+      "text": "中午吃完饭后去花港观鱼，下午看音乐喷泉。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_03_step_005",
+    "route_id": "hz_note_03",
+    "step_index": 5,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "音乐喷泉",
+    "poi_canonical": "音乐喷泉",
+    "activity": [
+      {
+        "type": "view",
+        "text": "看"
+      },
+      {
+        "type": "visit",
+        "text": "去"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 71,
+      "end": 75,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 56,
+      "end": 76,
+      "text": "中午吃完饭后去花港观鱼，下午看音乐喷泉。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_04_step_001",
+    "route_id": "hz_note_04",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "未标注时段",
+    "time_evidence": null,
+    "poi_surface": "楼外楼",
+    "poi_canonical": "楼外楼",
+    "activity": [
+      {
+        "type": "rest",
+        "text": "休息"
+      },
+      {
+        "type": "walk",
+        "text": "步行"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 21,
+      "end": 24,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 40,
+      "text": "如果下雨，我们会把长距离步行改成短线，先在楼外楼附近休息，雨小后再去断桥和白堤。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_04_step_002",
+    "route_id": "hz_note_04",
+    "step_index": 2,
+    "time_block_index": 1,
+    "time_bucket": "未标注时段",
+    "time_evidence": null,
+    "poi_surface": "断桥",
+    "poi_canonical": "断桥",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "去"
+      },
+      {
+        "type": "rest",
+        "text": "休息"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 34,
+      "end": 36,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 2,
+      "end": 40,
+      "text": "下雨，我们会把长距离步行改成短线，先在楼外楼附近休息，雨小后再去断桥和白堤。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_04_step_003",
+    "route_id": "hz_note_04",
+    "step_index": 3,
+    "time_block_index": 1,
+    "time_bucket": "未标注时段",
+    "time_evidence": null,
+    "poi_surface": "白堤",
+    "poi_canonical": "白堤",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "去"
+      },
+      {
+        "type": "rest",
+        "text": "休息"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 37,
+      "end": 39,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 5,
+      "end": 40,
+      "text": "我们会把长距离步行改成短线，先在楼外楼附近休息，雨小后再去断桥和白堤。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_04_step_004",
+    "route_id": "hz_note_04",
+    "step_index": 4,
+    "time_block_index": 2,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "西湖游船",
+    "poi_canonical": "西湖游船",
+    "activity": [],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 45,
+      "end": 49,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 40,
+      "end": 62,
+      "text": "下午可以乘西湖游船，但要先确认是否正常运营。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_04_step_005",
+    "route_id": "hz_note_04",
+    "step_index": 5,
+    "time_block_index": 2,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "雷峰塔",
+    "poi_canonical": "雷峰塔",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "去"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 79,
+      "end": 82,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 62,
+      "end": 83,
+      "text": "雨势较大时就取消户外安排，改天再去雷峰塔。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_05_step_001",
+    "route_id": "hz_note_05",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "断桥",
+    "poi_canonical": "断桥",
+    "activity": [
+      {
+        "type": "transport",
+        "text": "骑"
+      },
+      {
+        "type": "visit",
+        "text": "到"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 7,
+      "end": 9,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 23,
+      "text": "上午租自行车从断桥骑到苏堤，再步行到花港观鱼。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_05_step_002",
+    "route_id": "hz_note_05",
+    "step_index": 2,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "苏堤",
+    "poi_canonical": "苏堤",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "到"
+      },
+      {
+        "type": "transport",
+        "text": "骑"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 11,
+      "end": 13,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 23,
+      "text": "上午租自行车从断桥骑到苏堤，再步行到花港观鱼。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_05_step_003",
+    "route_id": "hz_note_05",
+    "step_index": 3,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "花港观鱼",
+    "poi_canonical": "花港观鱼",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "到"
+      },
+      {
+        "type": "walk",
+        "text": "步行"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 18,
+      "end": 22,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 23,
+      "text": "上午租自行车从断桥骑到苏堤，再步行到花港观鱼。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_05_step_004",
+    "route_id": "hz_note_05",
+    "step_index": 4,
+    "time_block_index": 2,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "西湖游船",
+    "poi_canonical": "西湖游船",
+    "activity": [
+      {
+        "type": "transport",
+        "text": "坐"
+      },
+      {
+        "type": "eat",
+        "text": "用餐"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 34,
+      "end": 38,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 23,
+      "end": 44,
+      "text": "中午在湖边用餐，下午坐西湖游船到三潭印月。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_05_step_005",
+    "route_id": "hz_note_05",
+    "step_index": 5,
+    "time_block_index": 2,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "三潭印月",
+    "poi_canonical": "三潭印月",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "到"
+      },
+      {
+        "type": "transport",
+        "text": "坐"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 39,
+      "end": 43,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 23,
+      "end": 44,
+      "text": "中午在湖边用餐，下午坐西湖游船到三潭印月。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_05_step_006",
+    "route_id": "hz_note_05",
+    "step_index": 6,
+    "time_block_index": 2,
+    "time_bucket": "下午",
+    "time_evidence": "傍晚",
+    "poi_surface": "雷峰塔",
+    "poi_canonical": "雷峰塔",
+    "activity": [
+      {
+        "type": "view",
+        "text": "看"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 53,
+      "end": 56,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 44,
+      "end": 62,
+      "text": "想看夕阳的话最好把雷峰塔安排在傍晚。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "hz_note_05_step_007",
+    "route_id": "hz_note_05",
+    "step_index": 7,
+    "time_block_index": 2,
+    "time_bucket": "下午",
+    "time_evidence": "傍晚",
+    "poi_surface": "断桥",
+    "poi_canonical": "断桥",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "到"
+      },
+      {
+        "type": "walk",
+        "text": "沿"
+      }
+    ],
+    "event_kind": "return",
+    "source_span": {
+      "start": 69,
+      "end": 71,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 62,
+      "end": 81,
+      "text": "我们返程时回到断桥附近，沿路风景不错。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_official_01_step_001",
+    "route_id": "sh_official_01",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "9:00",
+    "poi_surface": "迪士尼地铁站",
+    "poi_canonical": "迪士尼地铁站",
+    "activity": [
+      {
+        "type": "enter",
+        "text": "入园"
+      },
+      {
+        "type": "visit",
+        "text": "游玩"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 9,
+      "end": 15,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 35,
+      "text": "上午 9:00 从迪士尼地铁站入园，先游玩创极速光轮和玩具总动员区域。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_official_01_step_002",
+    "route_id": "sh_official_01",
+    "step_index": 2,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "9:00",
+    "poi_surface": "创极速光轮",
+    "poi_canonical": "创极速光轮",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "游玩"
+      },
+      {
+        "type": "enter",
+        "text": "入园"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 21,
+      "end": 26,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 35,
+      "text": "上午 9:00 从迪士尼地铁站入园，先游玩创极速光轮和玩具总动员区域。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_official_01_step_003",
+    "route_id": "sh_official_01",
+    "step_index": 3,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "9:00",
+    "poi_surface": "玩具总动员",
+    "poi_canonical": "玩具总动员",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "游玩"
+      },
+      {
+        "type": "enter",
+        "text": "入园"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 27,
+      "end": 32,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 35,
+      "text": "上午 9:00 从迪士尼地铁站入园，先游玩创极速光轮和玩具总动员区域。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_official_01_step_004",
+    "route_id": "sh_official_01",
+    "step_index": 4,
+    "time_block_index": 2,
+    "time_bucket": "中午",
+    "time_evidence": "中午",
+    "poi_surface": "宝藏湾",
+    "poi_canonical": "宝藏湾",
+    "activity": [
+      {
+        "type": "eat",
+        "text": "用餐"
+      },
+      {
+        "type": "rest",
+        "text": "休息"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 38,
+      "end": 41,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 35,
+      "end": 48,
+      "text": "中午在宝藏湾附近用餐休息。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_official_01_step_005",
+    "route_id": "sh_official_01",
+    "step_index": 5,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "加勒比海盗",
+    "poi_canonical": "加勒比海盗",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "体验"
+      },
+      {
+        "type": "view",
+        "text": "观看"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 52,
+      "end": 57,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 48,
+      "end": 80,
+      "text": "下午体验加勒比海盗并观看花车巡游，晚上前往奇幻童话城堡观看烟花。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_official_01_step_006",
+    "route_id": "sh_official_01",
+    "step_index": 6,
+    "time_block_index": 4,
+    "time_bucket": "晚上",
+    "time_evidence": "晚上",
+    "poi_surface": "花车巡游",
+    "poi_canonical": "花车巡游",
+    "activity": [
+      {
+        "type": "view",
+        "text": "观看"
+      },
+      {
+        "type": "visit",
+        "text": "前往"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 60,
+      "end": 64,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 48,
+      "end": 80,
+      "text": "下午体验加勒比海盗并观看花车巡游，晚上前往奇幻童话城堡观看烟花。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_official_01_step_007",
+    "route_id": "sh_official_01",
+    "step_index": 7,
+    "time_block_index": 4,
+    "time_bucket": "晚上",
+    "time_evidence": "晚上",
+    "poi_surface": "奇幻童话城堡",
+    "poi_canonical": "奇幻童话城堡",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "前往"
+      },
+      {
+        "type": "view",
+        "text": "观看"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 69,
+      "end": 75,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 48,
+      "end": 80,
+      "text": "下午体验加勒比海盗并观看花车巡游，晚上前往奇幻童话城堡观看烟花。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_01_step_001",
+    "route_id": "sh_note_01",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "早上",
+    "poi_surface": "迪士尼地铁站",
+    "poi_canonical": "迪士尼地铁站",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "到"
+      },
+      {
+        "type": "transport",
+        "text": "坐"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 8,
+      "end": 14,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 34,
+      "text": "我们早上坐地铁到迪士尼地铁站，开园后先去玩具总动员，再看创极速光轮。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_01_step_002",
+    "route_id": "sh_note_01",
+    "step_index": 2,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "早上",
+    "poi_surface": "玩具总动员",
+    "poi_canonical": "玩具总动员",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "去"
+      },
+      {
+        "type": "view",
+        "text": "看"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 20,
+      "end": 25,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 34,
+      "text": "我们早上坐地铁到迪士尼地铁站，开园后先去玩具总动员，再看创极速光轮。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_01_step_003",
+    "route_id": "sh_note_01",
+    "step_index": 3,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "早上",
+    "poi_surface": "创极速光轮",
+    "poi_canonical": "创极速光轮",
+    "activity": [
+      {
+        "type": "view",
+        "text": "看"
+      },
+      {
+        "type": "visit",
+        "text": "去"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 28,
+      "end": 33,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 34,
+      "text": "我们早上坐地铁到迪士尼地铁站，开园后先去玩具总动员，再看创极速光轮。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_01_step_004",
+    "route_id": "sh_note_01",
+    "step_index": 4,
+    "time_block_index": 2,
+    "time_bucket": "中午",
+    "time_evidence": "中午",
+    "poi_surface": "宝藏湾",
+    "poi_canonical": "宝藏湾",
+    "activity": [
+      {
+        "type": "eat",
+        "text": "吃饭"
+      },
+      {
+        "type": "rest",
+        "text": "休息"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 37,
+      "end": 40,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 34,
+      "end": 72,
+      "text": "中午在宝藏湾吃饭休息，下午排加勒比海盗和花车巡游，晚上去奇幻童话城堡看烟花。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_01_step_005",
+    "route_id": "sh_note_01",
+    "step_index": 5,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "加勒比海盗",
+    "poi_canonical": "加勒比海盗",
+    "activity": [
+      {
+        "type": "rest",
+        "text": "休息"
+      },
+      {
+        "type": "eat",
+        "text": "吃饭"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 48,
+      "end": 53,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 34,
+      "end": 72,
+      "text": "中午在宝藏湾吃饭休息，下午排加勒比海盗和花车巡游，晚上去奇幻童话城堡看烟花。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_01_step_006",
+    "route_id": "sh_note_01",
+    "step_index": 6,
+    "time_block_index": 4,
+    "time_bucket": "晚上",
+    "time_evidence": "晚上",
+    "poi_surface": "花车巡游",
+    "poi_canonical": "花车巡游",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "去"
+      },
+      {
+        "type": "rest",
+        "text": "休息"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 54,
+      "end": 58,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 34,
+      "end": 72,
+      "text": "中午在宝藏湾吃饭休息，下午排加勒比海盗和花车巡游，晚上去奇幻童话城堡看烟花。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_01_step_007",
+    "route_id": "sh_note_01",
+    "step_index": 7,
+    "time_block_index": 4,
+    "time_bucket": "晚上",
+    "time_evidence": "晚上",
+    "poi_surface": "奇幻童话城堡",
+    "poi_canonical": "奇幻童话城堡",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "去"
+      },
+      {
+        "type": "view",
+        "text": "看"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 62,
+      "end": 68,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 34,
+      "end": 72,
+      "text": "中午在宝藏湾吃饭休息，下午排加勒比海盗和花车巡游，晚上去奇幻童话城堡看烟花。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_02_step_001",
+    "route_id": "sh_note_02",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "未标注时段",
+    "time_evidence": null,
+    "poi_surface": "迪士尼地铁站",
+    "poi_canonical": "迪士尼地铁站",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "到"
+      },
+      {
+        "type": "enter",
+        "text": "入园"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 9,
+      "end": 15,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 29,
+      "text": "想少排队就尽量早到迪士尼地铁站，入园后先查看项目等候时间。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_02_step_002",
+    "route_id": "sh_note_02",
+    "step_index": 2,
+    "time_block_index": 1,
+    "time_bucket": "未标注时段",
+    "time_evidence": null,
+    "poi_surface": "创极速光轮",
+    "poi_canonical": "创极速光轮",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "去"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 34,
+      "end": 39,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 29,
+      "end": 49,
+      "text": "人多时先去创极速光轮，再安排玩具总动员。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_02_step_003",
+    "route_id": "sh_note_02",
+    "step_index": 3,
+    "time_block_index": 1,
+    "time_bucket": "未标注时段",
+    "time_evidence": null,
+    "poi_surface": "玩具总动员",
+    "poi_canonical": "玩具总动员",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "去"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 43,
+      "end": 48,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 29,
+      "end": 49,
+      "text": "人多时先去创极速光轮，再安排玩具总动员。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_02_step_004",
+    "route_id": "sh_note_02",
+    "step_index": 4,
+    "time_block_index": 2,
+    "time_bucket": "中午",
+    "time_evidence": "中午",
+    "poi_surface": "宝藏湾",
+    "poi_canonical": "宝藏湾",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "到"
+      },
+      {
+        "type": "rest",
+        "text": "休息"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 52,
+      "end": 55,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 49,
+      "end": 67,
+      "text": "中午到宝藏湾休息，下午看加勒比海盗。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_02_step_005",
+    "route_id": "sh_note_02",
+    "step_index": 5,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "加勒比海盗",
+    "poi_canonical": "加勒比海盗",
+    "activity": [
+      {
+        "type": "view",
+        "text": "看"
+      },
+      {
+        "type": "rest",
+        "text": "休息"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 61,
+      "end": 66,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 49,
+      "end": 67,
+      "text": "中午到宝藏湾休息，下午看加勒比海盗。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_03_step_001",
+    "route_id": "sh_note_03",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "星愿公园",
+    "poi_canonical": "星愿公园",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "去"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 19,
+      "end": 23,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 36,
+      "text": "带父母去迪士尼可以减少刺激项目，上午在星愿公园和奇幻童话城堡附近慢慢走。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_03_step_002",
+    "route_id": "sh_note_03",
+    "step_index": 2,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "奇幻童话城堡",
+    "poi_canonical": "奇幻童话城堡",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "去"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 24,
+      "end": 30,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 36,
+      "text": "带父母去迪士尼可以减少刺激项目，上午在星愿公园和奇幻童话城堡附近慢慢走。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_03_step_003",
+    "route_id": "sh_note_03",
+    "step_index": 3,
+    "time_block_index": 2,
+    "time_bucket": "中午",
+    "time_evidence": "中午",
+    "poi_surface": "宝藏湾",
+    "poi_canonical": "宝藏湾",
+    "activity": [
+      {
+        "type": "transport",
+        "text": "坐"
+      },
+      {
+        "type": "eat",
+        "text": "吃饭"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 39,
+      "end": 42,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 36,
+      "end": 65,
+      "text": "中午在宝藏湾坐下来吃饭，下午选择加勒比海盗或观看花车巡游。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_03_step_004",
+    "route_id": "sh_note_03",
+    "step_index": 4,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "加勒比海盗",
+    "poi_canonical": "加勒比海盗",
+    "activity": [
+      {
+        "type": "eat",
+        "text": "吃饭"
+      },
+      {
+        "type": "view",
+        "text": "观看"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 52,
+      "end": 57,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 36,
+      "end": 65,
+      "text": "中午在宝藏湾坐下来吃饭，下午选择加勒比海盗或观看花车巡游。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_03_step_005",
+    "route_id": "sh_note_03",
+    "step_index": 5,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "花车巡游",
+    "poi_canonical": "花车巡游",
+    "activity": [
+      {
+        "type": "view",
+        "text": "观看"
+      },
+      {
+        "type": "eat",
+        "text": "吃饭"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 60,
+      "end": 64,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 36,
+      "end": 65,
+      "text": "中午在宝藏湾坐下来吃饭，下午选择加勒比海盗或观看花车巡游。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_03_step_006",
+    "route_id": "sh_note_03",
+    "step_index": 6,
+    "time_block_index": 4,
+    "time_bucket": "晚上",
+    "time_evidence": "晚上",
+    "poi_surface": "阴凉处",
+    "poi_canonical": "阴凉处",
+    "activity": [
+      {
+        "type": "rest",
+        "text": "休息"
+      },
+      {
+        "type": "view",
+        "text": "看"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 71,
+      "end": 74,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 65,
+      "end": 92,
+      "text": "天气热时多找阴凉处休息，晚上看烟花要提前确认散场交通。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_04_step_001",
+    "route_id": "sh_note_04",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "未标注时段",
+    "time_evidence": null,
+    "poi_surface": "加勒比海盗",
+    "poi_canonical": "加勒比海盗",
+    "activity": [],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 27,
+      "end": 32,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 39,
+      "text": "如果下雨，建议先确认户外项目是否开放，再优先安排室内的加勒比海盗和玩具总动员。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_04_step_002",
+    "route_id": "sh_note_04",
+    "step_index": 2,
+    "time_block_index": 1,
+    "time_bucket": "未标注时段",
+    "time_evidence": null,
+    "poi_surface": "玩具总动员",
+    "poi_canonical": "玩具总动员",
+    "activity": [],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 33,
+      "end": 38,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 1,
+      "end": 39,
+      "text": "果下雨，建议先确认户外项目是否开放，再优先安排室内的加勒比海盗和玩具总动员。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_04_step_003",
+    "route_id": "sh_note_04",
+    "step_index": 3,
+    "time_block_index": 1,
+    "time_bucket": "未标注时段",
+    "time_evidence": null,
+    "poi_surface": "花车巡游",
+    "poi_canonical": "花车巡游",
+    "activity": [
+      {
+        "type": "view",
+        "text": "看"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 45,
+      "end": 49,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 39,
+      "end": 62,
+      "text": "雨停后可以看花车巡游，地面湿滑时不要着急赶路。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_05_step_001",
+    "route_id": "sh_note_05",
+    "step_index": 1,
+    "time_block_index": 1,
+    "time_bucket": "上午",
+    "time_evidence": "上午",
+    "poi_surface": "迪士尼地铁站",
+    "poi_canonical": "迪士尼地铁站",
+    "activity": [
+      {
+        "type": "enter",
+        "text": "入园"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 3,
+      "end": 9,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 35,
+      "text": "上午从迪士尼地铁站入园，先玩创极速光轮和玩具总动员，中午在宝藏湾吃饭。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_05_step_002",
+    "route_id": "sh_note_05",
+    "step_index": 2,
+    "time_block_index": 2,
+    "time_bucket": "中午",
+    "time_evidence": "中午",
+    "poi_surface": "创极速光轮",
+    "poi_canonical": "创极速光轮",
+    "activity": [
+      {
+        "type": "enter",
+        "text": "入园"
+      },
+      {
+        "type": "eat",
+        "text": "吃饭"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 14,
+      "end": 19,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 35,
+      "text": "上午从迪士尼地铁站入园，先玩创极速光轮和玩具总动员，中午在宝藏湾吃饭。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_05_step_003",
+    "route_id": "sh_note_05",
+    "step_index": 3,
+    "time_block_index": 2,
+    "time_bucket": "中午",
+    "time_evidence": "中午",
+    "poi_surface": "玩具总动员",
+    "poi_canonical": "玩具总动员",
+    "activity": [
+      {
+        "type": "enter",
+        "text": "入园"
+      },
+      {
+        "type": "eat",
+        "text": "吃饭"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 20,
+      "end": 25,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 35,
+      "text": "上午从迪士尼地铁站入园，先玩创极速光轮和玩具总动员，中午在宝藏湾吃饭。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_05_step_004",
+    "route_id": "sh_note_05",
+    "step_index": 4,
+    "time_block_index": 2,
+    "time_bucket": "中午",
+    "time_evidence": "中午",
+    "poi_surface": "宝藏湾",
+    "poi_canonical": "宝藏湾",
+    "activity": [
+      {
+        "type": "eat",
+        "text": "吃饭"
+      },
+      {
+        "type": "enter",
+        "text": "入园"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 29,
+      "end": 32,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 0,
+      "end": 35,
+      "text": "上午从迪士尼地铁站入园，先玩创极速光轮和玩具总动员，中午在宝藏湾吃饭。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_05_step_005",
+    "route_id": "sh_note_05",
+    "step_index": 5,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "下午",
+    "poi_surface": "加勒比海盗",
+    "poi_canonical": "加勒比海盗",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "去"
+      },
+      {
+        "type": "view",
+        "text": "看"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 38,
+      "end": 43,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 35,
+      "end": 55,
+      "text": "下午去加勒比海盗，傍晚找地方看花车巡游。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_05_step_006",
+    "route_id": "sh_note_05",
+    "step_index": 6,
+    "time_block_index": 3,
+    "time_bucket": "下午",
+    "time_evidence": "傍晚",
+    "poi_surface": "花车巡游",
+    "poi_canonical": "花车巡游",
+    "activity": [
+      {
+        "type": "view",
+        "text": "看"
+      },
+      {
+        "type": "visit",
+        "text": "去"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 50,
+      "end": 54,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 35,
+      "end": 55,
+      "text": "下午去加勒比海盗，傍晚找地方看花车巡游。",
+      "unit": "unicode_codepoint"
+    }
+  },
+  {
+    "step_id": "sh_note_05_step_007",
+    "route_id": "sh_note_05",
+    "step_index": 7,
+    "time_block_index": 4,
+    "time_bucket": "晚上",
+    "time_evidence": "晚上",
+    "poi_surface": "奇幻童话城堡",
+    "poi_canonical": "奇幻童话城堡",
+    "activity": [
+      {
+        "type": "visit",
+        "text": "到"
+      },
+      {
+        "type": "view",
+        "text": "看"
+      }
+    ],
+    "event_kind": "visit",
+    "source_span": {
+      "start": 65,
+      "end": 71,
+      "unit": "unicode_codepoint"
+    },
+    "evidence_span": {
+      "start": 55,
+      "end": 89,
+      "text": "想看烟花时最好提前到奇幻童话城堡前占位，晚上散场后跟着指引去地铁站。",
+      "unit": "unicode_codepoint"
+    }
+  }
+]

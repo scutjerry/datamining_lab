@@ -1,0 +1,954 @@
+[
+  {
+    "version": 1,
+    "sample_id": "E002",
+    "doc_id": "D001",
+    "text": "走过金銮殿、乾清宫、坤宁宫，在皇帝的御花园里赏弄花花草草，感觉好像穿越到了古装剧里。\n",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "金銮殿",
+        "start": 2,
+        "end": 5,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E003",
+    "doc_id": "D001",
+    "text": "其中珍宝馆和钟表馆很是引人注目，钟表馆每天11点和14点有钟表演示，可以看到清王朝珍藏的各种造型奇特的珍奇机械钟表，一定令你眼界大开。\n",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "11点",
+        "start": 21,
+        "end": 24,
+        "type": "TIME"
+      },
+      {
+        "text": "14点",
+        "start": 25,
+        "end": 28,
+        "type": "TIME"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E004",
+    "doc_id": "D001",
+    "text": "如果只有两个小时左右的时间，建议沿着故宫中轴线参观。",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "两个小时左右",
+        "start": 4,
+        "end": 10,
+        "type": "TIME"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E006",
+    "doc_id": "D002",
+    "text": "利用昆明湖、万寿山为基址，以杭州西湖风景为蓝本，汲取江南园林的某些设计手法和意境而建成的一座大型天然山水园，也是保存得最完整的一座皇家行宫御苑，被誉为皇家园林博物馆。\n",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "杭州西湖",
+        "start": 14,
+        "end": 18,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E007",
+    "doc_id": "D002",
+    "text": "服务区包括七个门区(东宫门、文昌院门、北宫门、北如意门、新建宫门、南如意门、西门)和游客服务中心。",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "文昌院门",
+        "start": 14,
+        "end": 18,
+        "type": "POI"
+      },
+      {
+        "text": "北如意门",
+        "start": 23,
+        "end": 27,
+        "type": "POI"
+      },
+      {
+        "text": "南如意门",
+        "start": 33,
+        "end": 37,
+        "type": "POI"
+      },
+      {
+        "text": "西门",
+        "start": 38,
+        "end": 40,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E008",
+    "doc_id": "D002",
+    "text": "那里的用餐时间一般为上午11:00——下午2:30。\n",
+    "false_positives": [
+      {
+        "text": "上午",
+        "start": 10,
+        "end": 12,
+        "type": "TIME"
+      },
+      {
+        "text": "11:00",
+        "start": 12,
+        "end": 17,
+        "type": "TIME"
+      },
+      {
+        "text": "下午",
+        "start": 19,
+        "end": 21,
+        "type": "TIME"
+      },
+      {
+        "text": "2:30",
+        "start": 21,
+        "end": 25,
+        "type": "TIME"
+      }
+    ],
+    "false_negatives": [
+      {
+        "text": "上午11:00——下午2:30",
+        "start": 10,
+        "end": 25,
+        "type": "TIME"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E009",
+    "doc_id": "D003",
+    "text": "（1）天坛公园南门-圜丘、回音壁景点-回音壁西侧闸机-迎客柏月亮门-丹陛桥西侧下面古树区-祈年殿西门-祈年殿-祈年殿东门-长廊-天坛公园东门\n",
+    "false_positives": [
+      {
+        "text": "天坛公园",
+        "start": 3,
+        "end": 7,
+        "type": "POI"
+      },
+      {
+        "text": "回音壁",
+        "start": 19,
+        "end": 22,
+        "type": "POI"
+      },
+      {
+        "text": "丹陛桥",
+        "start": 34,
+        "end": 37,
+        "type": "POI"
+      },
+      {
+        "text": "祈年殿",
+        "start": 45,
+        "end": 48,
+        "type": "POI"
+      },
+      {
+        "text": "祈年殿",
+        "start": 55,
+        "end": 58,
+        "type": "POI"
+      },
+      {
+        "text": "天坛公园",
+        "start": 64,
+        "end": 68,
+        "type": "POI"
+      }
+    ],
+    "false_negatives": [
+      {
+        "text": "天坛公园南门",
+        "start": 3,
+        "end": 9,
+        "type": "POI"
+      },
+      {
+        "text": "回音壁西侧闸机",
+        "start": 19,
+        "end": 26,
+        "type": "POI"
+      },
+      {
+        "text": "迎客柏月亮门",
+        "start": 27,
+        "end": 33,
+        "type": "POI"
+      },
+      {
+        "text": "丹陛桥西侧下面古树区",
+        "start": 34,
+        "end": 44,
+        "type": "POI"
+      },
+      {
+        "text": "祈年殿西门",
+        "start": 45,
+        "end": 50,
+        "type": "POI"
+      },
+      {
+        "text": "祈年殿东门",
+        "start": 55,
+        "end": 60,
+        "type": "POI"
+      },
+      {
+        "text": "天坛公园东门",
+        "start": 64,
+        "end": 70,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E011",
+    "doc_id": "D103",
+    "text": "东华门和神武门建筑形式一致，只是尺寸好像稍微小一点。",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "东华门",
+        "start": 0,
+        "end": 3,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E015",
+    "doc_id": "D106",
+    "text": "从天安门东站出站我们就排队排了将近半个小时。",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "半个小时",
+        "start": 17,
+        "end": 21,
+        "type": "TIME"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E016",
+    "doc_id": "D106",
+    "text": "下午两点左右，赶紧买回程的车票，买到18：23北京南站出发的C2067。\n",
+    "false_positives": [
+      {
+        "text": "下午",
+        "start": 0,
+        "end": 2,
+        "type": "TIME"
+      }
+    ],
+    "false_negatives": [
+      {
+        "text": "下午两点",
+        "start": 0,
+        "end": 4,
+        "type": "TIME"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E017",
+    "doc_id": "D106",
+    "text": "四点左右，到达神武门，还讲解器，出宫。",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "四点",
+        "start": 0,
+        "end": 2,
+        "type": "TIME"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E018",
+    "doc_id": "D106",
+    "text": "出了神武门，共享单车完全没有。",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "共享单车",
+        "start": 6,
+        "end": 10,
+        "type": "TRANSPORT"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E019",
+    "doc_id": "D201",
+    "text": "四天时间远远不够，今后还会抽空一点一点细细游览并不断补充、更新。\n",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "四天",
+        "start": 0,
+        "end": 2,
+        "type": "TIME"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E020",
+    "doc_id": "D201",
+    "text": "早上六点开门，人不多，光线也合适，观景效果最佳。\n",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "早上六点",
+        "start": 0,
+        "end": 4,
+        "type": "TIME"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E021",
+    "doc_id": "D201",
+    "text": "中午饭后，休息了两个小时。",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "两个小时",
+        "start": 8,
+        "end": 12,
+        "type": "TIME"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E024",
+    "doc_id": "D302",
+    "text": "北为“祈谷坛”，用于春季祈祷丰年，中心建筑是 祈年殿。\n",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "祈谷坛",
+        "start": 3,
+        "end": 6,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E025",
+    "doc_id": "D302",
+    "text": "⛺【游玩路线】：东门进，西门出，预计4-5小时~\n",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "东门",
+        "start": 8,
+        "end": 10,
+        "type": "POI"
+      },
+      {
+        "text": "西门",
+        "start": 12,
+        "end": 14,
+        "type": "POI"
+      },
+      {
+        "text": "4-5小时",
+        "start": 18,
+        "end": 23,
+        "type": "TIME"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E026",
+    "doc_id": "D304",
+    "text": "一、关于交通：乘坐地铁是最方便的出行方式了，地铁五号线，天坛东门站出，出来就到达公园的东门，可以买票进入了。",
+    "false_positives": [
+      {
+        "text": "天坛",
+        "start": 28,
+        "end": 30,
+        "type": "POI"
+      }
+    ],
+    "false_negatives": [
+      {
+        "text": "东门",
+        "start": 43,
+        "end": 45,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E027",
+    "doc_id": "D304",
+    "text": "自驾的朋友建议还是把车停远点，这里的交通实在是太拥挤，而且停车费很贵，节假日更是一位难求，所以还是建议选择公共交通出行。",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "公共交通",
+        "start": 53,
+        "end": 57,
+        "type": "TRANSPORT"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E028",
+    "doc_id": "D305",
+    "text": "11:15 买到天坛公园的联票，有学生证，优惠价：28元，然后从东门进入了天坛公园，开始了我的天坛之旅。",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "东门",
+        "start": 32,
+        "end": 34,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E029",
+    "doc_id": "D305",
+    "text": "天坛公园里具体的游历过程我就不想具体介绍了，简单记叙一下我的线路：东门（开始）——长廊——祈年殿——皇乾殿——展览——具服台——丹陛桥——成贞门——皇穹宇——回音壁——圆丘——南门—（休息）—东侧公园路——东门（结束）\n",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "东门",
+        "start": 33,
+        "end": 35,
+        "type": "POI"
+      },
+      {
+        "text": "具服台",
+        "start": 59,
+        "end": 62,
+        "type": "POI"
+      },
+      {
+        "text": "成贞门",
+        "start": 69,
+        "end": 72,
+        "type": "POI"
+      },
+      {
+        "text": "圆丘",
+        "start": 84,
+        "end": 86,
+        "type": "POI"
+      },
+      {
+        "text": "南门",
+        "start": 88,
+        "end": 90,
+        "type": "POI"
+      },
+      {
+        "text": "东门",
+        "start": 103,
+        "end": 105,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "sample_id": "E030",
+    "doc_id": "D305",
+    "text": "13:20 终于走到了东门，离开了天坛公园。",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "东门",
+        "start": 11,
+        "end": 13,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "sample_id": "E002",
+    "doc_id": "D001",
+    "text": "走过金銮殿、乾清宫、坤宁宫，在皇帝的御花园里赏弄花花草草，感觉好像穿越到了古装剧里。\n",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "金銮殿",
+        "start": 2,
+        "end": 5,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "sample_id": "E006",
+    "doc_id": "D002",
+    "text": "利用昆明湖、万寿山为基址，以杭州西湖风景为蓝本，汲取江南园林的某些设计手法和意境而建成的一座大型天然山水园，也是保存得最完整的一座皇家行宫御苑，被誉为皇家园林博物馆。\n",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "杭州西湖",
+        "start": 14,
+        "end": 18,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "sample_id": "E007",
+    "doc_id": "D002",
+    "text": "服务区包括七个门区(东宫门、文昌院门、北宫门、北如意门、新建宫门、南如意门、西门)和游客服务中心。",
+    "false_positives": [
+      {
+        "text": "文昌院",
+        "start": 14,
+        "end": 17,
+        "type": "POI"
+      }
+    ],
+    "false_negatives": [
+      {
+        "text": "文昌院门",
+        "start": 14,
+        "end": 18,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "sample_id": "E008",
+    "doc_id": "D002",
+    "text": "那里的用餐时间一般为上午11:00——下午2:30。\n",
+    "false_positives": [
+      {
+        "text": "上午",
+        "start": 10,
+        "end": 12,
+        "type": "TIME"
+      },
+      {
+        "text": "11:00",
+        "start": 12,
+        "end": 17,
+        "type": "TIME"
+      },
+      {
+        "text": "下午",
+        "start": 19,
+        "end": 21,
+        "type": "TIME"
+      },
+      {
+        "text": "2:30",
+        "start": 21,
+        "end": 25,
+        "type": "TIME"
+      }
+    ],
+    "false_negatives": [
+      {
+        "text": "上午11:00——下午2:30",
+        "start": 10,
+        "end": 25,
+        "type": "TIME"
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "sample_id": "E010",
+    "doc_id": "D101",
+    "text": "这七座藏书阁的名字中除了“文”都有一个带三点水的字，也是乾隆想以此避火。",
+    "false_positives": [
+      {
+        "text": "三点",
+        "start": 20,
+        "end": 22,
+        "type": "TIME"
+      }
+    ],
+    "false_negatives": []
+  },
+  {
+    "version": 2,
+    "sample_id": "E011",
+    "doc_id": "D103",
+    "text": "东华门和神武门建筑形式一致，只是尺寸好像稍微小一点。",
+    "false_positives": [
+      {
+        "text": "一点",
+        "start": 23,
+        "end": 25,
+        "type": "TIME"
+      }
+    ],
+    "false_negatives": []
+  },
+  {
+    "version": 2,
+    "sample_id": "E012",
+    "doc_id": "D106",
+    "text": "一定要记得第一时间预约，不然很可能约不到票。",
+    "false_positives": [
+      {
+        "text": "一时",
+        "start": 6,
+        "end": 8,
+        "type": "TIME"
+      }
+    ],
+    "false_negatives": []
+  },
+  {
+    "version": 2,
+    "sample_id": "E015",
+    "doc_id": "D106",
+    "text": "从天安门东站出站我们就排队排了将近半个小时。",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "半个小时",
+        "start": 17,
+        "end": 21,
+        "type": "TIME"
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "sample_id": "E018",
+    "doc_id": "D106",
+    "text": "出了神武门，共享单车完全没有。",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "共享单车",
+        "start": 6,
+        "end": 10,
+        "type": "TRANSPORT"
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "sample_id": "E019",
+    "doc_id": "D201",
+    "text": "四天时间远远不够，今后还会抽空一点一点细细游览并不断补充、更新。\n",
+    "false_positives": [
+      {
+        "text": "一点",
+        "start": 15,
+        "end": 17,
+        "type": "TIME"
+      },
+      {
+        "text": "一点",
+        "start": 17,
+        "end": 19,
+        "type": "TIME"
+      }
+    ],
+    "false_negatives": [
+      {
+        "text": "四天",
+        "start": 0,
+        "end": 2,
+        "type": "TIME"
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "sample_id": "E025",
+    "doc_id": "D302",
+    "text": "⛺【游玩路线】：东门进，西门出，预计4-5小时~\n",
+    "false_positives": [
+      {
+        "text": "5小时",
+        "start": 20,
+        "end": 23,
+        "type": "TIME"
+      }
+    ],
+    "false_negatives": [
+      {
+        "text": "东门",
+        "start": 8,
+        "end": 10,
+        "type": "POI"
+      },
+      {
+        "text": "西门",
+        "start": 12,
+        "end": 14,
+        "type": "POI"
+      },
+      {
+        "text": "4-5小时",
+        "start": 18,
+        "end": 23,
+        "type": "TIME"
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "sample_id": "E026",
+    "doc_id": "D304",
+    "text": "一、关于交通：乘坐地铁是最方便的出行方式了，地铁五号线，天坛东门站出，出来就到达公园的东门，可以买票进入了。",
+    "false_positives": [
+      {
+        "text": "天坛东门",
+        "start": 28,
+        "end": 32,
+        "type": "POI"
+      }
+    ],
+    "false_negatives": [
+      {
+        "text": "东门",
+        "start": 43,
+        "end": 45,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "sample_id": "E028",
+    "doc_id": "D305",
+    "text": "11:15 买到天坛公园的联票，有学生证，优惠价：28元，然后从东门进入了天坛公园，开始了我的天坛之旅。",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "东门",
+        "start": 32,
+        "end": 34,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "sample_id": "E029",
+    "doc_id": "D305",
+    "text": "天坛公园里具体的游历过程我就不想具体介绍了，简单记叙一下我的线路：东门（开始）——长廊——祈年殿——皇乾殿——展览——具服台——丹陛桥——成贞门——皇穹宇——回音壁——圆丘——南门—（休息）—东侧公园路——东门（结束）\n",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "东门",
+        "start": 33,
+        "end": 35,
+        "type": "POI"
+      },
+      {
+        "text": "圆丘",
+        "start": 84,
+        "end": 86,
+        "type": "POI"
+      },
+      {
+        "text": "南门",
+        "start": 88,
+        "end": 90,
+        "type": "POI"
+      },
+      {
+        "text": "东门",
+        "start": 103,
+        "end": 105,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "sample_id": "E030",
+    "doc_id": "D305",
+    "text": "13:20 终于走到了东门，离开了天坛公园。",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "东门",
+        "start": 11,
+        "end": 13,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 3,
+    "sample_id": "E006",
+    "doc_id": "D002",
+    "text": "利用昆明湖、万寿山为基址，以杭州西湖风景为蓝本，汲取江南园林的某些设计手法和意境而建成的一座大型天然山水园，也是保存得最完整的一座皇家行宫御苑，被誉为皇家园林博物馆。\n",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "杭州西湖",
+        "start": 14,
+        "end": 18,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 3,
+    "sample_id": "E015",
+    "doc_id": "D106",
+    "text": "从天安门东站出站我们就排队排了将近半个小时。",
+    "false_positives": [
+      {
+        "text": "天安门",
+        "start": 1,
+        "end": 4,
+        "type": "POI"
+      }
+    ],
+    "false_negatives": []
+  },
+  {
+    "version": 3,
+    "sample_id": "E025",
+    "doc_id": "D302",
+    "text": "⛺【游玩路线】：东门进，西门出，预计4-5小时~\n",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "东门",
+        "start": 8,
+        "end": 10,
+        "type": "POI"
+      },
+      {
+        "text": "西门",
+        "start": 12,
+        "end": 14,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 3,
+    "sample_id": "E026",
+    "doc_id": "D304",
+    "text": "一、关于交通：乘坐地铁是最方便的出行方式了，地铁五号线，天坛东门站出，出来就到达公园的东门，可以买票进入了。",
+    "false_positives": [
+      {
+        "text": "天坛东门",
+        "start": 28,
+        "end": 32,
+        "type": "POI"
+      }
+    ],
+    "false_negatives": [
+      {
+        "text": "东门",
+        "start": 43,
+        "end": 45,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 3,
+    "sample_id": "E028",
+    "doc_id": "D305",
+    "text": "11:15 买到天坛公园的联票，有学生证，优惠价：28元，然后从东门进入了天坛公园，开始了我的天坛之旅。",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "东门",
+        "start": 32,
+        "end": 34,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 3,
+    "sample_id": "E029",
+    "doc_id": "D305",
+    "text": "天坛公园里具体的游历过程我就不想具体介绍了，简单记叙一下我的线路：东门（开始）——长廊——祈年殿——皇乾殿——展览——具服台——丹陛桥——成贞门——皇穹宇——回音壁——圆丘——南门—（休息）—东侧公园路——东门（结束）\n",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "东门",
+        "start": 33,
+        "end": 35,
+        "type": "POI"
+      },
+      {
+        "text": "南门",
+        "start": 88,
+        "end": 90,
+        "type": "POI"
+      },
+      {
+        "text": "东门",
+        "start": 103,
+        "end": 105,
+        "type": "POI"
+      }
+    ]
+  },
+  {
+    "version": 3,
+    "sample_id": "E030",
+    "doc_id": "D305",
+    "text": "13:20 终于走到了东门，离开了天坛公园。",
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "text": "东门",
+        "start": 11,
+        "end": 13,
+        "type": "POI"
+      }
+    ]
+  }
+]

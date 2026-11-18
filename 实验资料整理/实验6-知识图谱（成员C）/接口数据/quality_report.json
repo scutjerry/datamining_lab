@@ -1,0 +1,48 @@
+{
+  "routes": {
+    "total": 19,
+    "by_type": {
+      "official": 18,
+      "visitor": 1
+    },
+    "by_scenic": {
+      "故宫博物院": 5,
+      "颐和园": 11,
+      "天坛公园": 3
+    },
+    "steps_total": 250,
+    "steps_with_known_poi": 248,
+    "routes_with_duration": 9,
+    "routes_with_transport": 3,
+    "time_slot_all_null": true
+  },
+  "advices": {
+    "fallback_extracted": 3,
+    "by_type": {
+      "time": 3
+    },
+    "by_audience": {
+      "通用": 3
+    }
+  },
+  "b_raw_outputs": {
+    "exp3_route_records": 21,
+    "exp3_step_mentions": 2776,
+    "exp5_mappings_mechanical_converted": 48,
+    "exp5_note": "机械转换后未过滤；人工抽查多为误报（如“两个桃尖→取意…”“一天→先生所书”），不建议直接入图"
+  },
+  "unparsed_official_docs": [
+    {
+      "doc_id": "D004",
+      "scenic": "故宫博物院",
+      "b_parsed_mention_steps": 32,
+      "note": "无链式路线行；B 的提及级解析噪声大，需 B 在实验3重写路线段切分后再用"
+    },
+    {
+      "doc_id": "D005",
+      "scenic": "颐和园",
+      "b_parsed_mention_steps": 58,
+      "note": "无链式路线行；B 的提及级解析噪声大，需 B 在实验3重写路线段切分后再用"
+    }
+  ]
+}

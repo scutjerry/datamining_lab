@@ -1,0 +1,18 @@
+{
+  "doc_id": "D006",
+  "scenic": "天坛公园",
+  "doc_type": "official",
+  "source": "天坛公园官网",
+  "url": "https://www.tiantanpark.cn/attraction.html",
+  "parser": "tiantan",
+  "role": "visitor_guide",
+  "final_url": "https://www.tiantanpark.cn/attraction.html",
+  "http_status": 200,
+  "encoding": "utf-8",
+  "content_type": "text/html; charset=utf-8",
+  "retrieved_at": "2026-11-13T08:48:28.834337+00:00",
+  "raw_path": "data/raw/pages/D006.html",
+  "bytes": 42020,
+  "sha256": "26fedf7a7ea27bf48635ac83d76c670e76e53057e1625f57ee31308116b08ce3",
+  "attempt": 1
+}

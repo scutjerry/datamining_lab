@@ -1,0 +1,52 @@
+{
+  "question": "我想去杭州西湖玩半天",
+  "backend": "llm",
+  "llm": {
+    "available": true,
+    "model": "deepseek-chat",
+    "base_url": "https://api.deepseek.com/v1",
+    "api_key_set": true,
+    "api_key_masked": "sk-2a1…eb9c",
+    "calls": 5
+  },
+  "constraints": {
+    "raw": "我想去杭州西湖玩半天",
+    "scenic": null,
+    "minutes": 240,
+    "audience": "通用",
+    "pace": "常规",
+    "interests": [
+      "园林"
+    ],
+    "start_hint": null
+  },
+  "missing": [
+    "景区"
+  ],
+  "steps": [
+    {
+      "i": 1,
+      "thought": "用户要去杭州西湖，但图谱只有故宫博物院、颐和园、天坛公园三个景区，西湖不在其中，无法排路线。需要明确告知并询问是否换成这三个之一。",
+      "action": "finish",
+      "action_input": {
+        "followup": "图谱里没有杭州西湖这个景区（它只是景区外的参照物），我排不了西湖的路线。目前只能排 故宫博物院 / 颐和园 / 天坛公园 三个景区。你半天约 240 分钟，想换成哪一个？比如颐和园园林多、比较符合你偏好的“园林”。"
+      },
+      "observation": {
+        "ok": true,
+        "tool": "-",
+        "count": 0,
+        "note": "结束",
+        "preview": []
+      }
+    }
+  ],
+  "final": {
+    "kind": "followup",
+    "answer": "图谱里没有杭州西湖这个景区（它只是景区外的参照物），我排不了西湖的路线。目前只能排 故宫博物院 / 颐和园 / 天坛公园 三个景区。你半天约 240 分钟，想换成哪一个？比如颐和园园林多、比较符合你偏好的“园林”。",
+    "followup": [
+      "图谱里没有杭州西湖这个景区（它只是景区外的参照物），我排不了西湖的路线。目前只能排 故宫博物院 / 颐和园 / 天坛公园 三个景区。你半天约 240 分钟，想换成哪一个？比如颐和园园林多、比较符合你偏好的“园林”。"
+    ]
+  },
+  "started_at": "2026-11-18T15:03:05",
+  "elapsed_ms": 1330
+}

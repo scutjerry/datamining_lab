@@ -1,0 +1,36 @@
+[
+  {
+    "fixture_id": "fixture_arrow_route_01",
+    "expected_format": "arrow_chain",
+    "detected_formats": [
+      "arrow_chain"
+    ],
+    "expected_pois": [
+      "午门",
+      "太和门",
+      "太和殿"
+    ],
+    "actual_pois": [
+      "午门",
+      "太和门",
+      "太和殿"
+    ],
+    "passed": true
+  },
+  {
+    "fixture_id": "fixture_numbered_route_01",
+    "expected_format": "numbered",
+    "detected_formats": [
+      "numbered"
+    ],
+    "expected_pois": [
+      "午门",
+      "太和殿"
+    ],
+    "actual_pois": [
+      "午门",
+      "太和殿"
+    ],
+    "passed": true
+  }
+]

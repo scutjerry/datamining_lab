@@ -1,0 +1,14 @@
+[
+  {
+    "doc_id": "D006",
+    "issues": [
+      "navigation_and_news_index_no_procedural_body"
+    ]
+  },
+  {
+    "doc_id": "D204",
+    "issues": [
+      "body_less_than_100_characters"
+    ]
+  }
+]

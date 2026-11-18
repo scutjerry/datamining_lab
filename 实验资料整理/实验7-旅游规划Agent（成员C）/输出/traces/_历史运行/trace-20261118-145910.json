@@ -1,0 +1,52 @@
+{
+  "question": "帮我规划一下北京三日游",
+  "backend": "rule",
+  "llm": {
+    "available": false,
+    "model": "deepseek-chat",
+    "base_url": "https://api.deepseek.com/v1",
+    "api_key_set": false,
+    "api_key_masked": "",
+    "calls": 0
+  },
+  "constraints": {
+    "raw": "帮我规划一下北京三日游",
+    "scenic": null,
+    "minutes": null,
+    "audience": "通用",
+    "pace": "常规",
+    "interests": [],
+    "start_hint": null
+  },
+  "missing": [
+    "景区",
+    "可用时长"
+  ],
+  "steps": [
+    {
+      "i": 1,
+      "thought": "用户请求缺关键约束：景区、可用时长，先追问而不是瞎猜",
+      "action": "finish",
+      "action_input": {
+        "followup": "想去哪个景区（故宫 / 颐和园 / 天坛）、大概能逛多久（比如 2 小时、半天）"
+      },
+      "observation": {
+        "ok": true,
+        "tool": "-",
+        "count": 0,
+        "note": "信息不足，走回退追问分支",
+        "preview": []
+      }
+    }
+  ],
+  "final": {
+    "kind": "followup",
+    "answer": "为了排准一点，还想确认一下：想去哪个景区（故宫 / 颐和园 / 天坛）；大概能逛多久（比如 2 小时、半天）？",
+    "followup": [
+      "想去哪个景区（故宫 / 颐和园 / 天坛）",
+      "大概能逛多久（比如 2 小时、半天）"
+    ]
+  },
+  "started_at": "2026-11-18T14:59:10",
+  "elapsed_ms": 0
+}

@@ -1,0 +1,390 @@
+[
+  {
+    "doc_id": "D301",
+    "scenic": "天坛公园",
+    "sentence_id": 4,
+    "document_start": 81,
+    "document_end": 110,
+    "text": "在建筑设计和建造上，非常特别，涵盖深刻的中国文化传统元素。",
+    "content_sha256": "856bd8e1262edcc25ef83dee00bf60cb91d589312f5499ced49176bad99f4348",
+    "sample_id": "R001",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": []
+  },
+  {
+    "doc_id": "D301",
+    "scenic": "天坛公园",
+    "sentence_id": 1,
+    "document_start": 0,
+    "document_end": 40,
+    "text": "列入世界遗产的北京天坛公园里的祈年殿前身是大享殿建于嘉靖二十四年（1545年）。",
+    "content_sha256": "856bd8e1262edcc25ef83dee00bf60cb91d589312f5499ced49176bad99f4348",
+    "sample_id": "R002",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": [
+      {
+        "start": 9,
+        "end": 13,
+        "type": "POI",
+        "text": "天坛公园"
+      },
+      {
+        "start": 15,
+        "end": 18,
+        "type": "POI",
+        "text": "祈年殿"
+      },
+      {
+        "start": 21,
+        "end": 24,
+        "type": "POI",
+        "text": "大享殿"
+      }
+    ]
+  },
+  {
+    "doc_id": "D303",
+    "scenic": "天坛公园",
+    "sentence_id": 3,
+    "document_start": 164,
+    "document_end": 224,
+    "text": "今天只去了天坛这一个景点，中午去找在北京工作的朋友吃了告别饭，短短的几天很快就过去了，希望新的一年，都能像这几天一样美好",
+    "content_sha256": "e0b62e1c19e8b5c2cf7d2f4d76e77dbe4218c586bb6455ce6d4a3068dcebf21a",
+    "sample_id": "R003",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": [
+      {
+        "start": 5,
+        "end": 7,
+        "type": "POI",
+        "text": "天坛"
+      },
+      {
+        "start": 13,
+        "end": 15,
+        "type": "TIME",
+        "text": "中午"
+      }
+    ]
+  },
+  {
+    "doc_id": "D301",
+    "scenic": "天坛公园",
+    "sentence_id": 7,
+    "document_start": 173,
+    "document_end": 222,
+    "text": "最里面的4根钻金柱高度近20m，内圈之外的12根柱子被称为金柱，最外圈较小的12根木柱被称为檐柱。",
+    "content_sha256": "856bd8e1262edcc25ef83dee00bf60cb91d589312f5499ced49176bad99f4348",
+    "sample_id": "R004",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": []
+  },
+  {
+    "doc_id": "D301",
+    "scenic": "天坛公园",
+    "sentence_id": 19,
+    "document_start": 416,
+    "document_end": 451,
+    "text": "对祈年殿有兴趣，两侧大殿里有祈年殿大展和遇见天坛展览，很值得细细看看。",
+    "content_sha256": "856bd8e1262edcc25ef83dee00bf60cb91d589312f5499ced49176bad99f4348",
+    "sample_id": "R005",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": [
+      {
+        "start": 1,
+        "end": 4,
+        "type": "POI",
+        "text": "祈年殿"
+      }
+    ]
+  },
+  {
+    "doc_id": "D303",
+    "scenic": "天坛公园",
+    "sentence_id": 2,
+    "document_start": 109,
+    "document_end": 164,
+    "text": "祈年殿的人比较多，其他地方人明显少了很多，但也很值得一逛，各种建筑颜色很鲜明，尤其是在冬季里，拍出来格外好看\n",
+    "content_sha256": "e0b62e1c19e8b5c2cf7d2f4d76e77dbe4218c586bb6455ce6d4a3068dcebf21a",
+    "sample_id": "R006",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "type": "POI",
+        "text": "祈年殿"
+      }
+    ]
+  },
+  {
+    "doc_id": "D105",
+    "scenic": "故宫博物院",
+    "sentence_id": 16,
+    "document_start": 464,
+    "document_end": 506,
+    "text": "清乾隆十一年（公元1746年），这里建成了现在的南三所，正式官名还叫撷（念邪）芳殿。",
+    "content_sha256": "aaa213a74d64110e3ae42ff1435f44ccec770e3aaee17b47d715a0dd05c6597e",
+    "sample_id": "R007",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": [
+      {
+        "start": 24,
+        "end": 27,
+        "type": "POI",
+        "text": "南三所"
+      },
+      {
+        "start": 34,
+        "end": 41,
+        "type": "POI",
+        "text": "撷（念邪）芳殿"
+      }
+    ]
+  },
+  {
+    "doc_id": "D102",
+    "scenic": "故宫博物院",
+    "sentence_id": 83,
+    "document_start": 2451,
+    "document_end": 2488,
+    "text": "对这些数字的解读有“万物生存之数”，其中有前面说的“天一生水，地六成之”。",
+    "content_sha256": "68435aab56e8b8e1489ae5a030ddc9adc34a1e7e0a4460d2c3a7d53fd9970fa3",
+    "sample_id": "R008",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": []
+  },
+  {
+    "doc_id": "D105",
+    "scenic": "故宫博物院",
+    "sentence_id": 118,
+    "document_start": 3484,
+    "document_end": 3521,
+    "text": "没听说莫奈像画《池塘·睡莲》那样画了多幅《日出·印象》，没得说，这是摹本。",
+    "content_sha256": "aaa213a74d64110e3ae42ff1435f44ccec770e3aaee17b47d715a0dd05c6597e",
+    "sample_id": "R009",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": []
+  },
+  {
+    "doc_id": "D102",
+    "scenic": "故宫博物院",
+    "sentence_id": 192,
+    "document_start": 5594,
+    "document_end": 5640,
+    "text": "这是宫里藏书的地方，皇上逛园子的时候，可以到这里拿本书，举着书本迈着方步，显着皇上学而不厌。",
+    "content_sha256": "68435aab56e8b8e1489ae5a030ddc9adc34a1e7e0a4460d2c3a7d53fd9970fa3",
+    "sample_id": "R010",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": []
+  },
+  {
+    "doc_id": "D102",
+    "scenic": "故宫博物院",
+    "sentence_id": 124,
+    "document_start": 3711,
+    "document_end": 3752,
+    "text": "这棵龙爪槐是明初所栽，可以看出人工嫁接的痕迹，现在长成了独眼海盗船长米空的模样。\n",
+    "content_sha256": "68435aab56e8b8e1489ae5a030ddc9adc34a1e7e0a4460d2c3a7d53fd9970fa3",
+    "sample_id": "R011",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": []
+  },
+  {
+    "doc_id": "D102",
+    "scenic": "故宫博物院",
+    "sentence_id": 59,
+    "document_start": 1705,
+    "document_end": 1738,
+    "text": "嘉靖帝在此修院子也是有原因的，这个院子里是御花园的核心建筑钦安殿。",
+    "content_sha256": "68435aab56e8b8e1489ae5a030ddc9adc34a1e7e0a4460d2c3a7d53fd9970fa3",
+    "sample_id": "R012",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": [
+      {
+        "start": 21,
+        "end": 24,
+        "type": "POI",
+        "text": "御花园"
+      },
+      {
+        "start": 29,
+        "end": 32,
+        "type": "POI",
+        "text": "钦安殿"
+      }
+    ]
+  },
+  {
+    "doc_id": "D205",
+    "scenic": "颐和园",
+    "sentence_id": 255,
+    "document_start": 7401,
+    "document_end": 7455,
+    "text": "园内东南角有一石桥，桥头石坊上有乾隆题写的“知鱼桥”三字额，是引用了庄子和惠子在“秋水濠上”的争论而来的。\n",
+    "content_sha256": "e6ce4ad6f3272382979a3d976a15aea4880ba0f32453d86814f0004ee4e0443c",
+    "sample_id": "R013",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": [
+      {
+        "start": 22,
+        "end": 25,
+        "type": "POI",
+        "text": "知鱼桥"
+      }
+    ]
+  },
+  {
+    "doc_id": "D202",
+    "scenic": "颐和园",
+    "sentence_id": 11,
+    "document_start": 365,
+    "document_end": 404,
+    "text": "三山是指万寿山、香山、玉泉山，五园是指清漪园、静宜园、静明园、畅春园和圆明园。",
+    "content_sha256": "24eca8479c1f164ca55eb4fcceab8ba25a3ae0ac1b39edcd31eb29e8668024fc",
+    "sample_id": "R014",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "type": "POI",
+        "text": "万寿山"
+      },
+      {
+        "start": 8,
+        "end": 10,
+        "type": "POI",
+        "text": "香山"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "type": "POI",
+        "text": "玉泉山"
+      },
+      {
+        "start": 19,
+        "end": 22,
+        "type": "POI",
+        "text": "清漪园"
+      },
+      {
+        "start": 23,
+        "end": 26,
+        "type": "POI",
+        "text": "静宜园"
+      },
+      {
+        "start": 27,
+        "end": 30,
+        "type": "POI",
+        "text": "静明园"
+      },
+      {
+        "start": 31,
+        "end": 34,
+        "type": "POI",
+        "text": "畅春园"
+      },
+      {
+        "start": 35,
+        "end": 38,
+        "type": "POI",
+        "text": "圆明园"
+      }
+    ]
+  },
+  {
+    "doc_id": "D206",
+    "scenic": "颐和园",
+    "sentence_id": 96,
+    "document_start": 3185,
+    "document_end": 3226,
+    "text": "由于当时没有工具运输这么大物件，要先修路，等到冬天再泼水冻冰，然后从冰上人拉马拽。",
+    "content_sha256": "47cf16cf60b8f92f22709ddb12610daccb53eebea61860f4b9a344973cd74d7f",
+    "sample_id": "R015",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": []
+  },
+  {
+    "doc_id": "D202",
+    "scenic": "颐和园",
+    "sentence_id": 69,
+    "document_start": 2027,
+    "document_end": 2068,
+    "text": "建筑群依山而筑，万寿山前山，以八面三层四重檐的佛香阁为中心，组成巨大的主体建筑群。",
+    "content_sha256": "24eca8479c1f164ca55eb4fcceab8ba25a3ae0ac1b39edcd31eb29e8668024fc",
+    "sample_id": "R016",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": [
+      {
+        "start": 8,
+        "end": 11,
+        "type": "POI",
+        "text": "万寿山"
+      },
+      {
+        "start": 23,
+        "end": 26,
+        "type": "POI",
+        "text": "佛香阁"
+      }
+    ]
+  },
+  {
+    "doc_id": "D206",
+    "scenic": "颐和园",
+    "sentence_id": 130,
+    "document_start": 4321,
+    "document_end": 4378,
+    "text": "据说，李莲英为了讨好老佛爷，特意从畅春园弄来这十二块石头，分别排列在排云门外的两侧，象征全国百姓都在向老佛爷祝寿。",
+    "content_sha256": "47cf16cf60b8f92f22709ddb12610daccb53eebea61860f4b9a344973cd74d7f",
+    "sample_id": "R017",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": [
+      {
+        "start": 17,
+        "end": 20,
+        "type": "POI",
+        "text": "畅春园"
+      },
+      {
+        "start": 34,
+        "end": 37,
+        "type": "POI",
+        "text": "排云门"
+      }
+    ]
+  },
+  {
+    "doc_id": "D205",
+    "scenic": "颐和园",
+    "sentence_id": 142,
+    "document_start": 4592,
+    "document_end": 4623,
+    "text": "院内花卉植有玉兰、海棠、牡丹等，名花满院，寓“玉堂富贵”之意。",
+    "content_sha256": "e6ce4ad6f3272382979a3d976a15aea4880ba0f32453d86814f0004ee4e0443c",
+    "sample_id": "R018",
+    "human_confirmed": false,
+    "annotation_origin": "assistant_reviewed_provisional",
+    "entities": []
+  }
+]

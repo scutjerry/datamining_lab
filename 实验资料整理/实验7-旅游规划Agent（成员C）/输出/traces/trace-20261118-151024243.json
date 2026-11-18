@@ -1,0 +1,50 @@
+{
+  "question": "我想去颐和园",
+  "backend": "llm",
+  "llm": {
+    "available": true,
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com/v1",
+    "api_key_set": true,
+    "api_key_masked": "sk-2a1…eb9c",
+    "calls": 5
+  },
+  "constraints": {
+    "raw": "我想去颐和园",
+    "scenic": "颐和园",
+    "minutes": null,
+    "audience": "通用",
+    "pace": "常规",
+    "interests": [],
+    "start_hint": null
+  },
+  "missing": [
+    "可用时长"
+  ],
+  "steps": [
+    {
+      "i": 1,
+      "thought": "用户只说了想去颐和园，没给可用游玩时长。没有时长就没法按预算截断路线、做取舍，属于缺关键信息，应先反问。",
+      "action": "finish",
+      "action_input": {
+        "followup": "好的，颐和园可以排。请问你这次大概能玩多久（比如 2 小时、半天 4 小时、一整天 6-7 小时）？是陪同老人/带小孩，还是普通成人同行？我好按时间帮你选路线、做取舍。"
+      },
+      "observation": {
+        "ok": true,
+        "tool": "-",
+        "count": 0,
+        "note": "结束",
+        "preview": []
+      }
+    }
+  ],
+  "final": {
+    "kind": "followup",
+    "answer": "好的，颐和园可以排。请问你这次大概能玩多久（比如 2 小时、半天 4 小时、一整天 6-7 小时）？是陪同老人/带小孩，还是普通成人同行？我好按时间帮你选路线、做取舍。",
+    "followup": [
+      "好的，颐和园可以排。请问你这次大概能玩多久（比如 2 小时、半天 4 小时、一整天 6-7 小时）？是陪同老人/带小孩，还是普通成人同行？我好按时间帮你选路线、做取舍。"
+    ]
+  },
+  "started_at": "2026-11-18T15:10:22",
+  "elapsed_ms": 1491
+}

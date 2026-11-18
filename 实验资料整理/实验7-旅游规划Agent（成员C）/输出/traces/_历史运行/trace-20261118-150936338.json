@@ -1,0 +1,52 @@
+{
+  "question": "我想去杭州西湖玩半天",
+  "backend": "rule",
+  "llm": {
+    "available": true,
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com/v1",
+    "api_key_set": true,
+    "api_key_masked": "sk-2a1…eb9c",
+    "calls": 0
+  },
+  "constraints": {
+    "raw": "我想去杭州西湖玩半天",
+    "scenic": null,
+    "minutes": 240,
+    "audience": "通用",
+    "pace": "常规",
+    "interests": [
+      "园林"
+    ],
+    "start_hint": null
+  },
+  "missing": [
+    "景区"
+  ],
+  "steps": [
+    {
+      "i": 1,
+      "thought": "用户请求缺关键约束：景区，先追问而不是瞎猜",
+      "action": "finish",
+      "action_input": {
+        "followup": "想去哪个景区（故宫 / 颐和园 / 天坛）"
+      },
+      "observation": {
+        "ok": true,
+        "tool": "-",
+        "count": 0,
+        "note": "信息不足，走回退追问分支",
+        "preview": []
+      }
+    }
+  ],
+  "final": {
+    "kind": "followup",
+    "answer": "为了排准一点，还想确认一下：想去哪个景区（故宫 / 颐和园 / 天坛）？\n另外，杭州西湖 在图谱里只是景区外的参照物（scope=nearby），没有对应景区和路线，没法据此排行程；目前图谱只覆盖故宫博物院、颐和园、天坛公园三个景区。",
+    "followup": [
+      "想去哪个景区（故宫 / 颐和园 / 天坛）"
+    ]
+  },
+  "started_at": "2026-11-18T15:09:36",
+  "elapsed_ms": 0
+}

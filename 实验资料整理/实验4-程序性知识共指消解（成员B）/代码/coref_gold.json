@@ -1,0 +1,7 @@
+[
+  {"record_id": "bj_note_02", "pronoun": "那里", "occurrence": 1, "antecedent": "中和殿", "annotation_source": "assistant_preannotation_pending_student_review"},
+  {"record_id": "bj_note_04", "pronoun": "那里", "occurrence": 1, "antecedent": "珍宝馆", "annotation_source": "assistant_preannotation_pending_student_review"},
+  {"record_id": "hz_note_01", "pronoun": "这里", "occurrence": 1, "antecedent": "孤山", "annotation_source": "assistant_preannotation_pending_student_review"},
+  {"record_id": "hz_note_02", "pronoun": "那里", "occurrence": 1, "antecedent": "三潭印月", "annotation_source": "assistant_preannotation_pending_student_review"},
+  {"record_id": "sh_note_01", "pronoun": "它", "occurrence": 1, "antecedent": "奇幻童话城堡", "annotation_source": "assistant_preannotation_pending_student_review"}
+]

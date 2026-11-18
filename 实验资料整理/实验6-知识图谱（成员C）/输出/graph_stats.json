@@ -1,0 +1,285 @@
+{
+  "generated_at": "2026-11-18T14:49:41",
+  "nodes": 159,
+  "edges": 377,
+  "by_label": {
+    "ScenicArea": 3,
+    "TimeSlot": 3,
+    "POI": 131,
+    "Route": 19,
+    "Advice": 3
+  },
+  "by_type": {
+    "HAS_ROUTE": 19,
+    "HAS_ADVICE": 3,
+    "LOCATED_IN": 131,
+    "STEP": 224
+  },
+  "avg_degree": 4.742,
+  "scenic_subgraph": {
+    "天坛公园": {
+      "nodes": 24,
+      "edges": 48,
+      "components": 1
+    },
+    "故宫博物院": {
+      "nodes": 67,
+      "edges": 133,
+      "components": 1
+    },
+    "颐和园": {
+      "nodes": 65,
+      "edges": 196,
+      "components": 1
+    }
+  },
+  "step_only_view": {
+    "components": 3,
+    "pois_without_route": 74
+  },
+  "route_steps": {
+    "routes": 19,
+    "routes_with_steps": 19,
+    "min": 2,
+    "max": 26,
+    "avg": 11.8,
+    "total": 224
+  },
+  "top_hubs_by_routes": [
+    {
+      "poi_id": "POI-BEIJING-YHY-022",
+      "name": "排云殿",
+      "scenic": "颐和园",
+      "routes": 11,
+      "occurrences": 13
+    },
+    {
+      "poi_id": "POI-BEIJING-YHY-004",
+      "name": "乐寿堂",
+      "scenic": "颐和园",
+      "routes": 10,
+      "occurrences": 12
+    },
+    {
+      "poi_id": "POI-BEIJING-YHY-006",
+      "name": "佛香阁",
+      "scenic": "颐和园",
+      "routes": 10,
+      "occurrences": 12
+    },
+    {
+      "poi_id": "POI-BEIJING-YHY-052",
+      "name": "长廊",
+      "scenic": "颐和园",
+      "routes": 10,
+      "occurrences": 12
+    },
+    {
+      "poi_id": "POI-BEIJING-YHY-005",
+      "name": "仁寿殿",
+      "scenic": "颐和园",
+      "routes": 10,
+      "occurrences": 11
+    },
+    {
+      "poi_id": "POI-BEIJING-YHY-025",
+      "name": "文昌院",
+      "scenic": "颐和园",
+      "routes": 9,
+      "occurrences": 9
+    },
+    {
+      "poi_id": "POI-BEIJING-YHY-046",
+      "name": "苏州街",
+      "scenic": "颐和园",
+      "routes": 8,
+      "occurrences": 8
+    },
+    {
+      "poi_id": "POI-BEIJING-YHY-003",
+      "name": "东宫门",
+      "scenic": "颐和园",
+      "routes": 7,
+      "occurrences": 8
+    },
+    {
+      "poi_id": "POI-BEIJING-YHY-042",
+      "name": "石舫",
+      "scenic": "颐和园",
+      "routes": 7,
+      "occurrences": 7
+    },
+    {
+      "poi_id": "POI-BEIJING-GG-005",
+      "name": "中和殿",
+      "scenic": "故宫博物院",
+      "routes": 5,
+      "occurrences": 5
+    }
+  ],
+  "repeat_poi_in_route": [
+    {
+      "route": "RT-YHY-OFF-004",
+      "poi": "POI-BEIJING-YHY-003",
+      "times": 2
+    },
+    {
+      "route": "RT-YHY-VIS-001",
+      "poi": "POI-BEIJING-YHY-005",
+      "times": 2
+    },
+    {
+      "route": "RT-YHY-VIS-001",
+      "poi": "POI-BEIJING-YHY-021",
+      "times": 3
+    },
+    {
+      "route": "RT-YHY-VIS-001",
+      "poi": "POI-BEIJING-YHY-038",
+      "times": 3
+    },
+    {
+      "route": "RT-YHY-VIS-001",
+      "poi": "POI-BEIJING-YHY-017",
+      "times": 3
+    },
+    {
+      "route": "RT-YHY-VIS-001",
+      "poi": "POI-BEIJING-YHY-004",
+      "times": 3
+    },
+    {
+      "route": "RT-YHY-VIS-001",
+      "poi": "POI-BEIJING-YHY-052",
+      "times": 3
+    },
+    {
+      "route": "RT-YHY-VIS-001",
+      "poi": "POI-BEIJING-YHY-022",
+      "times": 3
+    },
+    {
+      "route": "RT-YHY-VIS-001",
+      "poi": "POI-BEIJING-YHY-006",
+      "times": 3
+    }
+  ],
+  "visualization": {
+    "html": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\数据挖掘实验\\实验资料整理\\实验6-知识图谱（成员C）\\输出\\graph.html",
+    "html_ok": true,
+    "png": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\数据挖掘实验\\实验资料整理\\实验6-知识图谱（成员C）\\输出\\graph_overview.png",
+    "gml": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\数据挖掘实验\\实验资料整理\\实验6-知识图谱（成员C）\\输出\\graph.gml",
+    "cypher": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\数据挖掘实验\\实验资料整理\\实验6-知识图谱（成员C）\\输出\\import_neo4j.cypher"
+  },
+  "checks": {
+    "errors": [],
+    "warnings": [
+      {
+        "level": "warn",
+        "check": "route_order_gap",
+        "detail": "RT-GG-OFF-004 步序断档 [12, 13]（原始 step [12, 13] 被判为残渣隔离，已记入 poi_quarantine.csv）"
+      },
+      {
+        "level": "warn",
+        "check": "route_order_gap",
+        "detail": "RT-GG-OFF-005 步序断档 [16]（原始 step [16] 被判为残渣隔离，已记入 poi_quarantine.csv）"
+      },
+      {
+        "level": "warn",
+        "check": "route_order_gap",
+        "detail": "RT-YHY-OFF-001 步序断档 [4]（原始 step [4] 被判为残渣隔离，已记入 poi_quarantine.csv）"
+      },
+      {
+        "level": "warn",
+        "check": "route_order_gap",
+        "detail": "RT-YHY-OFF-002 步序断档 [4]（原始 step [4] 被判为残渣隔离，已记入 poi_quarantine.csv）"
+      },
+      {
+        "level": "warn",
+        "check": "route_order_gap",
+        "detail": "RT-YHY-OFF-003 步序断档 [4]（原始 step [4] 被判为残渣隔离，已记入 poi_quarantine.csv）"
+      },
+      {
+        "level": "warn",
+        "check": "route_order_gap",
+        "detail": "RT-YHY-OFF-004 步序断档 [4]（原始 step [4] 被判为残渣隔离，已记入 poi_quarantine.csv）"
+      },
+      {
+        "level": "warn",
+        "check": "route_order_gap",
+        "detail": "RT-YHY-OFF-005 步序断档 [13]（原始 step [13] 被判为残渣隔离，已记入 poi_quarantine.csv）"
+      },
+      {
+        "level": "warn",
+        "check": "route_order_gap",
+        "detail": "RT-YHY-OFF-006 步序断档 [6]（原始 step [6] 被判为残渣隔离，已记入 poi_quarantine.csv）"
+      },
+      {
+        "level": "warn",
+        "check": "route_order_gap",
+        "detail": "RT-YHY-OFF-008 步序断档 [5]（原始 step [5] 被判为残渣隔离，已记入 poi_quarantine.csv）"
+      },
+      {
+        "level": "warn",
+        "check": "route_order_gap",
+        "detail": "RT-YHY-OFF-009 步序断档 [12]（原始 step [12] 被判为残渣隔离，已记入 poi_quarantine.csv）"
+      },
+      {
+        "level": "warn",
+        "check": "route_order_gap",
+        "detail": "RT-YHY-OFF-010 步序断档 [2, 3]（原始 step [2, 3] 被判为残渣隔离，已记入 poi_quarantine.csv）"
+      },
+      {
+        "level": "warn",
+        "check": "route_order_gap",
+        "detail": "RT-TT-OFF-001 步序断档 [2, 3]（原始 step [2, 3] 被判为残渣隔离，已记入 poi_quarantine.csv）"
+      },
+      {
+        "level": "warn",
+        "check": "route_order_gap",
+        "detail": "RT-TT-OFF-002 步序断档 [7, 8]（原始 step [7, 8] 被判为残渣隔离，已记入 poi_quarantine.csv）"
+      },
+      {
+        "level": "warn",
+        "check": "route_order_gap",
+        "detail": "RT-TT-OFF-003 步序断档 [4, 5, 6]（原始 step [4, 5, 6] 被判为残渣隔离，已记入 poi_quarantine.csv）"
+      },
+      {
+        "level": "warn",
+        "check": "route_order_head_gap",
+        "detail": "RT-YHY-VIS-001 的首步是 2（原始 step 1 及之前被判为残渣隔离，起点缺失）"
+      },
+      {
+        "level": "warn",
+        "check": "route_order_gap",
+        "detail": "RT-YHY-VIS-001 步序断档 [10, 19]（原始 step [10, 19] 被判为残渣隔离，已记入 poi_quarantine.csv）"
+      },
+      {
+        "level": "warn",
+        "check": "ts_unlinked",
+        "detail": "TS-AM 无任何边（time_slot 数据缺失，属已知缺口）"
+      },
+      {
+        "level": "warn",
+        "check": "ts_unlinked",
+        "detail": "TS-NOON 无任何边（time_slot 数据缺失，属已知缺口）"
+      },
+      {
+        "level": "warn",
+        "check": "ts_unlinked",
+        "detail": "TS-PM 无任何边（time_slot 数据缺失，属已知缺口）"
+      },
+      {
+        "level": "warn",
+        "check": "repeat_poi",
+        "detail": "9 处同一路线内重复经过同一景点"
+      },
+      {
+        "level": "warn",
+        "check": "poi_without_route",
+        "detail": "74 个景点没有任何路线经过（仅实体来源，靠 LOCATED_IN 挂到景区）"
+      }
+    ],
+    "passed": true
+  }
+}

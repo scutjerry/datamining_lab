@@ -1,0 +1,482 @@
+[
+  {
+    "advice_id": "map_0001",
+    "scenic": "天坛公园",
+    "condition_type": "other",
+    "condition": "两个桃尖",
+    "advice": "取意“和合、吉祥、长寿”之意",
+    "audience": "通用",
+    "source": "D302",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0002",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "不下马",
+    "advice": "它的面积比北京皇宫还要大十万平方米",
+    "audience": "通用",
+    "source": "D103",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0003",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "不看屋顶",
+    "advice": "是一座民间建筑",
+    "audience": "通用",
+    "source": "D102",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0004",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "不知道在哪里",
+    "advice": "一定会有游人丙指给你看",
+    "audience": "通用",
+    "source": "D105",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0005",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "你有富裕钱",
+    "advice": "使钱把这好东西请回家",
+    "audience": "通用",
+    "source": "D103",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0006",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "再加上每面三条围脊共十二条",
+    "advice": "那每座角楼能数出来七十二条脊",
+    "audience": "通用",
+    "source": "D103",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0007",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "半截迁都的也算上",
+    "advice": "要从金中都开始算",
+    "audience": "通用",
+    "source": "D103",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0008",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "只是走马观花",
+    "advice": "能逛完",
+    "audience": "通用",
+    "source": "D001",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0009",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "只有两个小时左右的时间",
+    "advice": "沿着故宫中轴线参观",
+    "audience": "通用",
+    "source": "D001",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0010",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "处处盘桓流连",
+    "advice": "一天的时间恐怕也不足以尽览胜景",
+    "audience": "通用",
+    "source": "D001",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0011",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "夏皇后有子",
+    "advice": "哪里轮得到他来当皇上",
+    "audience": "通用",
+    "source": "D103",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0012",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "宫里女眷奉旨见亲戚",
+    "advice": "从神武门进来在这个顺贞门庭院里见宫中女眷",
+    "audience": "通用",
+    "source": "D102",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0013",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "干",
+    "advice": "便死活要讨来吃三颗",
+    "audience": "通用",
+    "source": "D104",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0014",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "干天后",
+    "advice": "躺在梓宫里从这座东华门出去",
+    "audience": "通用",
+    "source": "D103",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0015",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "干次",
+    "advice": "而它的功能也是从皇上寝政两用殿",
+    "audience": "通用",
+    "source": "D104",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0016",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "您与亲友在参观中走失",
+    "advice": "到景运门内西南侧的广播室通知他们",
+    "audience": "通用",
+    "source": "D004",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0017",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "您在参观中遇到紧急情况",
+    "advice": "近寻求我院工作人员的帮助",
+    "audience": "通用",
+    "source": "D004",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0018",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "我大清亿万斯年",
+    "advice": "宁寿宫仍作太上皇之居”",
+    "audience": "通用",
+    "source": "D105",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0019",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "我将来有做得不对的地方",
+    "advice": "不要怪我",
+    "audience": "通用",
+    "source": "D101",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0020",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "我将来有做得不对的地方",
+    "advice": "那都是他们给教坏的",
+    "audience": "通用",
+    "source": "D101",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0021",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "拆了明皇宫",
+    "advice": "只能盖出来山寨",
+    "audience": "通用",
+    "source": "D103",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0022",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "是搬迁坤宁宫神位",
+    "advice": "那在岗的子孙后代去哪里祀神",
+    "audience": "通用",
+    "source": "D105",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0023",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "有宫人亡故",
+    "advice": "棺材从顺贞门的西门洞出去",
+    "audience": "通用",
+    "source": "D102",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0024",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "有建储密匣的话",
+    "advice": "肯定是和这匾同归于尽了",
+    "audience": "通用",
+    "source": "D104",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0025",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "有难愈之病",
+    "advice": "病退",
+    "audience": "通用",
+    "source": "D102",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0026",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "未被皇上临幸",
+    "advice": "二十多岁便可退休出宫",
+    "audience": "通用",
+    "source": "D102",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0027",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "注意",
+    "advice": "发现丹陛石上有六条龙",
+    "audience": "通用",
+    "source": "D102",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0028",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "注意",
+    "advice": "故宫里的房子多数都是这样",
+    "audience": "通用",
+    "source": "D102",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0029",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "特指",
+    "advice": "没有一定之规",
+    "audience": "通用",
+    "source": "D104",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0030",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "用白绫",
+    "advice": "悬了",
+    "audience": "通用",
+    "source": "D104",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0031",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "皇上在城楼上一高兴",
+    "advice": "大喊一声“赦”",
+    "audience": "通用",
+    "source": "D103",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0032",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "站了很多人",
+    "advice": "称作“门庭若市”",
+    "audience": "通用",
+    "source": "D102",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0033",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "范公之心",
+    "advice": "其正大光明",
+    "audience": "通用",
+    "source": "D104",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0034",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "觉得两个小时的游览不够尽兴",
+    "advice": "到东、西六宫的院落里逛逛",
+    "audience": "通用",
+    "source": "D001",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0035",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "遇到重大活动或特殊情况",
+    "advice": "开放时间如有改变",
+    "audience": "通用",
+    "source": "D004",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0036",
+    "scenic": "故宫博物院",
+    "condition_type": "other",
+    "condition": "钟上带有西洋仕女图",
+    "advice": "风格",
+    "audience": "通用",
+    "source": "D105",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0037",
+    "scenic": "故宫博物院",
+    "condition_type": "time",
+    "condition": "一天",
+    "advice": "先生所书",
+    "audience": "通用",
+    "source": "D103",
+    "_raw_condition_type": "time_constraint"
+  },
+  {
+    "advice_id": "map_0038",
+    "scenic": "故宫博物院",
+    "condition_type": "time",
+    "condition": "半天",
+    "advice": "过了八分钟",
+    "audience": "通用",
+    "source": "D106",
+    "_raw_condition_type": "time_constraint"
+  },
+  {
+    "advice_id": "map_0039",
+    "scenic": "颐和园",
+    "condition_type": "other",
+    "condition": "从造景上看",
+    "advice": "修建治镜阁是为了营造“一水三山”之仙境",
+    "audience": "通用",
+    "source": "D201",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0040",
+    "scenic": "颐和园",
+    "condition_type": "other",
+    "condition": "作为游客想在听鹂馆吃顿饭",
+    "advice": "我了解的情况是：目前只有每位168元的套餐",
+    "audience": "通用",
+    "source": "D206",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0041",
+    "scenic": "颐和园",
+    "condition_type": "other",
+    "condition": "您来颐和园",
+    "advice": "是什么",
+    "audience": "通用",
+    "source": "D206",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0042",
+    "scenic": "颐和园",
+    "condition_type": "other",
+    "condition": "时间充裕体力较好的话",
+    "advice": "买联票",
+    "audience": "通用",
+    "source": "D205",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0043",
+    "scenic": "颐和园",
+    "condition_type": "other",
+    "condition": "玉带",
+    "advice": "半圆的桥洞与水中的倒影",
+    "audience": "通用",
+    "source": "D206",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0044",
+    "scenic": "颐和园",
+    "condition_type": "other",
+    "condition": "细看的话",
+    "advice": "估计得花上几天的功夫",
+    "audience": "通用",
+    "source": "D206",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0045",
+    "scenic": "颐和园",
+    "condition_type": "other",
+    "condition": "细细看的话",
+    "advice": "能十天半月也未必能看完",
+    "audience": "通用",
+    "source": "D201",
+    "_raw_condition_type": "other"
+  },
+  {
+    "advice_id": "map_0046",
+    "scenic": "颐和园",
+    "condition_type": "time",
+    "condition": "一天",
+    "advice": "也就是沿昆明湖逆时针转一圈",
+    "audience": "通用",
+    "source": "D201",
+    "_raw_condition_type": "time_constraint"
+  },
+  {
+    "advice_id": "map_0047",
+    "scenic": "颐和园",
+    "condition_type": "time",
+    "condition": "一天",
+    "advice": "是北行",
+    "audience": "通用",
+    "source": "D201",
+    "_raw_condition_type": "time_constraint"
+  },
+  {
+    "advice_id": "map_0048",
+    "scenic": "颐和园",
+    "condition_type": "time",
+    "condition": "一天游玩全部景点",
+    "advice": "花费的时间不说",
+    "audience": "通用",
+    "source": "D205",
+    "_raw_condition_type": "time_constraint"
+  }
+]

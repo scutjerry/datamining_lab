@@ -1,0 +1,348 @@
+{
+  "question": "带爸妈去颐和园，半天时间，慢慢逛",
+  "backend": "rule",
+  "llm": {
+    "available": false,
+    "model": "deepseek-chat",
+    "base_url": "https://api.deepseek.com/v1",
+    "api_key_set": false,
+    "api_key_masked": "",
+    "calls": 0
+  },
+  "constraints": {
+    "raw": "带爸妈去颐和园，半天时间，慢慢逛",
+    "scenic": "颐和园",
+    "minutes": 240,
+    "audience": "老人",
+    "pace": "深度",
+    "interests": [],
+    "start_hint": null
+  },
+  "missing": [],
+  "steps": [
+    {
+      "i": 1,
+      "thought": "先看 颐和园 有哪些现成路线，以及每条路线的步骤数（用来估时长）",
+      "action": "query_route",
+      "action_input": {
+        "scenic": "颐和园",
+        "with_steps": true
+      },
+      "observation": {
+        "ok": true,
+        "tool": "query_route",
+        "count": 11,
+        "note": "上游 time_slot/duration_min 缺失（实验3 未落时间维度），步骤只有顺序可依据",
+        "preview": [
+          {
+            "route_id": "RT-YHY-OFF-001",
+            "name": "颐和园",
+            "step_count": 10
+          },
+          {
+            "route_id": "RT-YHY-OFF-002",
+            "name": "颐和园",
+            "step_count": 12
+          },
+          {
+            "route_id": "RT-YHY-OFF-003",
+            "name": "颐和园",
+            "step_count": 9
+          }
+        ]
+      }
+    },
+    {
+      "i": 2,
+      "thought": "再查该景区的条件性建议，看有没有和当前约束（时长/人群）对得上的取舍提醒",
+      "action": "query_advices",
+      "action_input": {
+        "scenic": "颐和园"
+      },
+      "observation": {
+        "ok": true,
+        "tool": "query_advices",
+        "count": 0,
+        "note": "该景区/条件下没有抽到建议；实验5 一共只产出 3 条（故宫 时间类），不要编造",
+        "preview": []
+      }
+    },
+    {
+      "i": 3,
+      "thought": "约束齐了（240 分钟、老人、深度），交给规划器算路线和时间预算",
+      "action": "route_plan",
+      "action_input": {
+        "scenic": "颐和园",
+        "minutes": 240,
+        "audience": "老人",
+        "pace": "深度"
+      },
+      "observation": {
+        "ok": true,
+        "tool": "route_plan",
+        "count": 26,
+        "note": "选 【老梆菜】一篇游记游遍皇家园林颐和园（visitor，共 26 步，整条估算 231 分钟），按 240 分钟预算截取前 26 步",
+        "preview": [
+          {
+            "minutes_used": 231
+          }
+        ]
+      }
+    }
+  ],
+  "final": {
+    "kind": "plan",
+    "answer": "【颐和园 · 240 分钟 · 老人】选 【老梆菜】一篇游记游遍皇家园林颐和园（visitor，共 26 步，整条估算 231 分钟），按 240 分钟预算截取前 26 步\n\n1. 仁寿殿（停留约 6 分钟）\n2. 德和园（停留约 6 分钟，路上 3 分钟）\n3. 玉澜堂（停留约 6 分钟，路上 3 分钟）\n4. 宜芸馆（停留约 6 分钟，路上 3 分钟）\n5. 乐寿堂（停留约 6 分钟，路上 3 分钟）\n6. 长廊（停留约 6 分钟，路上 3 分钟）\n7. 排云殿（停留约 6 分钟，路上 3 分钟）\n8. 佛香阁（停留约 6 分钟，路上 3 分钟）\n9. 苏州街（停留约 6 分钟，路上 3 分钟）\n10. 佛香阁（停留约 6 分钟，路上 3 分钟）\n11. 排云殿（停留约 6 分钟，路上 3 分钟）\n12. 长廊（停留约 6 分钟，路上 3 分钟）\n13. 乐寿堂（停留约 6 分钟，路上 3 分钟）\n14. 宜芸馆（停留约 6 分钟，路上 3 分钟）\n15. 玉澜堂（停留约 6 分钟，路上 3 分钟）\n16. 德和园（停留约 6 分钟，路上 3 分钟）\n17. 铜牛（停留约 6 分钟，路上 3 分钟）\n18. 文昌阁（停留约 6 分钟，路上 3 分钟）\n19. 仁寿殿（停留约 6 分钟，路上 3 分钟）\n20. 德和园（停留约 6 分钟，路上 3 分钟）\n21. 玉澜堂（停留约 6 分钟，路上 3 分钟）\n22. 宜芸馆（停留约 6 分钟，路上 3 分钟）\n23. 乐寿堂（停留约 6 分钟，路上 3 分钟）\n24. 长廊（停留约 6 分钟，路上 3 分钟）\n25. 排云殿（停留约 6 分钟，路上 3 分钟）\n26. 佛香阁（停留约 6 分钟，路上 3 分钟）\n\n合计约 231 分钟，余 9 分钟。\n\n注意：\n- 整条路线在预算内，可以完整走完\n- 时间来自估算（每景点 6 分钟、转场 3 分钟），图谱里 time_slot/duration_min 上游为空，不是实测\n- 图谱没有老人受众标签（建议的 audience 全是“通用”），该人群适配只能靠常识补充，不能算图谱结论",
+    "plan": {
+      "ok": true,
+      "scenic": "颐和园",
+      "audience": "老人",
+      "pace": "深度",
+      "minutes": 240,
+      "candidates": [
+        {
+          "route_id": "RT-YHY-VIS-001",
+          "name": "【老梆菜】一篇游记游遍皇家园林颐和园",
+          "route_type": "visitor",
+          "step_count": 26,
+          "full_minutes": 231,
+          "over_budget": 0
+        },
+        {
+          "route_id": "RT-YHY-OFF-005",
+          "name": "颐和园",
+          "route_type": "official",
+          "step_count": 15,
+          "full_minutes": 132,
+          "over_budget": 0
+        },
+        {
+          "route_id": "RT-YHY-OFF-009",
+          "name": "颐和园",
+          "route_type": "official",
+          "step_count": 14,
+          "full_minutes": 123,
+          "over_budget": 0
+        },
+        {
+          "route_id": "RT-YHY-OFF-006",
+          "name": "颐和园",
+          "route_type": "official",
+          "step_count": 13,
+          "full_minutes": 114,
+          "over_budget": 0
+        },
+        {
+          "route_id": "RT-YHY-OFF-002",
+          "name": "颐和园",
+          "route_type": "official",
+          "step_count": 12,
+          "full_minutes": 105,
+          "over_budget": 0
+        }
+      ],
+      "route": {
+        "route_id": "RT-YHY-VIS-001",
+        "name": "【老梆菜】一篇游记游遍皇家园林颐和园",
+        "route_type": "visitor",
+        "step_count": 26,
+        "full_minutes": 231
+      },
+      "steps": [
+        {
+          "order": "2",
+          "poi_name": "仁寿殿",
+          "poi_id": "POI-BEIJING-YHY-005",
+          "est_min": 6,
+          "transport_min": 0
+        },
+        {
+          "order": "3",
+          "poi_name": "德和园",
+          "poi_id": "POI-BEIJING-YHY-021",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "4",
+          "poi_name": "玉澜堂",
+          "poi_id": "POI-BEIJING-YHY-038",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "5",
+          "poi_name": "宜芸馆",
+          "poi_id": "POI-BEIJING-YHY-017",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "6",
+          "poi_name": "乐寿堂",
+          "poi_id": "POI-BEIJING-YHY-004",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "7",
+          "poi_name": "长廊",
+          "poi_id": "POI-BEIJING-YHY-052",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "8",
+          "poi_name": "排云殿",
+          "poi_id": "POI-BEIJING-YHY-022",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "9",
+          "poi_name": "佛香阁",
+          "poi_id": "POI-BEIJING-YHY-006",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "11",
+          "poi_name": "苏州街",
+          "poi_id": "POI-BEIJING-YHY-046",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "12",
+          "poi_name": "佛香阁",
+          "poi_id": "POI-BEIJING-YHY-006",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "13",
+          "poi_name": "排云殿",
+          "poi_id": "POI-BEIJING-YHY-022",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "14",
+          "poi_name": "长廊",
+          "poi_id": "POI-BEIJING-YHY-052",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "15",
+          "poi_name": "乐寿堂",
+          "poi_id": "POI-BEIJING-YHY-004",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "16",
+          "poi_name": "宜芸馆",
+          "poi_id": "POI-BEIJING-YHY-017",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "17",
+          "poi_name": "玉澜堂",
+          "poi_id": "POI-BEIJING-YHY-038",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "18",
+          "poi_name": "德和园",
+          "poi_id": "POI-BEIJING-YHY-021",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "20",
+          "poi_name": "铜牛",
+          "poi_id": "POI-BEIJING-YHY-051",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "21",
+          "poi_name": "文昌阁",
+          "poi_id": "POI-BEIJING-YHY-024",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "22",
+          "poi_name": "仁寿殿",
+          "poi_id": "POI-BEIJING-YHY-005",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "23",
+          "poi_name": "德和园",
+          "poi_id": "POI-BEIJING-YHY-021",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "24",
+          "poi_name": "玉澜堂",
+          "poi_id": "POI-BEIJING-YHY-038",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "25",
+          "poi_name": "宜芸馆",
+          "poi_id": "POI-BEIJING-YHY-017",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "26",
+          "poi_name": "乐寿堂",
+          "poi_id": "POI-BEIJING-YHY-004",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "27",
+          "poi_name": "长廊",
+          "poi_id": "POI-BEIJING-YHY-052",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "28",
+          "poi_name": "排云殿",
+          "poi_id": "POI-BEIJING-YHY-022",
+          "est_min": 6,
+          "transport_min": 3
+        },
+        {
+          "order": "29",
+          "poi_name": "佛香阁",
+          "poi_id": "POI-BEIJING-YHY-006",
+          "est_min": 6,
+          "transport_min": 3
+        }
+      ],
+      "minutes_used": 231,
+      "leftover": 9,
+      "advices": [],
+      "caveats": [
+        "整条路线在预算内，可以完整走完",
+        "时间来自估算（每景点 6 分钟、转场 3 分钟），图谱里 time_slot/duration_min 上游为空，不是实测",
+        "图谱没有老人受众标签（建议的 audience 全是“通用”），该人群适配只能靠常识补充，不能算图谱结论"
+      ],
+      "reason": "选 【老梆菜】一篇游记游遍皇家园林颐和园（visitor，共 26 步，整条估算 231 分钟），按 240 分钟预算截取前 26 步"
+    }
+  },
+  "started_at": "2026-11-18T14:59:28",
+  "elapsed_ms": 0
+}

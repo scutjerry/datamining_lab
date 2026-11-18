@@ -1,0 +1,18 @@
+{
+  "doc_id": "D304",
+  "scenic": "天坛公园",
+  "doc_type": "travelogue",
+  "source": "汽车之家游客游记",
+  "url": "https://you.m.autohome.com.cn/details/127690",
+  "parser": "autohome",
+  "role": "travelogue",
+  "final_url": "https://you.m.autohome.com.cn/details/127690",
+  "http_status": 200,
+  "encoding": "utf-8",
+  "content_type": "text/html;charset=UTF-8",
+  "retrieved_at": "2026-11-13T08:48:57.820379+00:00",
+  "raw_path": "data/raw/pages/D304.html",
+  "bytes": 166706,
+  "sha256": "fdd24d2f4ac208e27df6d1503d5f87397e5707cf4e15d42dac976d8282e43a31",
+  "attempt": 1
+}

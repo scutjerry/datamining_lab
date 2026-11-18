@@ -1,0 +1,3946 @@
+[
+  {
+    "scenic": "故宫博物院",
+    "text": "故宫博物院",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101",
+      "D103",
+      "D105",
+      "D106"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "故宫",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101",
+      "D102",
+      "D103",
+      "D104",
+      "D105",
+      "D205",
+      "D302",
+      "D303",
+      "D304",
+      "D305",
+      "D106"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "紫禁城",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101",
+      "D103",
+      "D104",
+      "D304",
+      "D106"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "午门",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101",
+      "D102",
+      "D103",
+      "D104",
+      "D106"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "太和门",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101",
+      "D102",
+      "D103",
+      "D104"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "太和殿",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101",
+      "D102",
+      "D103",
+      "D104",
+      "D105"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "中和殿",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D001",
+      "D004",
+      "D104"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "保和殿",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101",
+      "D102",
+      "D104",
+      "D105"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "乾清宫",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101",
+      "D102",
+      "D103",
+      "D104",
+      "D105"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "交泰殿",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "坤宁宫",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101",
+      "D102",
+      "D105"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "御花园",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101",
+      "D102"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "神武门",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D001",
+      "D004",
+      "D102",
+      "D103",
+      "D104",
+      "D105",
+      "D303",
+      "D106"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "珍宝馆",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D001",
+      "D004",
+      "D105",
+      "D303",
+      "D106"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "钟表馆",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D001",
+      "D004",
+      "D105",
+      "D106"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "“正大光明”匾",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D104"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "万春亭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102",
+      "D103"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "专题展览",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "东六宫区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001",
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "东华门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D101",
+      "D103",
+      "D104",
+      "D106"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "中和殿原状陈列",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "丽景轩",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "乐寿堂",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D004",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "九龙壁",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D105",
+      "D106"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "书画馆",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "乾清宫原状陈列",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "乾清门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101",
+      "D102",
+      "D103",
+      "D104",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "乾隆帝写字",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "井亭汲水",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "交泰殿原状陈列",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "位育斋",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "体仁阁",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D101"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "体元殿",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "体和殿",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "体顺堂",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "保和殿东庑",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "保和殿原状陈列",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "保和殿西庑",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "储秀宫",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "储秀宫原状陈列",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "元旦大朝贺",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "养心殿",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001",
+      "D004",
+      "D102",
+      "D103",
+      "D104",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "养心殿区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "养心殿原状陈列",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "养心殿后寝殿",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "养心门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "养性斋",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "养性殿",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "养性门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "内金水桥",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "军机处",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D104"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "军机处夜值",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "冰窖",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D106"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "冰窖书店",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D106"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "冰窖餐厅",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D106"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "凝香亭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "前三殿区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "前朝（外朝）",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "千秋亭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "协和门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D101",
+      "D104"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "原状陈列",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D005",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "古华轩",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "古建馆（暂闭）",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "吉祥门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "同道堂",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "后三宫区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "后寝（内廷）",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "咸福宫",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "四神祠",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "坤宁宫原状陈列",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "坤宁宫吃肉",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "坤宁门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "垂帘听政",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D104"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "城池侍卫区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "城池区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "堆秀山",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "外金水桥",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D103"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "大朝典礼区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "大禹治水图玉山",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "天一门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "天子万年-清代万寿庆典展",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "太上皇宫殿区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "太后太妃养老区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "太和殿原状陈列",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "太子宫殿区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "太极殿",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "太极殿原状陈列",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "奉先殿",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001",
+      "D004",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "奉先殿区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "奉先殿祭告祖先",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "宁寿宫",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001",
+      "D004",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "宁寿宫五世同堂",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "宁寿宫区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001",
+      "D004",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "宁寿宫区前朝",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "宁寿宫区后寝",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "宁寿门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "宫寝生活区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "宫廷历史",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "宫廷建筑",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102",
+      "D103"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "宫殿功能分区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "家具馆",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "寿康宫",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "寿康宫原状陈列",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "展馆专馆",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "常设专馆",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "庆隆尊养-崇庆皇太后专题展",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "府库与衙署区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "延晖阁",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "延禧宫",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "建福宫张灯结彩",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "弘义阁",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "御景亭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "御花园区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "御苑与庙宇区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "御苑中秋",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "御门听政",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102",
+      "D104"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "慈宁宫",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D104",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "慈宁宫花园",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "慈宁宫花园原状陈列",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "戏曲馆",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001",
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "批阅奏章",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "承乾宫",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "摛藻堂",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "故宫角楼咖啡馆",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D303"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "文华殿",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101",
+      "D104",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "文华殿区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "文渊阁",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D101",
+      "D104"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "文物珍品",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D103"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "斋宫",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001",
+      "D003",
+      "D004",
+      "D006",
+      "D105",
+      "D302",
+      "D304"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "斋宫区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "日精门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "昭德门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "景仁宫",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "景运门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D104",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "景阳宫",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "月华门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "武备馆（暂闭）",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "武英殿",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101",
+      "D103"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "武英殿区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "永和宫",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "永寿宫",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "浮碧亭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "浴德堂",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "清二十五宝",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "清代军机处史料展",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "澄瑞亭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "点燃宫灯",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "熙和门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "玉翠亭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "现开放宫殿区：",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "珍妃井",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001",
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "畅音阁",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D205"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "皇后入洞房",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "皇子生活区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "皇子诞生",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "皇帝用膳",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "皇极殿",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "皇极门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "石鼓馆",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "禊赏亭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "禊赏亭流杯赋诗",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "紫禁城总体上可分为南北两大部分：",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "绛雪轩",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "翊坤宫",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "翊坤宫原状陈列",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "营造之道-紫禁城建筑艺术展（暂闭）",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "西六宫区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001",
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "西华门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D103",
+      "D104"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "贞度门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "贞顺门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "选秀女",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102",
+      "D103"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "遵义门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "金水桥",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001",
+      "D004",
+      "D103",
+      "D205"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "钟粹宫",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "钦安殿",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "铜缸添水添炭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "铜镀金写字人钟",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001",
+      "D004",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "锡庆门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "长春宫",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "长春宫原状陈列",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "阅是楼",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "陶瓷馆",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "隆宗门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D104",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "雕塑馆",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "青铜器馆（暂闭）",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "顺贞门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004",
+      "D102"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "颐和轩",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "髹金雕龙宝座屏风",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D004"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "颐和园",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D002",
+      "D005",
+      "D006",
+      "D104",
+      "D105",
+      "D201",
+      "D202",
+      "D203",
+      "D204",
+      "D205",
+      "D303",
+      "D304",
+      "D206"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "万寿山",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D202",
+      "D204",
+      "D205",
+      "D206"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "昆明湖",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D202",
+      "D203",
+      "D204",
+      "D205",
+      "D206"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "东宫门",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D205",
+      "D206"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "北宫门",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "新建宫门",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D205",
+      "D206"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "仁寿殿",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D002",
+      "D104",
+      "D201",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "玉澜堂",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D205",
+      "D206"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "宜芸馆",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D002",
+      "D201",
+      "D205",
+      "D206"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "乐寿堂",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D002",
+      "D004",
+      "D205",
+      "D206"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "长廊",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D002",
+      "D003",
+      "D005",
+      "D006",
+      "D201",
+      "D202",
+      "D205",
+      "D302",
+      "D304",
+      "D305",
+      "D206"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "佛香阁",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "石舫",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D205",
+      "D206"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "十七孔桥",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "苏州街",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "东堤",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "乐寿宫",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D201",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "八方亭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D005",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "北如意门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D201",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "半壁桥",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D201",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "南如意门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "南湖岛",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "听鹂馆",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "四大部洲",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D201",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "团城湖",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D201",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "如意门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "宿云檐",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "宿云檐城关",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D201",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "寅辉城关",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D201",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "廊如亭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D201",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "廓如亭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "德和园",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "排云殿",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D105",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "排云门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "文昌阁",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "文昌阁码头",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D005"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "文昌院",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D201",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "昆仑石碑",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D201",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "景明楼",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D005",
+      "D201",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "景福阁",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "智慧海",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D201",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "柳桥",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D201",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "清晏舫",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "玉带桥",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D005",
+      "D201",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "玉澜堂码头",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D005"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "画中游",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "界湖桥",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D201",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "眺远斋",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D201",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "知春亭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D201",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "石丈亭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D005",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "祗树林",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D201",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "紫气东来城关",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D201",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "绣漪桥",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D201",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "耕织图景区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D201"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "藕香榭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D201",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "西堤",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D005",
+      "D201",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "西门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D003",
+      "D004",
+      "D005",
+      "D102",
+      "D103",
+      "D201",
+      "D302",
+      "D304",
+      "D305",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "谐趣园",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D201",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "邀月门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "铜牛",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D002",
+      "D005",
+      "D105",
+      "D201",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "天坛公园",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D003",
+      "D005",
+      "D006",
+      "D301",
+      "D302",
+      "D304",
+      "D305"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "天坛",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D003",
+      "D005",
+      "D006",
+      "D301",
+      "D302",
+      "D303",
+      "D304",
+      "D305"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "祈年殿",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D003",
+      "D006",
+      "D301",
+      "D302",
+      "D303",
+      "D304",
+      "D305"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "皇乾殿",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D302",
+      "D304",
+      "D305"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "圜丘",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D003",
+      "D006",
+      "D302",
+      "D304"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "皇穹宇",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D302",
+      "D304",
+      "D305"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "回音壁",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D003",
+      "D006",
+      "D302",
+      "D304",
+      "D305"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "丹陛桥",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D003",
+      "D302",
+      "D304",
+      "D305"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "斋宫",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D001",
+      "D003",
+      "D004",
+      "D006",
+      "D105",
+      "D302",
+      "D304"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "神乐署",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D006",
+      "D302",
+      "D304"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "长廊",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D002",
+      "D003",
+      "D005",
+      "D006",
+      "D201",
+      "D202",
+      "D205",
+      "D302",
+      "D304",
+      "D305",
+      "D206"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "七星石",
+    "type": "POI",
+    "added_in": 1,
+    "evidence": [
+      "D302"
+    ],
+    "origin": "curated core scenic vocabulary; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "七十二长廊",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D302"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "三座门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D003",
+      "D104",
+      "D105"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "东天门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D304"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "丹陛桥西侧下面古树区",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D003"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "具服台",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D305"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "北天门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D304"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "北宰牲亭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D302",
+      "D304"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "北神厨",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D302",
+      "D304"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "双环万寿亭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D302"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "回音壁西侧闸机",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D003"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "圜丘坛",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D302",
+      "D304"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "天坛东门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D302",
+      "D304"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "天坛公园东门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D003"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "天坛公园北门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D003"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "天坛公园南门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D003"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "天坛公园西门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D003"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "天坛西门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D302"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "宰牲亭",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D302",
+      "D304"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "广利门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D304"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "成贞门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D304",
+      "D305"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "无梁殿",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D205"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "昭亨门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D304"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "泰元门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D304"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "祈年殿东门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D003"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "祈年殿西门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D003"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "祈谷坛",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D302",
+      "D304"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "神厨",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D302",
+      "D304"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "西天门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D304"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "迎客柏月亮门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": [
+      "D003"
+    ],
+    "origin": "official labels or curated source-attested name; not normalization; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "圆丘",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D305"
+    ],
+    "origin": "source surface-form variant; retained literally for C; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "宰牲亭北",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D302"
+    ],
+    "origin": "source surface-form variant; retained literally for C; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "宰牲亭南",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D302"
+    ],
+    "origin": "source surface-form variant; retained literally for C; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "神厨北",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D302"
+    ],
+    "origin": "source surface-form variant; retained literally for C; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "神厨南",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D302"
+    ],
+    "origin": "source surface-form variant; retained literally for C; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "金銮殿",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D001",
+      "D101"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "雁翅楼",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D106"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "东南角楼",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D106"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "西北角楼",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D103",
+      "D106"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "故宫餐厅",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D106"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "文昌院门",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D002",
+      "D201",
+      "D206"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "排云殿东九间",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D002"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "天安门",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D001",
+      "D004",
+      "D101",
+      "D102",
+      "D103",
+      "D104",
+      "D303",
+      "D106"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "天安门广场",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D001",
+      "D103",
+      "D303",
+      "D106"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "景山公园",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D004",
+      "D005",
+      "D006",
+      "D102",
+      "D303",
+      "D106"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "景山",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D004",
+      "D005",
+      "D006",
+      "D102",
+      "D103",
+      "D104",
+      "D303",
+      "D106"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "北海公园",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D004",
+      "D005",
+      "D006",
+      "D102",
+      "D105",
+      "D303",
+      "D106"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "北海",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D004",
+      "D005",
+      "D006",
+      "D102",
+      "D103",
+      "D105",
+      "D201",
+      "D303",
+      "D106",
+      "D206"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "圆明园",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D002",
+      "D101",
+      "D102",
+      "D103",
+      "D104",
+      "D105",
+      "D202",
+      "D205"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "法源寺",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D305"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "白云观",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D305"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "地坛",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D304",
+      "D305"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "日坛",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D305"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "月坛",
+    "type": "POI",
+    "added_in": 3,
+    "evidence": [
+      "D305"
+    ],
+    "origin": "source-attested surface form; * denotes external POI, not scenic membership; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "杭州西湖",
+    "type": "POI",
+    "added_in": 4,
+    "evidence": [
+      "D002",
+      "D101",
+      "D201",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "explicit comparison POI; external location, no scenic membership assertion; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "东门",
+    "type": "POI",
+    "added_in": 4,
+    "evidence": [
+      "D003",
+      "D004",
+      "D102",
+      "D103",
+      "D302",
+      "D304",
+      "D305"
+    ],
+    "origin": "local gate surface form; resolve names only downstream with scenic/context; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "南门",
+    "type": "POI",
+    "added_in": 4,
+    "evidence": [
+      "D003",
+      "D004",
+      "D103",
+      "D302",
+      "D304",
+      "D305"
+    ],
+    "origin": "local gate surface form; resolve names only downstream with scenic/context; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "西门",
+    "type": "POI",
+    "added_in": 4,
+    "evidence": [
+      "D002",
+      "D003",
+      "D004",
+      "D005",
+      "D102",
+      "D103",
+      "D201",
+      "D302",
+      "D304",
+      "D305",
+      "D206"
+    ],
+    "origin": "local gate surface form; resolve names only downstream with scenic/context; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "北门",
+    "type": "POI",
+    "added_in": 4,
+    "evidence": [
+      "D003",
+      "D004",
+      "D102",
+      "D103",
+      "D202",
+      "D203",
+      "D302",
+      "D304",
+      "D305"
+    ],
+    "origin": "local gate surface form; resolve names only downstream with scenic/context; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "东门",
+    "type": "POI",
+    "added_in": 4,
+    "evidence": [
+      "D003",
+      "D004",
+      "D102",
+      "D103",
+      "D302",
+      "D304",
+      "D305"
+    ],
+    "origin": "local gate surface form; resolve names only downstream with scenic/context; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "南门",
+    "type": "POI",
+    "added_in": 4,
+    "evidence": [
+      "D003",
+      "D004",
+      "D103",
+      "D302",
+      "D304",
+      "D305"
+    ],
+    "origin": "local gate surface form; resolve names only downstream with scenic/context; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "北门",
+    "type": "POI",
+    "added_in": 4,
+    "evidence": [
+      "D003",
+      "D004",
+      "D102",
+      "D103",
+      "D202",
+      "D203",
+      "D302",
+      "D304",
+      "D305"
+    ],
+    "origin": "local gate surface form; resolve names only downstream with scenic/context; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "东门",
+    "type": "POI",
+    "added_in": 4,
+    "evidence": [
+      "D003",
+      "D004",
+      "D102",
+      "D103",
+      "D302",
+      "D304",
+      "D305"
+    ],
+    "origin": "local gate surface form; resolve names only downstream with scenic/context; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "南门",
+    "type": "POI",
+    "added_in": 4,
+    "evidence": [
+      "D003",
+      "D004",
+      "D103",
+      "D302",
+      "D304",
+      "D305"
+    ],
+    "origin": "local gate surface form; resolve names only downstream with scenic/context; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "西门",
+    "type": "POI",
+    "added_in": 4,
+    "evidence": [
+      "D002",
+      "D003",
+      "D004",
+      "D005",
+      "D102",
+      "D103",
+      "D201",
+      "D302",
+      "D304",
+      "D305",
+      "D206"
+    ],
+    "origin": "local gate surface form; resolve names only downstream with scenic/context; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "北门",
+    "type": "POI",
+    "added_in": 4,
+    "evidence": [
+      "D003",
+      "D004",
+      "D102",
+      "D103",
+      "D202",
+      "D203",
+      "D302",
+      "D304",
+      "D305"
+    ],
+    "origin": "local gate surface form; resolve names only downstream with scenic/context; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "大享殿",
+    "type": "POI",
+    "added_in": 5,
+    "evidence": [
+      "D301",
+      "D302"
+    ],
+    "origin": "v4 error review; literal historical/external name, not canonical alignment; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "南三所",
+    "type": "POI",
+    "added_in": 5,
+    "evidence": [
+      "D105"
+    ],
+    "origin": "v4 error review; literal historical/external name, not canonical alignment; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "故宫博物院",
+    "text": "撷（念邪）芳殿",
+    "type": "POI",
+    "added_in": 5,
+    "evidence": [
+      "D105"
+    ],
+    "origin": "v4 error review; literal historical/external name, not canonical alignment; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "知鱼桥",
+    "type": "POI",
+    "added_in": 5,
+    "evidence": [
+      "D202",
+      "D205"
+    ],
+    "origin": "v4 error review; literal historical/external name, not canonical alignment; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "清漪园",
+    "type": "POI",
+    "added_in": 5,
+    "evidence": [
+      "D002",
+      "D201",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "v4 error review; literal historical/external name, not canonical alignment; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "香山",
+    "type": "POI",
+    "added_in": 5,
+    "evidence": [
+      "D002",
+      "D005",
+      "D006",
+      "D103",
+      "D202",
+      "D205"
+    ],
+    "origin": "v4 error review; literal historical/external name, not canonical alignment; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "玉泉山",
+    "type": "POI",
+    "added_in": 5,
+    "evidence": [
+      "D002",
+      "D101",
+      "D103",
+      "D201",
+      "D202",
+      "D205",
+      "D206"
+    ],
+    "origin": "v4 error review; literal historical/external name, not canonical alignment; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "静宜园",
+    "type": "POI",
+    "added_in": 5,
+    "evidence": [
+      "D002",
+      "D202"
+    ],
+    "origin": "v4 error review; literal historical/external name, not canonical alignment; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "静明园",
+    "type": "POI",
+    "added_in": 5,
+    "evidence": [
+      "D002",
+      "D202"
+    ],
+    "origin": "v4 error review; literal historical/external name, not canonical alignment; evidence audited against visible raw page text"
+  },
+  {
+    "scenic": "*",
+    "text": "畅春园",
+    "type": "POI",
+    "added_in": 5,
+    "evidence": [
+      "D002",
+      "D202",
+      "D206"
+    ],
+    "origin": "v4 error review; literal historical/external name, not canonical alignment; evidence audited against visible raw page text"
+  }
+]

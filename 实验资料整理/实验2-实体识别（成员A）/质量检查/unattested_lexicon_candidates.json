@@ -1,0 +1,130 @@
+[
+  {
+    "scenic": "颐和园",
+    "text": "乐农轩",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": "D002",
+    "origin": "official labels or curated source-attested name; not normalization"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "南湖岛北码头",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": "D002",
+    "origin": "official labels or curated source-attested name; not normalization"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "多宝琉璃塔",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": "D002",
+    "origin": "official labels or curated source-attested name; not normalization"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "排云殿码头",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": "D002",
+    "origin": "official labels or curated source-attested name; not normalization"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "澄爽斋",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": "D002",
+    "origin": "official labels or curated source-attested name; not normalization"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "石舫码头",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": "D002",
+    "origin": "official labels or curated source-attested name; not normalization"
+  },
+  {
+    "scenic": "颐和园",
+    "text": "铜牛码头",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": "D002",
+    "origin": "official labels or curated source-attested name; not normalization"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "七十二连房",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": "D003",
+    "origin": "official labels or curated source-attested name; not normalization"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "九龙柏",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": "D003",
+    "origin": "official labels or curated source-attested name; not normalization"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "天坛北门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": "D003",
+    "origin": "official labels or curated source-attested name; not normalization"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "天坛南门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": "D003",
+    "origin": "official labels or curated source-attested name; not normalization"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "斋宫无梁殿",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": "D003",
+    "origin": "official labels or curated source-attested name; not normalization"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "祈年殿东配殿",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": "D003",
+    "origin": "official labels or curated source-attested name; not normalization"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "祈年殿西配殿",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": "D003",
+    "origin": "official labels or curated source-attested name; not normalization"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "祈年门",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": "D003",
+    "origin": "official labels or curated source-attested name; not normalization"
+  },
+  {
+    "scenic": "天坛公园",
+    "text": "神库",
+    "type": "POI",
+    "added_in": 2,
+    "evidence": "D003",
+    "origin": "official labels or curated source-attested name; not normalization"
+  }
+]

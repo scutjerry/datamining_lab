@@ -1,0 +1,17 @@
+{
+  "preannotated_mentions": 0,
+  "student_confirmed_mentions": 0,
+  "correct_mentions": 0,
+  "accuracy_against_preannotations": null,
+  "formal_student_verified_accuracy": null,
+  "coverage_over_all_detected": 0.0,
+  "detected_mentions": 1145,
+  "unlabeled_mentions": 1145,
+  "student_review_pending": true,
+  "source_span_integrity": {
+    "passed": true,
+    "checked_spans": 2290
+  },
+  "errors_against_preannotations": [],
+  "limitation": "先行词为助手预标注，尚待学生人工核验；样本量仅 5 条，且规则只查找同文档最近的前置 POI，不能据此推断跨句泛化性能。"
+}

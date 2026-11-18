@@ -1,0 +1,4 @@
+beautifulsoup4>=4.12,<5
+jieba==0.42.1
+matplotlib>=3.9,<4
+jsonschema>=4.23,<5

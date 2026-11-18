@@ -1,0 +1,254 @@
+{
+  "offset_convention": "start/end are zero-based Unicode codepoint offsets, half-open; slice the record content with content[start:end].",
+  "experiment_3": {
+    "granularity": "one route_step per POI mention",
+    "route_record": {
+      "route_id": "bj_official_01",
+      "attraction": "故宫博物院",
+      "text_type": "official_route",
+      "title": "故宫一日游官方路线生成样例",
+      "source": "课程生成语料，非官网原文",
+      "source_url": "",
+      "format_detected": [
+        "time_segmented_prose"
+      ],
+      "source_text": "上午 8:30 从午门入馆，沿中轴线依次参观太和门、太和殿、中和殿和保和殿。中午可在东六宫附近休息用餐。下午参观珍宝馆和九龙壁，之后步行至神武门出馆，建议预留约 6 小时。",
+      "step_count": 9,
+      "steps": [
+        "bj_official_01_step_001",
+        "bj_official_01_step_002",
+        "bj_official_01_step_003",
+        "bj_official_01_step_004",
+        "bj_official_01_step_005",
+        "bj_official_01_step_006",
+        "bj_official_01_step_007",
+        "bj_official_01_step_008",
+        "bj_official_01_step_009"
+      ]
+    },
+    "route_step": {
+      "step_id": "bj_official_01_step_001",
+      "route_id": "bj_official_01",
+      "step_index": 1,
+      "time_block_index": 1,
+      "time_bucket": "上午",
+      "time_evidence": "8:30",
+      "poi_surface": "午门",
+      "poi_canonical": "午门",
+      "activity": [
+        {
+          "type": "enter",
+          "text": "入馆"
+        },
+        {
+          "type": "walk",
+          "text": "沿"
+        }
+      ],
+      "event_kind": "visit",
+      "source_span": {
+        "start": 9,
+        "end": 11,
+        "unit": "unicode_codepoint"
+      },
+      "evidence_span": {
+        "start": 0,
+        "end": 38,
+        "text": "上午 8:30 从午门入馆，沿中轴线依次参观太和门、太和殿、中和殿和保和殿。",
+        "unit": "unicode_codepoint"
+      }
+    },
+    "route_hierarchy": {
+      "attraction": "故宫博物院",
+      "route_id": "bj_official_01",
+      "root": "故宫博物院",
+      "time_blocks": [
+        {
+          "block_index": 1,
+          "time_bucket": "上午",
+          "step_ids": [
+            "bj_official_01_step_001",
+            "bj_official_01_step_002",
+            "bj_official_01_step_003",
+            "bj_official_01_step_004",
+            "bj_official_01_step_005"
+          ]
+        },
+        {
+          "block_index": 2,
+          "time_bucket": "中午",
+          "step_ids": [
+            "bj_official_01_step_006"
+          ]
+        },
+        {
+          "block_index": 3,
+          "time_bucket": "下午",
+          "step_ids": [
+            "bj_official_01_step_007",
+            "bj_official_01_step_008",
+            "bj_official_01_step_009"
+          ]
+        }
+      ]
+    },
+    "route_comparison": {
+      "comparison_id": "cmp_bj_official_01__bj_note_01",
+      "attraction": "故宫博物院",
+      "official_route_id": "bj_official_01",
+      "traveler_route_id": "bj_note_01",
+      "official_poi_sequence": [
+        "午门",
+        "太和门",
+        "太和殿",
+        "中和殿",
+        "保和殿",
+        "东六宫",
+        "珍宝馆",
+        "九龙壁",
+        "神武门"
+      ],
+      "traveler_poi_sequence": [
+        "午门",
+        "太和殿",
+        "中和殿",
+        "保和殿",
+        "东六宫",
+        "珍宝馆",
+        "九龙壁",
+        "神武门"
+      ],
+      "shared_pois": [
+        "午门",
+        "太和殿",
+        "中和殿",
+        "保和殿",
+        "东六宫",
+        "珍宝馆",
+        "九龙壁",
+        "神武门"
+      ],
+      "official_coverage": 0.8889,
+      "sequence_lcs_similarity": 0.8889,
+      "order_consistency": 1.0,
+      "official_time_share": {
+        "上午": 0.5556,
+        "下午": 0.3333,
+        "中午": 0.1111
+      },
+      "traveler_time_share": {
+        "上午": 0.5,
+        "下午": 0.375,
+        "中午": 0.125
+      },
+      "time_distribution_total_variation": 0.0556,
+      "interpretation": "官方节点覆盖率为 0.89；游客路线未包含 太和门；时间层分布相对接近。"
+    }
+  },
+  "experiment_4": {
+    "granularity": "one pronoun occurrence per mention record",
+    "pronoun_mention": {
+      "mention_id": "bj_note_02_那里_01",
+      "record_id": "bj_note_02",
+      "attraction": "故宫博物院",
+      "text_type": "traveler_note",
+      "pronoun": "那里",
+      "occurrence": 1,
+      "pronoun_span": {
+        "start": 43,
+        "end": 45,
+        "unit": "unicode_codepoint"
+      },
+      "sentence_span": {
+        "start": 43,
+        "end": 60,
+        "unit": "unicode_codepoint"
+      },
+      "sentence": "那里台阶较多，老人走慢一点更稳妥。",
+      "candidate_antecedent": {
+        "text": "中和殿",
+        "canonical": "中和殿",
+        "span": {
+          "start": 33,
+          "end": 36,
+          "unit": "unicode_codepoint"
+        }
+      },
+      "predicted_antecedent": "中和殿",
+      "predicted_antecedent_span": {
+        "start": 33,
+        "end": 36,
+        "text": "中和殿",
+        "unit": "unicode_codepoint"
+      },
+      "gold_antecedent": "中和殿",
+      "gold_antecedent_span": {
+        "start": 33,
+        "end": 36,
+        "text": "中和殿",
+        "unit": "unicode_codepoint"
+      },
+      "annotation_status": "preannotated_pending_student_review",
+      "annotation_origin": "assistant_preannotation_pending_student_review",
+      "annotation_note": "建议先行词，提交前需由学生核验",
+      "correct": true,
+      "method": "最近的前置 POI 表面提及，名称按别名表归一化"
+    },
+    "source_content": "带父母游故宫，最好提前预约并从午门进。上午参观太和门和太和殿后，在中和殿附近坐一会儿。那里台阶较多，老人走慢一点更稳妥。下午选择珍宝馆和九龙壁，累了就减少停留，不必追求把所有宫殿都看完。"
+  },
+  "experiment_5": {
+    "granularity": "one atomic advice per condition mapping; duplicate relations aggregate source evidence",
+    "condition_advice_mapping": {
+      "mapping_id": "map_0018",
+      "attraction": "故宫博物院",
+      "condition_type": "weather",
+      "condition": {
+        "text": "下雨",
+        "normalized": "下雨"
+      },
+      "advice": {
+        "text": "穿防滑鞋",
+        "normalized": "穿防滑鞋"
+      },
+      "evidence_count": 1,
+      "source_record_ids": [
+        "bj_note_03"
+      ],
+      "evidence": [
+        {
+          "attraction": "故宫博物院",
+          "record_id": "bj_note_03",
+          "text_type": "traveler_note",
+          "sentence_index": 1,
+          "condition_type": "weather",
+          "condition_text": "下雨",
+          "condition_span": {
+            "start": 2,
+            "end": 4,
+            "unit": "unicode_codepoint"
+          },
+          "advice_text": "穿防滑鞋",
+          "advice_span": {
+            "start": 7,
+            "end": 11,
+            "unit": "unicode_codepoint"
+          },
+          "sentence_span": {
+            "start": 0,
+            "end": 18,
+            "unit": "unicode_codepoint"
+          },
+          "evidence_sentence": "如果下雨，建议穿防滑鞋并带轻便雨衣。",
+          "rule": "explicit_conditional"
+        }
+      ],
+      "dedup_key": "attraction + condition_type + normalized_condition + normalized_advice",
+      "student_review": {
+        "status": "pending_student_confirmation",
+        "suggested_note": "候选判断：雨天条件与防滑建议匹配；需学生核对。",
+        "review_scope": "assistant_precheck_candidate"
+      }
+    },
+    "source_content": "如果下雨，建议穿防滑鞋并带轻便雨衣。我们上午从午门进，经过太和殿和保和殿，中午在室内找地方休息。下午主要看珍宝馆，室外拍照就取消了。雨天路面湿，带小朋友不要在台阶上跑。"
+  }
+}

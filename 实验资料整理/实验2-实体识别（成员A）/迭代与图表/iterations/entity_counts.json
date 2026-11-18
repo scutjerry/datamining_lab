@@ -1,0 +1,27 @@
+{
+  "v1": {
+    "POI": 1448,
+    "TRANSPORT": 59,
+    "TIME": 113
+  },
+  "v2": {
+    "POI": 2547,
+    "TIME": 184,
+    "TRANSPORT": 99
+  },
+  "v3": {
+    "POI": 2638,
+    "TIME": 188,
+    "TRANSPORT": 97
+  },
+  "v4": {
+    "POI": 2675,
+    "TIME": 188,
+    "TRANSPORT": 97
+  },
+  "v5": {
+    "POI": 2747,
+    "TIME": 188,
+    "TRANSPORT": 97
+  }
+}

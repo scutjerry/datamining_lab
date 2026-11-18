@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "cached_full_pipeline_replay": true,
+  "files": {
+    "data/processed/documents.csv": "66e2ccb9859d7a2f380565a7a1da7298ed6daa87c41e985a4cfb02e64e7f70ac",
+    "outputs/entities.json": "d356ce9f7d3c9d41b0cd718147726792e3526d527de0359710fe83feebe0e501",
+    "outputs/entities.meta.json": "a2738a93db67c1feded5015eac1b7e2ac13f51f24212dc3190cd39f694310139",
+    "outputs/sentences.json": "a52c91450619179bb46d4b2209341cf77b12c6e9ef28d6fecd63ade95726ba80"
+  }
+}

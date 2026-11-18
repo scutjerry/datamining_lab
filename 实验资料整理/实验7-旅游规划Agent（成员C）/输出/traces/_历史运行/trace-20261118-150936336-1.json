@@ -1,0 +1,50 @@
+{
+  "question": "我想去颐和园",
+  "backend": "rule",
+  "llm": {
+    "available": true,
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com/v1",
+    "api_key_set": true,
+    "api_key_masked": "sk-2a1…eb9c",
+    "calls": 0
+  },
+  "constraints": {
+    "raw": "我想去颐和园",
+    "scenic": "颐和园",
+    "minutes": null,
+    "audience": "通用",
+    "pace": "常规",
+    "interests": [],
+    "start_hint": null
+  },
+  "missing": [
+    "可用时长"
+  ],
+  "steps": [
+    {
+      "i": 1,
+      "thought": "用户请求缺关键约束：可用时长，先追问而不是瞎猜",
+      "action": "finish",
+      "action_input": {
+        "followup": "大概能逛多久（比如 2 小时、半天）"
+      },
+      "observation": {
+        "ok": true,
+        "tool": "-",
+        "count": 0,
+        "note": "信息不足，走回退追问分支",
+        "preview": []
+      }
+    }
+  ],
+  "final": {
+    "kind": "followup",
+    "answer": "为了排准一点，还想确认一下：大概能逛多久（比如 2 小时、半天）？",
+    "followup": [
+      "大概能逛多久（比如 2 小时、半天）"
+    ]
+  },
+  "started_at": "2026-11-18T15:09:36",
+  "elapsed_ms": 0
+}

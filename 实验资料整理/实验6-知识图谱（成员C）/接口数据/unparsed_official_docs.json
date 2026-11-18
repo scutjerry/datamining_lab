@@ -1,0 +1,14 @@
+[
+  {
+    "doc_id": "D004",
+    "scenic": "故宫博物院",
+    "b_parsed_mention_steps": 32,
+    "note": "无链式路线行；B 的提及级解析噪声大，需 B 在实验3重写路线段切分后再用"
+  },
+  {
+    "doc_id": "D005",
+    "scenic": "颐和园",
+    "b_parsed_mention_steps": 58,
+    "note": "无链式路线行；B 的提及级解析噪声大，需 B 在实验3重写路线段切分后再用"
+  }
+]

@@ -1,0 +1,314 @@
+{
+  "question": "我下午去故宫，只有两个小时，随便看看主要宫殿",
+  "backend": "llm",
+  "llm": {
+    "available": true,
+    "model": "mock-llm",
+    "base_url": "mock",
+    "api_key_set": false,
+    "api_key_masked": "",
+    "calls": 0
+  },
+  "constraints": {
+    "raw": "我下午去故宫，只有两个小时，随便看看主要宫殿",
+    "scenic": "故宫博物院",
+    "minutes": 120,
+    "audience": "通用",
+    "pace": "快速",
+    "interests": [
+      "建筑"
+    ],
+    "start_hint": "下午"
+  },
+  "missing": [],
+  "steps": [
+    {
+      "i": 1,
+      "thought": "用户要去故宫两小时，先看有哪些官方路线和步骤数",
+      "action": "query_route",
+      "action_input": {
+        "scenic": "故宫博物院",
+        "with_steps": false
+      },
+      "observation": {
+        "ok": true,
+        "tool": "query_route",
+        "count": 5,
+        "note": "",
+        "preview": [
+          {
+            "route_id": "RT-GG-OFF-001",
+            "name": "故宫5A景区游览攻略",
+            "step_count": 12
+          },
+          {
+            "route_id": "RT-GG-OFF-002",
+            "name": "故宫5A景区游览攻略",
+            "step_count": 13
+          },
+          {
+            "route_id": "RT-GG-OFF-003",
+            "name": "故宫5A景区游览攻略",
+            "step_count": 14
+          }
+        ]
+      }
+    },
+    {
+      "i": 2,
+      "thought": "再看条件建议里有没有时长相关的取舍",
+      "action": "query_advices",
+      "action_input": {
+        "scenic": "故宫博物院"
+      },
+      "observation": {
+        "ok": true,
+        "tool": "query_advices",
+        "count": 3,
+        "note": "全部建议 audience=通用，图谱没有老人/亲子等受众标签",
+        "preview": [
+          {
+            "advice_id": "AD-GG-001"
+          },
+          {
+            "advice_id": "AD-GG-002"
+          },
+          {
+            "advice_id": "AD-GG-003"
+          }
+        ]
+      }
+    },
+    {
+      "i": 3,
+      "thought": "约束齐全，用规划器按 120 分钟截断",
+      "action": "route_plan",
+      "action_input": {
+        "scenic": "故宫博物院",
+        "minutes": 120,
+        "audience": "通用",
+        "pace": "快速"
+      },
+      "observation": {
+        "ok": true,
+        "tool": "route_plan",
+        "count": 13,
+        "note": "选 故宫5A景区游览攻略（official，共 13 步，整条估算 114 分钟），按 120 分钟预算截取前 13 步",
+        "preview": [
+          {
+            "minutes_used": 114
+          }
+        ]
+      }
+    },
+    {
+      "i": 4,
+      "thought": "已拿到规划结果，可以给结论了",
+      "action": "finish",
+      "action_input": {
+        "answer": "结论：走官方中轴线「故宫5A景区游览攻略」，共 13 步，估算约 114 分钟，你的 120 分钟预算够完整走完、余约 6 分钟。行程：午门 → 太和门 → 太和殿 → 中和殿 → 保和殿 → 乾清门 → 乾清宫 → 交泰殿 → 坤宁宫 → 御花园 → 神武门。注意：时长为估算（每景点 6 分钟 + 转场 3 分钟），不是实测；图谱里没有老人/亲子等受众标签。"
+      },
+      "observation": {
+        "ok": true,
+        "tool": "-",
+        "count": 0,
+        "note": "结束",
+        "preview": []
+      }
+    }
+  ],
+  "final": {
+    "kind": "llm_answer",
+    "answer": "结论：走官方中轴线「故宫5A景区游览攻略」，共 13 步，估算约 114 分钟，你的 120 分钟预算够完整走完、余约 6 分钟。行程：午门 → 太和门 → 太和殿 → 中和殿 → 保和殿 → 乾清门 → 乾清宫 → 交泰殿 → 坤宁宫 → 御花园 → 神武门。注意：时长为估算（每景点 6 分钟 + 转场 3 分钟），不是实测；图谱里没有老人/亲子等受众标签。"
+  },
+  "started_at": "2026-11-18T15:10:12",
+  "plan": {
+    "ok": true,
+    "scenic": "故宫博物院",
+    "audience": "通用",
+    "pace": "快速",
+    "minutes": 120,
+    "candidates": [
+      {
+        "route_id": "RT-GG-OFF-002",
+        "name": "故宫5A景区游览攻略",
+        "route_type": "official",
+        "step_count": 13,
+        "full_minutes": 114,
+        "over_budget": 0
+      },
+      {
+        "route_id": "RT-GG-OFF-001",
+        "name": "故宫5A景区游览攻略",
+        "route_type": "official",
+        "step_count": 12,
+        "full_minutes": 105,
+        "over_budget": 0
+      },
+      {
+        "route_id": "RT-GG-OFF-004",
+        "name": "故宫5A景区游览攻略",
+        "route_type": "official",
+        "step_count": 12,
+        "full_minutes": 105,
+        "over_budget": 0
+      },
+      {
+        "route_id": "RT-GG-OFF-003",
+        "name": "故宫5A景区游览攻略",
+        "route_type": "official",
+        "step_count": 14,
+        "full_minutes": 123,
+        "over_budget": 3
+      },
+      {
+        "route_id": "RT-GG-OFF-005",
+        "name": "故宫5A景区游览攻略",
+        "route_type": "official",
+        "step_count": 16,
+        "full_minutes": 141,
+        "over_budget": 21
+      }
+    ],
+    "route": {
+      "route_id": "RT-GG-OFF-002",
+      "name": "故宫5A景区游览攻略",
+      "route_type": "official",
+      "step_count": 13,
+      "full_minutes": 114
+    },
+    "steps": [
+      {
+        "order": "1",
+        "poi_name": "午门",
+        "poi_id": "POI-BEIJING-GG-020",
+        "est_min": 6,
+        "transport_min": 0
+      },
+      {
+        "order": "2",
+        "poi_name": "太和门",
+        "poi_id": "POI-BEIJING-GG-030",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "3",
+        "poi_name": "太和殿",
+        "poi_id": "POI-BEIJING-GG-029",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "4",
+        "poi_name": "保和殿西庑（天府永藏展）",
+        "poi_id": "POI-BEIJING-GG-013",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "5",
+        "poi_name": "保和殿东庑（宫阙述往展）",
+        "poi_id": "POI-BEIJING-GG-012",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "6",
+        "poi_name": "中和殿",
+        "poi_id": "POI-BEIJING-GG-005",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "7",
+        "poi_name": "保和殿",
+        "poi_id": "POI-BEIJING-GG-011",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "8",
+        "poi_name": "乾清门",
+        "poi_id": "POI-BEIJING-GG-008",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "9",
+        "poi_name": "乾清宫",
+        "poi_id": "POI-BEIJING-GG-007",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "10",
+        "poi_name": "交泰殿",
+        "poi_id": "POI-BEIJING-GG-009",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "11",
+        "poi_name": "坤宁宫",
+        "poi_id": "POI-BEIJING-GG-024",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "12",
+        "poi_name": "御花园",
+        "poi_id": "POI-BEIJING-GG-036",
+        "est_min": 6,
+        "transport_min": 3
+      },
+      {
+        "order": "13",
+        "poi_name": "神武门",
+        "poi_id": "POI-BEIJING-GG-050",
+        "est_min": 6,
+        "transport_min": 3
+      }
+    ],
+    "minutes_used": 114,
+    "leftover": 6,
+    "advices": [
+      {
+        "advice_id": "AD-GG-001",
+        "scenic": "故宫博物院",
+        "condition": "如果只是走马观花，看一看主要宫殿",
+        "advice": "约两个小时就能逛完",
+        "condition_type": "time",
+        "audience": "通用",
+        "source_doc": "D001",
+        "patched_by": "C"
+      },
+      {
+        "advice_id": "AD-GG-002",
+        "scenic": "故宫博物院",
+        "condition": "如果只有两个小时左右的时间",
+        "advice": "建议沿着故宫中轴线参观",
+        "condition_type": "time",
+        "audience": "通用",
+        "source_doc": "D001",
+        "patched_by": null
+      },
+      {
+        "advice_id": "AD-GG-003",
+        "scenic": "故宫博物院",
+        "condition": "如果觉得两个小时的游览不够尽兴",
+        "advice": "可以到东、西六宫的院落里逛逛，这里曾经住着紫禁城里备受恩宠的妃嫔们",
+        "condition_type": "time",
+        "audience": "通用",
+        "source_doc": "D001",
+        "patched_by": null
+      }
+    ],
+    "caveats": [
+      "整条路线在预算内，可以完整走完",
+      "时间来自估算（每景点 6 分钟、转场 3 分钟），图谱里 time_slot/duration_min 上游为空，不是实测"
+    ],
+    "reason": "选 故宫5A景区游览攻略（official，共 13 步，整条估算 114 分钟），按 120 分钟预算截取前 13 步"
+  },
+  "elapsed_ms": 1
+}
