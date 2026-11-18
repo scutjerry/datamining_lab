@@ -2,11 +2,11 @@
   "question": "去故宫，只有20分钟",
   "backend": "rule",
   "llm": {
-    "available": true,
+    "available": false,
     "model": "deepseek-flash",
     "base_url": "https://api.deepseek.com/v1",
-    "api_key_set": true,
-    "api_key_masked": "sk-2a1…eb9c",
+    "api_key_set": false,
+    "api_key_masked": "",
     "calls": 0
   },
   "constraints": {
@@ -215,6 +215,6 @@
       "reason": "选 故宫5A景区游览攻略（official，共 12 步，整条估算 105 分钟），按 20 分钟预算截取前 2 步"
     }
   },
-  "started_at": "2026-11-18T15:10:12",
+  "started_at": "2026-11-18T15:33:38",
   "elapsed_ms": 0
 }

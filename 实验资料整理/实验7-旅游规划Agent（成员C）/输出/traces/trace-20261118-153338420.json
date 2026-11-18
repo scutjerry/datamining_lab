@@ -2,11 +2,11 @@
   "question": "我想去杭州西湖玩半天",
   "backend": "rule",
   "llm": {
-    "available": true,
+    "available": false,
     "model": "deepseek-flash",
     "base_url": "https://api.deepseek.com/v1",
-    "api_key_set": true,
-    "api_key_masked": "sk-2a1…eb9c",
+    "api_key_set": false,
+    "api_key_masked": "",
     "calls": 0
   },
   "constraints": {
@@ -47,6 +47,6 @@
       "想去哪个景区（故宫 / 颐和园 / 天坛）"
     ]
   },
-  "started_at": "2026-11-18T15:10:12",
+  "started_at": "2026-11-18T15:33:38",
   "elapsed_ms": 0
 }
