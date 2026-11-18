@@ -3,6 +3,8 @@
 课程实验成果汇总。七个实验由三名成员分工完成，最终串成一条链路：
 网页采集与预处理 → 实体识别 → 路线层级结构 / 共指消解 / 条件建议抽取 → 知识图谱 → 旅游规划 Agent。
 
+> **接手先看**：[`实验7-旅游规划Agent/交接说明.md`](实验7-旅游规划Agent/交接说明.md) —— 怎么配自己的模型参数、怎么跑起来、常见问题。
+
 ## 目录
 
 | 目录 | 内容 |
@@ -33,7 +35,7 @@ python 实验6-知识图谱/代码/03_build_graph.py
 cd 实验7-旅游规划Agent/代码 && python run_scenarios.py
 
 # 实验 7：接入真实模型（需要 API key）
-export LLM_API_KEY=...   # Windows PowerShell: $env:LLM_API_KEY="..."
+export LLM_API_KEY=...   # 或写进 代码/llm_config.local.json，见交接说明.md
 python run_scenarios.py --real-llm
 ```
 
