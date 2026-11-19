@@ -2,7 +2,7 @@
 """
 agent.py — 旅游规划 Agent：ReAct（思考 → 行动 → 观察）闭环 + 可观察轨迹
 
-两个后端，同一条循环、同一份 trace 结构：
+两个后端，共用工具接口与 trace 结构：
     llm  后端：真调大模型（OpenAI 兼容），由模型逐步给出 thought / action / action_input
     rule 后端：没有 API key 时的确定性兜底，用规则决定同样的"下一步调哪个工具"
 
@@ -45,14 +45,16 @@ MAX_STEPS = 6
 
 
 # ---------------------------------------------------------------- 工具注册
-def _tool_route_plan(scenic=None, minutes=None, audience=None, pace=None, **kwargs) -> dict:
+def _tool_route_plan(scenic=None, minutes=None, audience=None, pace=None, interests=None, must_visit=None, avoid_pois=None) -> dict:
     """把路线规划器包成工具，让 ReAct 循环能像调图谱一样调规划。"""
     constraints = {
-        "scenic": kg_tools.get_kg().resolve_scenic(scenic) if scenic else None,
+        "scenic": scenic,
         "minutes": minutes,
         "audience": audience or "通用",
         "pace": pace or "常规",
-        "interests": kwargs.get("interests") or [],
+        "interests": interests or [],
+        "must_visit": must_visit or [],
+        "avoid_pois": avoid_pois or [],
         "start_hint": None,
     }
     if not constraints["scenic"]:
@@ -78,6 +80,9 @@ TOOLS["route_plan"] = {
         "minutes": "可用时长（分钟）",
         "audience": "人群：通用/老人/亲子/情侣/学生",
         "pace": "节奏：快速/常规/深度",
+        "interests": "可选字符串数组：拍照/历史/建筑/园林/祈福",
+        "must_visit": "可选字符串数组：必须到达的图谱景点名",
+        "avoid_pois": "可选字符串数组：不能经过的图谱景点名",
     },
 }
 
@@ -86,17 +91,29 @@ def call_tool(name: str, args: dict | None = None) -> dict:
     spec = TOOLS.get(name)
     if not spec:
         return {"ok": False, "tool": name, "count": 0, "data": [], "note": f"未知工具；可用：{', '.join(TOOLS)}"}
+    if args is not None and not isinstance(args, dict):
+        return {"ok": False, "tool": name, "count": 0, "data": [], "note": "参数必须是 JSON 对象"}
     args = dict(args or {})
     unknown = set(args) - set(spec["args"])
     if unknown:
         return {"ok": False, "tool": name, "count": 0, "data": [], "note": f"未知参数 {sorted(unknown)}"}
     try:
         return spec["func"](**args)
-    except TypeError as exc:
+    except (TypeError, ValueError, KeyError) as exc:
         return {"ok": False, "tool": name, "count": 0, "data": [], "note": f"参数错误：{exc}"}
 
 
 # ---------------------------------------------------------------- prompt
+INTENT_PROMPT = """从用户请求提取旅游规划约束，只输出 JSON 对象：
+{"scenic":null,"minutes":null,"audience":"通用","pace":"常规","interests":[],"must_visit":[],"avoid_pois":[]}
+scenic 只允许故宫博物院、颐和园、天坛公园；未知或多个景区待选择时为 null。
+minutes 为明确可用时长的整数分钟，缺失时为 null，禁止默认两小时；半天=240，一天=480，暂不支持多日。
+audience 只允许通用、老人、亲子、情侣、学生；例如带六岁儿子对应亲子。
+pace 只允许快速、常规、深度；interests 只允许拍照、历史、建筑、园林、祈福。
+must_visit/avoid_pois 为用户明确要求的景点名数组，未提到为 []。不要把“故宫”等景区当作景点。
+尊重否定、改口与已有会话约束；不要补造用户没有表达的时长、景点、开放时间。
+"""
+
 SYSTEM_PROMPT = """你是「景区游览规划 Agent」。你只能依据知识图谱工具返回的事实组织回答，绝不编造景点、时长、开放时间。
 
 工作方式（严格逐步，每步只输出一个 JSON 对象，不要输出别的文字）：
@@ -112,8 +129,11 @@ __TOOLS__
 - 推荐顺序：query_route 看候选路线 → query_advices 查条件建议 → route_plan 排最终行程；同一信息不要重复调。
 - 工具返回 ok=false 时不要重试同样的参数，换思路或如实告诉用户查不到。
 - 图谱只有 故宫博物院 / 颐和园 / 天坛公园 三个景区。用户提到别的地点（如杭州西湖、香山）时，必须先明确说“图谱里没有这个景区（它只是景区外的参照物），排不了路线”，再问是否换成这三个之一。
-- 时间估算来自 route_plan 的 est_min（每景点 6 分钟 + 转场 3 分钟），必须说明是估算。
+- 时间估算与兴趣评分以 route_plan 返回的 time_policy/personalization 为准，均是本地启发式，必须说明不是实测。
 - 图谱里没有受众标签（audience 全是“通用”），涉及老人/亲子时要说清这是常识补充。
+- 景区和时长齐全时，必须调用 route_plan 后再 finish；不得用 followup 重问已知信息。
+- 如用户约束无法满足，如实结束，不得自行换景区、删去必去要求或延长预算。
+- 最终行程由程序依据结构化计划渲染；你负责意图理解与工具决策。
 - 回答用中文，先给结论（走哪条路线、几步、多久），再给行程清单和注意事项。
 """
 
@@ -125,6 +145,7 @@ class Agent:
         self.forced_offline = offline
         self.max_steps = max_steps
         self.kg = kg_tools.get_kg()
+        self._pending_constraints = None
 
     # -- 后端选择 ------------------------------------------------------
     def backend(self) -> str:
@@ -137,6 +158,14 @@ class Agent:
         t0 = time.time()
         backend = self.backend()
         constraints = planner.parse_constraints(question)
+        if self._pending_constraints:
+            previous = self._pending_constraints
+            for field in planner.PLAN_FIELDS:
+                if field not in constraints["provided"]:
+                    if field not in ("must_visit", "avoid_pois") or constraints["scenic"] in (None, previous["scenic"]):
+                        constraints[field] = previous.get(field)
+            constraints["provided"] = list(set(previous.get("provided", [])) | set(constraints["provided"]))
+        calls_before = self.llm.status().get("calls", 0)
         trace = {
             "question": question,
             "backend": backend,
@@ -146,14 +175,49 @@ class Agent:
             "steps": [],
             "final": {},
             "started_at": datetime.now().isoformat(timespec="seconds"),
+            "intent": {"source": "rule"},
+            "protocol_errors": [],
         }
         if backend == "llm":
-            final = self._run_llm(question, constraints, trace)
+            try:
+                constraints = self._parse_intent(question, constraints, trace)
+                trace["constraints"] = constraints
+                trace["missing"] = planner.missing(constraints)
+                final = self._run_llm(question, constraints, trace)
+            except llm_mod.LLMUnavailable as exc:
+                trace["intent"]["error"] = str(exc)
+                trace["backend"] = "rule(fallback)"
+                trace["backend_fallback"] = "rule"
+                final = self._run_rule(question, constraints, trace)
         else:
             final = self._run_rule(question, constraints, trace)
         trace["final"] = final
+        trace["llm"] = self.llm.status()
+        trace["llm_calls"] = trace["llm"].get("calls", 0) - calls_before
         trace["elapsed_ms"] = int((time.time() - t0) * 1000)
+        self._pending_constraints = dict(constraints) if final.get("kind") == "followup" else None
         return trace
+
+    def _parse_intent(self, question: str, base: dict, trace: dict) -> dict:
+        reply = self.llm.chat([
+            {"role": "system", "content": INTENT_PROMPT},
+            {"role": "user", "content": question + "\n已有约束：" + json.dumps(base, ensure_ascii=False)},
+        ])
+        try:
+            obj = llm_mod.extract_json(reply)
+            if not isinstance(obj, dict) or not {"scenic", "minutes", "audience"}.issubset(obj):
+                raise ValueError("意图 JSON 缺少 scenic/minutes/audience")
+            merged = dict(base)
+            merged.update({k: obj[k] for k in planner.PLAN_FIELDS if k in obj})
+            # 已明确解析的字面约束是硬约束；LLM 补充语义，不得覆盖它们。
+            for key in base.get("provided", []):
+                merged[key] = base[key]
+            merged = planner.normalize_constraints(merged)
+            trace["intent"] = {"source": "llm", "validated": True, "model_constraints": {k: obj.get(k) for k in planner.PLAN_FIELDS}}
+            return merged
+        except (ValueError, TypeError) as exc:
+            trace["intent"] = {"source": "rule_fallback", "validated": False, "error": str(exc)}
+            return base
 
     # -- 一个 trace 步 -------------------------------------------------
     def _step(self, trace: dict, thought: str, action: str, action_input: dict, observation: dict) -> None:
@@ -169,6 +233,7 @@ class Agent:
                     "count": observation.get("count"),
                     "note": observation.get("note", ""),
                     "preview": _preview(observation.get("data")),
+                    "data": observation.get("data", []),
                 },
             }
         )
@@ -196,7 +261,7 @@ class Agent:
                 ask.append("大概能逛多久（比如 2 小时、半天）")
             trace["steps"].append(
                 {
-                    "i": 1,
+                    "i": len(trace["steps"]) + 1,
                     "thought": f"用户请求缺关键约束：{'、'.join(gaps)}，先追问而不是瞎猜",
                     "action": "finish",
                     "action_input": {"followup": "、".join(ask)},
@@ -206,6 +271,8 @@ class Agent:
             answer = f"为了排准一点，还想确认一下：{'；'.join(ask)}？"
             if hint:
                 answer += "\n" + hint
+            if len(c.get("scenic_candidates", [])) > 1:
+                answer += "\n当前仅支持一次规划一个景区，请先选择其中一个。"
             return {
                 "kind": "followup",
                 "answer": answer,
@@ -245,20 +312,19 @@ class Agent:
                 obs3,
             )
         # 4) 规划
-        obs4 = call_tool(
-            "route_plan",
-            {"scenic": scen, "minutes": c["minutes"], "audience": c["audience"], "pace": c["pace"]},
-        )
+        plan_args = {k: c.get(k) for k in planner.PLAN_FIELDS}
+        obs4 = call_tool("route_plan", plan_args)
         self._step(
             trace,
             f"约束齐了（{c['minutes']} 分钟、{c['audience']}、{c['pace']}），交给规划器算路线和时间预算",
             "route_plan",
-            {"scenic": scen, "minutes": c["minutes"], "audience": c["audience"], "pace": c["pace"]},
+            plan_args,
             obs4,
         )
         p = (obs4.get("data") or [{}])[0]
         answer = planner.render_plan(p) if p else "没有排出行程"
-        return {"kind": "plan", "answer": answer, "plan": p}
+        trace["plan"] = p
+        return {"kind": "plan" if p.get("ok") else "no_plan", "answer": answer, "plan": p, "answer_source": "planner"}
 
     # -- LLM 后端 ------------------------------------------------------
     def _run_llm(self, question: str, c: dict, trace: dict) -> dict:
@@ -297,9 +363,17 @@ class Agent:
             obj = llm_mod.extract_json(reply) or {}
             thought = str(obj.get("thought", "")).strip()
             action = str(obj.get("action", "")).strip()
-            action_input = obj.get("action_input") or {}
+            action_input = obj.get("action_input", {})
+            if not isinstance(action_input, dict):
+                trace["protocol_errors"].append("action_input 必须是对象")
+                messages.extend([
+                    {"role": "assistant", "content": reply},
+                    {"role": "user", "content": "action_input 必须是 JSON 对象，不能是字符串或数组。请修正。"},
+                ])
+                continue
             if not action:
                 last_err = reply[:200]
+                trace["protocol_errors"].append("缺少合法 action")
                 messages.append({"role": "assistant", "content": reply})
                 messages.append(
                     {
@@ -311,6 +385,7 @@ class Agent:
 
             if action not in TOOLS and action != "finish":
                 last_err = f"未知 action：{action}"
+                trace["protocol_errors"].append(last_err)
                 messages.append({"role": "assistant", "content": reply})
                 messages.append(
                     {
@@ -321,6 +396,15 @@ class Agent:
                 continue
 
             if action == "finish":
+                if planner.missing(c):
+                    return self._run_rule(question, c, trace)
+                if trace.get("plan") is None:
+                    trace["protocol_errors"].append("未取得规划结果就尝试结束")
+                    messages.extend([
+                        {"role": "assistant", "content": reply},
+                        {"role": "user", "content": "尚无图谱规划依据。请先调用 route_plan，不能直接编写行程。"},
+                    ])
+                    continue
                 trace["steps"].append(
                     {
                         "i": i,
@@ -330,28 +414,47 @@ class Agent:
                         "observation": {"ok": True, "tool": "-", "count": 0, "note": "结束", "preview": []},
                     }
                 )
-                if action_input.get("followup"):
-                    return {"kind": "followup", "answer": action_input["followup"], "followup": [action_input["followup"]]}
-                return {"kind": "llm_answer", "answer": action_input.get("answer", "")}
+                return self._grounded_final(trace["plan"])
 
-            observation = call_tool(action, action_input)
+            if action == "route_plan":
+                if planner.missing(c):
+                    observation = {"ok": False, "tool": action, "count": 0, "data": [], "note": "用户缺少景区或时长，请追问，不得补造"}
+                else:
+                    action_input = dict(action_input)
+                    action_input.update({k: c.get(k) for k in planner.PLAN_FIELDS})
+                    observation = call_tool(action, action_input)
+            else:
+                observation = call_tool(action, action_input)
             self._step(trace, thought, action, action_input, observation)
             messages.append({"role": "assistant", "content": reply})
             messages.append(
                 {
                     "role": "user",
-                    "content": "observation=" + json.dumps(_compact(observation), ensure_ascii=False)[:4000],
+                    "content": "observation=" + json.dumps(_compact(observation), ensure_ascii=False),
                 }
             )
-            if action == "route_plan" and observation.get("ok"):
+            if action == "route_plan" and observation.get("data"):
                 p = (observation.get("data") or [{}])[0]
                 trace["plan"] = p
 
         # 步数用尽
+        if trace.get("plan") is not None:
+            final = self._grounded_final(trace["plan"])
+            final["finish_mode"] = "已获得工具结果，模型未及时结束，由程序渲染"
+            return final
         return {
             "kind": "exhausted",
             "answer": "工具调用步数用尽，没能收敛出方案；请把需求说得更具体些（景区 + 时长）。",
             "llm_last_error": last_err,
+        }
+
+    @staticmethod
+    def _grounded_final(p: dict) -> dict:
+        return {
+            "kind": "llm_answer" if p.get("ok") else "no_plan",
+            "answer": planner.render_plan(p),
+            "plan": p,
+            "answer_source": "verified_tool_result",
         }
 
 
@@ -435,11 +538,29 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("question", nargs="?", default="", help="自然语言请求")
     ap.add_argument("--offline", action="store_true", help="强制规则后端（不调 LLM）")
     ap.add_argument("--json", action="store_true", help="输出 trace JSON")
+    ap.add_argument("--chat", action="store_true", help="交互模式，补充上一轮缺失约束；输入 exit 退出")
     ap.add_argument("--trace", default="", help="把 trace 存到指定文件名（默认 输出/traces/trace-时间戳.json）")
     args = ap.parse_args(argv)
 
     question = args.question or "我想去天坛，只有一个半小时，想祈福拍照"
     agent = Agent(offline=args.offline)
+    if args.chat:
+        # PowerShell 7 管道传入 UTF-8；Windows locale 可能仍按 GBK 解码。
+        if hasattr(sys.stdin, "reconfigure") and not sys.stdin.isatty():
+            sys.stdin.reconfigure(encoding="utf-8")
+        while True:
+            try:
+                question = input("你：").strip()
+            except (EOFError, KeyboardInterrupt):
+                break
+            if question.lower() in ("exit", "quit", "退出"):
+                break
+            if not question:
+                continue
+            trace = agent.run(question)
+            save_trace(trace)
+            print(render_trace(trace))
+        return 0
     trace = agent.run(question)
     path = save_trace(trace, args.trace or None)
 

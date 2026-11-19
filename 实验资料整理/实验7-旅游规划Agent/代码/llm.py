@@ -159,7 +159,7 @@ class LLM:
             "model": self.model,
             "base_url": self.base_url,
             "api_key_set": bool(self.api_key),
-            "api_key_masked": (self.api_key[:6] + "…" + self.api_key[-4:]) if self.api_key else "",
+            "api_key_masked": "[REDACTED]" if self.api_key else "",
             "api_key_note": (
                 "未配置（或仍是模板占位符），当前走规则后端"
                 if not self.api_key else "已配置"
@@ -168,7 +168,7 @@ class LLM:
         }
 
     # -- 调用 ----------------------------------------------------------
-    def chat(self, messages: list[dict], temperature: float | None = None, max_tokens: int = 900) -> str:
+    def chat(self, messages: list[dict], temperature: float | None = None, max_tokens: int = 2048) -> str:
         if not self.available:
             raise LLMUnavailable(
                 "未配置 LLM_API_KEY（或缺少 requests），无法调用在线模型；"
@@ -186,13 +186,21 @@ class LLM:
         headers = {"Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json"}
         try:
             resp = requests.post(url, headers=headers, json=payload, timeout=self.timeout)
-        except Exception as exc:
-            raise LLMUnavailable(f"请求 {url} 失败：{type(exc).__name__}: {exc}") from exc
+        except requests.RequestException as exc:
+            raise LLMUnavailable(self.redact(f"请求失败：{type(exc).__name__}: {exc}")) from exc
         if resp.status_code >= 400:
-            raise LLMUnavailable(f"HTTP {resp.status_code}：{resp.text[:300]}")
-        body = resp.json()
-        text = (body.get("choices") or [{}])[0].get("message", {}).get("content", "")
-        usage = body.get("usage", {})
+            raise LLMUnavailable(self.redact(f"HTTP {resp.status_code}：{resp.text}")[:300])
+        try:
+            body = resp.json()
+            choice = body["choices"][0]
+            text = choice["message"].get("content") or ""
+            if not isinstance(text, str):
+                raise TypeError("content 必须是字符串")
+        except (ValueError, KeyError, IndexError, TypeError, AttributeError) as exc:
+            raise LLMUnavailable("接口返回的内容不符合 Chat Completions JSON 协议") from exc
+        usage = body.get("usage") or {}
+        if not isinstance(usage, dict):
+            usage = {}
         self.calls.append(
             {
                 "model": body.get("model", self.model),
@@ -200,11 +208,18 @@ class LLM:
                 "prompt_tokens": usage.get("prompt_tokens"),
                 "completion_tokens": usage.get("completion_tokens"),
                 "reply_chars": len(text or ""),
+                "finish_reason": choice.get("finish_reason"),
             }
         )
+        if choice.get("finish_reason") == "length":
+            raise LLMUnavailable("模型输出达到 token 上限，JSON 可能不完整；回退到确定性规划")
         if not text:
-            raise LLMUnavailable(f"模型返回空内容：{json.dumps(body, ensure_ascii=False)[:300]}")
-        return text
+            raise LLMUnavailable("模型返回空内容")
+        return self.redact(text)
+
+    def redact(self, text: str) -> str:
+        """完整密钥不进入错误、回答或轨迹；本地配置保留真实值用于认证。"""
+        return text.replace(self.api_key, "[REDACTED]") if self.api_key else text
 
 
 # ---------------------------------------------------------------- 解析辅助
@@ -212,33 +227,16 @@ def extract_json(text: str) -> dict | None:
     """从模型回复里抠出第一个 JSON 对象（容忍 ```json 围栏与前后废话）。"""
     if not text:
         return None
-    fence = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text, re.S)
+    decoder = json.JSONDecoder()
     fallback = None
-    candidates = [fence.group(1)] if fence else []
-    start = text.find("{")
-    while start != -1:
-        depth, end = 0, -1
-        for i in range(start, len(text)):
-            if text[i] == "{":
-                depth += 1
-            elif text[i] == "}":
-                depth -= 1
-                if depth == 0:
-                    end = i
-                    break
-        if end > start:
-            candidates.append(text[start : end + 1])
-        start = text.find("{", start + 1)
-        if len(candidates) > 6:
-            break
-    for cand in candidates:
+    for match in re.finditer(r"\{", text):
         try:
-            obj = json.loads(cand)
+            obj, _ = decoder.raw_decode(text, match.start())
         except json.JSONDecodeError:
             continue
         if isinstance(obj, dict):
-            # 优先取真正带 thought/action 的那个对象，避免抓到示例模板
-            if "action" in obj or "thought" in obj:
+            # 正确处理字符串中的花括号与转义引号。
+            if "action" in obj:
                 return obj
             fallback = fallback or obj
     return fallback

@@ -40,7 +40,13 @@ SCENARIOS = [
     ("S2-信息不足-缺时长", "我想去颐和园", {"ask": True}),
     ("S3-无匹配景区", "我想去杭州西湖玩半天", {"ask": True, "refuse": True}),
     ("S4-预算冲突", "去故宫，只有20分钟", {"plan": True, "conflict": True}),
-    ("S5-兴趣约束", "我想去天坛，只有一个半小时，想祈福拍照", {"plan": True}),
+    ("S5-兴趣约束", "我想去天坛，只有一个半小时，想祈福拍照", {"plan": True, "interests": True}),
+    ("S6-老人慢行", "带老人去颐和园，两个小时，慢慢走", {"plan": True, "audience": "老人", "pace": "深度"}),
+    ("S7-亲子", "带孩子去天坛，一个半小时", {"plan": True, "audience": "亲子"}),
+    ("S8-情侣半天", "情侣去故宫，半天，想拍照", {"plan": True, "audience": "情侣", "minutes": 240}),
+    ("S9-复合时长", "去故宫，2小时30分钟", {"plan": True, "minutes": 150}),
+    ("S10-极短预算", "去故宫，只有5分钟", {"no_plan": True}),
+    ("S11-必去与避开", "去故宫，两小时，必须参观武英殿，不去御花园", {"plan": True, "must_visit": ["武英殿"], "avoid_pois": ["御花园"]}),
 ]
 
 
@@ -50,6 +56,7 @@ class MockLLM:
     def __init__(self):
         self.calls = []
         self._script = [
+            {"scenic": "故宫博物院", "minutes": 120, "audience": "通用", "pace": "快速", "interests": ["建筑"], "must_visit": [], "avoid_pois": []},
             {"thought": "用户要去故宫两小时，先看有哪些官方路线和步骤数", "action": "query_route", "action_input": {"scenic": "故宫博物院", "with_steps": False}},
             {"thought": "再看条件建议里有没有时长相关的取舍", "action": "query_advices", "action_input": {"scenic": "故宫博物院"}},
             {"thought": "约束齐全，用规划器按 120 分钟截断", "action": "route_plan", "action_input": {"scenic": "故宫博物院", "minutes": 120, "audience": "通用", "pace": "快速"}},
@@ -78,7 +85,7 @@ def run_one(question: str, offline: bool = True, llm=None) -> dict:
     return trace
 
 
-def judge(expect: dict, final: dict, tools: list[str]) -> tuple[bool, list[str]]:
+def judge(expect: dict, final: dict, tools: list[str], trace: dict | None = None) -> tuple[bool, list[str]]:
     """按场景期望判定，返回 (是否通过, 证据/不通过原因)。"""
     answer = (final.get("answer") or "").strip()
     kind = final.get("kind")
@@ -86,9 +93,41 @@ def judge(expect: dict, final: dict, tools: list[str]) -> tuple[bool, list[str]]
     notes: list[str] = []
 
     if expect.get("plan"):
-        checks["给出了行程"] = kind in ("plan", "llm_answer") and len(answer) >= 80
+        p = final.get("plan") or {}
+        steps = p.get("steps") or []
+        checks["给出了结构化行程"] = kind in ("plan", "llm_answer") and p.get("ok") is True and bool(steps)
         checks["调了规划器"] = "route_plan" in tools
+        budget = p.get("minutes")
+        used = p.get("minutes_used")
+        checks["严格不超预算"] = isinstance(budget, int) and isinstance(used, int) and 0 < used <= budget
+        checks["耗时计算一致"] = bool(steps) and sum(s.get("est_min", 0) + s.get("transport_min", 0) for s in steps) == used
+        kg = agent_mod.kg_tools.get_kg()
+        route = p.get("route") or {}
+        route_node = kg.nodes.get(route.get("route_id"), {})
+        official_steps = kg.route_steps(route["route_id"]) if route_node else []
+        checks["图谱路线与来源可追溯"] = (
+            route_node.get("label") == "Route"
+            and route_node.get("scenic") == p.get("scenic")
+            and bool(route.get("source_doc_id"))
+            and route.get("source_doc_id") == route_node.get("extra", {}).get("source_doc_id")
+        )
+        checks["站点保持图谱路线前缀"] = bool(steps) and [s.get("poi_id") for s in steps] == [s["target"] for s in official_steps[:len(steps)]]
+        checks["景点名称与图谱一致"] = bool(steps) and all(kg.nodes.get(s.get("poi_id"), {}).get("name") == s.get("poi_name") for s in steps)
+        visited = {s.get("poi_name") for s in steps}
+        checks["满足必去与避开"] = set(p.get("must_visit", [])) <= visited and not (set(p.get("avoid_pois", [])) & visited)
+        checks["回答确实使用工具结果"] = bool(p.get("ok")) and answer == agent_mod.planner.render_plan(p)
+        for field in ("audience", "pace", "minutes"):
+            if field in expect:
+                checks[f"{field}约束正确"] = p.get(field) == expect[field]
+        for field in ("must_visit", "avoid_pois"):
+            if field in expect:
+                checks[f"{field}约束已传递"] = set(expect[field]) <= set(p.get(field, []))
+        if expect.get("interests"):
+            personalization = p.get("personalization") or {}
+            checks["兴趣参与规划评分"] = bool(personalization.get("interests")) and bool(personalization.get("matched_pois"))
         notes.append(f"kind={kind}, 回答 {len(answer)} 字, 工具={tools or '无'}")
+    if expect.get("no_plan"):
+        checks["拒绝不可行约束"] = kind == "no_plan" and not (final.get("plan") or {}).get("ok") and bool(answer)
     if expect.get("ask"):
         asked = bool(re.search(r"[？?]|吗|还是|想确认|请问", answer))
         checks["追问而非瞎排"] = asked and kind in ("followup", "llm_answer")
@@ -103,6 +142,10 @@ def judge(expect: dict, final: dict, tools: list[str]) -> tuple[bool, list[str]]
         )
         checks["点明预算冲突或取舍"] = conflict
         notes.append(f"点明冲突={conflict}")
+    if expect.get("real_llm"):
+        checks["真实LLM无规则回退"] = bool(trace) and trace.get("backend") == "llm"
+        checks["LLM实际完成意图解析"] = bool(trace) and trace.get("intent", {}).get("source") == "llm"
+        checks["有实际模型调用"] = bool(trace) and trace.get("llm_calls", 0) > 0
 
     ok = all(checks.values()) if checks else False
     return ok, [f"{k}={'✓' if v else '✗'}" for k, v in checks.items()] + notes
@@ -111,7 +154,7 @@ def judge(expect: dict, final: dict, tools: list[str]) -> tuple[bool, list[str]]
 def summarize(name: str, expect: dict, trace: dict) -> dict:
     final = trace["final"]
     tools = [s["action"] for s in trace["steps"] if s["action"] != "finish"]
-    ok, why = judge(expect, final, tools)
+    ok, why = judge(expect, final, tools, trace)
     return {
         "scenario": name,
         "question": trace["question"],
@@ -125,8 +168,12 @@ def summarize(name: str, expect: dict, trace: dict) -> dict:
         "answer": final.get("answer", ""),
         "elapsed_ms": trace["elapsed_ms"],
         "trace": trace.get("trace_path"),
-        "llm_calls": trace["llm"].get("calls"),
+        "llm_calls": trace.get("llm_calls", trace["llm"].get("calls")),
         "llm_model": trace["llm"].get("model"),
+        "intent_source": trace.get("intent", {}).get("source"),
+        "plan": final.get("plan"),
+        "protocol_errors": trace.get("protocol_errors", []),
+        "answer_source": final.get("answer_source"),
     }
 
 
@@ -149,6 +196,11 @@ def md_report(rows: list[dict], mock_row: dict | None, backend_label: str) -> st
             f"| {r['steps']} | {', '.join(r['tools']) or '—'} |"
         )
     lines += ["", "## 二、判定依据", ""]
+    lines += [
+        "规划场景检查结构化计划、预算、耗时加和、图谱来源、路线前缀、必去/避开与最终文本一致性；",
+        "真实模式还要求 LLM 意图解析成功、实际调用模型且无规则回退。上述断言不验证现实距离、开放时间或离园耗时。",
+        "",
+    ]
     for r in rows:
         lines.append(f"- **{r['scenario']}**（{'通过' if r['pass'] else '失败'}）：{'；'.join(r['why'])}")
     lines += ["", "## 三、逐场景回答", ""]
@@ -158,7 +210,8 @@ def md_report(rows: list[dict], mock_row: dict | None, backend_label: str) -> st
             "",
             f"- 请求：{r['question']}",
             f"- 解析约束：`{json.dumps(r['constraints'], ensure_ascii=False)}`",
-            f"- 耗时：{r['elapsed_ms']} ms；轨迹：`输出/traces/{r['trace']}`",
+            f"- 耗时：{r['elapsed_ms']} ms；本轮模型调用 {r['llm_calls']} 次；意图来源 {r['intent_source']}",
+            f"- 轨迹：`输出/traces/{r['trace']}`；回答来源 {r['answer_source']}",
             "",
             "```",
             r["answer"],
@@ -183,9 +236,9 @@ def md_report(rows: list[dict], mock_row: dict | None, backend_label: str) -> st
         for r in fails:
             lines.append(f"- **{r['scenario']} 未达预期**：{'；'.join(r['why'])}")
     else:
-        lines.append(f"- {len(rows)} 类场景全部达预期，没有静默编造（无匹配/信息不足都显式说明或追问）。")
+        lines.append(f"- {len(rows)} 类预定义场景通过全部结构化断言；这不等于现实旅游可行性已通过验证。")
     lines += [
-        "- 边界 1：图谱 `time_slot`/`duration_min` 全空，所有时长是 6 分钟/景点 + 3 分钟转场的显式估算，回答里已声明。",
+        "- 边界 1：上游时长为空；默认 6+3 分钟，快速/深度与老人/亲子使用显式本地估算参数，均不是实测。",
         "- 边界 2：建议只有 3 条且全在故宫、`audience` 全是“通用”，非故宫场景 `query_advices` 返回空并说明。",
         "- 边界 3：景区外参照物（杭州西湖/香山等）是 `scope=nearby` 的 POI，不是景区，无法规划。",
         "- 边界 4：`route_type=visitor` 的路线来自单篇游记，实验6 已标可能拼接，规划器默认官方路线优先。",
@@ -201,6 +254,7 @@ def demo_markdown(trace: dict) -> str:
         "",
         f"- 请求：`{trace['question']}`",
         f"- 后端：{trace['backend']}（模型 {trace['llm'].get('model')}）",
+        f"- 意图来源：{trace.get('intent', {}).get('source')}；本轮调用：{trace.get('llm_calls')} 次",
         f"- 耗时：{trace['elapsed_ms']} ms，共 {len(trace['steps'])} 步",
         "",
         "## 1. 意图解析（planner.parse_constraints）",
@@ -245,6 +299,8 @@ def main(argv: list[str] | None = None) -> int:
 
     rows = []
     for name, q, expect in SCENARIOS:
+        if args.real_llm:
+            expect = dict(expect, real_llm=True)
         trace = run_one(q, offline=not args.real_llm, llm=llm if args.real_llm else None)
         rows.append(summarize(name, expect, trace))
         r = rows[-1]
@@ -253,8 +309,8 @@ def main(argv: list[str] | None = None) -> int:
     mock_row = None
     if not args.real_llm:
         trace = run_one("我下午去故宫，只有两个小时，随便看看主要宫殿", offline=False, llm=MockLLM())
-        mock_row = summarize("S6-LLM分支(Mock)", {"plan": True}, trace)
-        print(f"S6-LLM分支(Mock): kind={mock_row['kind']} steps={mock_row['steps']} {'通过' if mock_row['pass'] else '失败'}")
+        mock_row = summarize("M1-LLM分支(Mock)", {"plan": True}, trace)
+        print(f"M1-LLM分支(Mock): kind={mock_row['kind']} steps={mock_row['steps']} {'通过' if mock_row['pass'] else '失败'}")
 
     if args.real_llm:
         served = sorted({c.get("model") for c in llm.calls if c.get("model")})

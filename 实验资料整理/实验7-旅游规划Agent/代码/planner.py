@@ -60,47 +60,61 @@ INTEREST_RULES = [
     (("祈福", "烧香", "祭天", "祈年"), "祈福"),
 ]
 
+# 名称启发式，不是图谱中已有的受众/兴趣标签。
+INTEREST_KEYWORDS = {
+    "拍照": ("门", "桥", "湖", "园", "廊"),
+    "历史": ("殿", "展", "馆", "文昌院"),
+    "建筑": ("殿", "阁", "宫", "堂"),
+    "园林": ("园", "湖", "廊", "石舫", "苏州街"),
+    "祈福": ("祈年", "圜丘", "皇穹宇"),
+}
+PLAN_FIELDS = ("scenic", "minutes", "audience", "pace", "interests", "must_visit", "avoid_pois")
+NUM_PATTERN = r"(?:\d+(?:\.\d+)?|[零一两二三四五六七八九十]+)"
+
 
 # ---------------------------------------------------------------- 时长解析
 def parse_minutes(text: str) -> int | None:
-    """从中文里解析可用时长（分钟）。解析不到返回 None，交给 Agent 追问。"""
+    """累计同一句中的小时与分钟；范围、负值和不明确的时长交给追问。"""
     if not text:
         return None
     t = text.strip()
-
-    # 半天 / 一天
+    clock = re.search(r"(\d{1,2})(?:点|:)(\d{1,2})?分?\s*(?:到|至|-)\s*(\d{1,2})(?:点|:)(\d{1,2})?分?", t)
+    if clock:
+        h1, m1, h2, m2 = (int(x or 0) for x in clock.groups())
+        if h1 < 24 and h2 < 24 and m1 < 60 and m2 < 60:
+            duration = (h2 * 60 + m2) - (h1 * 60 + m1)
+            return duration if duration > 0 else None
+        return None
+    if re.search(rf"-\s*\d|{NUM_PATTERN}\s*(?:到|至|~|～|-)\s*{NUM_PATTERN}\s*(?:小时|分钟)", t):
+        return None
+    units = re.compile(
+        rf"(?P<h>{NUM_PATTERN})\s*个?\s*(?P<half>半)?\s*(?:小时|钟头|h\b)(?P<after>半)?"
+        rf"|(?P<m>{NUM_PATTERN})\s*(?:分钟|min\b)"
+        r"|(?P<only_half>半个?小时)"
+    )
+    total = 0
+    found = False
+    for match in units.finditer(t):
+        found = True
+        if match["only_half"]:
+            total += 30
+        elif match["m"]:
+            total += int(_number(match["m"]))
+        else:
+            total += int(_number(match["h"]) * 60)
+            if match["half"] or match["after"]:
+                total += 30
+    if found:
+        return total if total > 0 else None
     if "半天" in t:
         return 240
     if "一天" in t or "整天" in t or "全天" in t:
         return 480
-
-    # 一个半小时 / 两个半小时 / 1.5小时 里的"半"要先吃掉，否则会先命中"半小时"变成 30
-    m = re.search(r"(\d+(?:\.\d+)?|[零一两二三四五六七八九十]{1,3})\s*个?\s*半\s*(?:个)?\s*(?:小时|钟头)", t)
-    if m:
-        base = m.group(1)
-        hours = float(base) if re.fullmatch(r"\d+(?:\.\d+)?", base) else float(_cn_to_int(base))
-        if hours:
-            return int(hours * 60 + 30)
-
-    # 90分钟 / 45 分钟
-    m = re.search(r"(\d+(?:\.\d+)?)\s*(?:分钟|min)", t)
-    if m:
-        return int(float(m.group(1)))
-
-    # 2.5小时 / 1.5 个小时
-    m = re.search(r"(\d+(?:\.\d+)?)\s*(?:个)?\s*(?:小时|钟头|h\b)", t)
-    if m:
-        return int(float(m.group(1)) * 60)
-
-    # 两个小时 / 三小时 / 一小时
-    m = re.search(r"([零一两二三四五六七八九十]{1,3})\s*(?:个)?\s*(?:小时|钟头)", t)
-    if m:
-        return _cn_to_int(m.group(1)) * 60 if _cn_to_int(m.group(1)) else None
-
-    # 半小时
-    if "半小时" in t or "半个小时" in t:
-        return 30
     return None
+
+
+def _number(value: str) -> float:
+    return float(value) if value[0].isdigit() else float(_cn_to_int(value))
 
 
 def _cn_to_int(s: str) -> int:
@@ -118,25 +132,39 @@ def _cn_to_int(s: str) -> int:
 def parse_constraints(text: str) -> dict:
     """规则解析用户请求里的硬约束；拿不准的字段留 None，由 Agent 决定是否追问。"""
     text = text or ""
-    scenic = None
-    for alias, canonical in SCENIC_ALIASES.items():
-        if alias in text:
-            scenic = canonical
-            break
+    scenic_names = []
+    pattern = "|".join(re.escape(x) for x in sorted(SCENIC_ALIASES, key=len, reverse=True))
+    for hit in re.finditer(pattern, text):
+        prefix = re.split(r"[，,；;。]", text[:hit.start()])[-1]
+        if re.search(r"(?:不去|别去|不想去|不考虑|取消|换掉)\s*$", prefix):
+            continue
+        scenic_names.append(SCENIC_ALIASES[hit.group()])
+    scenic_names = list(dict.fromkeys(scenic_names))
+    scenic = scenic_names[0] if len(scenic_names) == 1 else None
+    provided = [key for key, yes in (("scenic", bool(re.search(pattern, text))), ("minutes", parse_minutes(text) is not None)) if yes]
 
     audience = "通用"
     for keys, val in AUDIENCE_RULES:
         if any(k in text for k in keys):
             audience = val
+            provided.append("audience")
             break
 
     pace = "常规"
     for keys, val in PACE_RULES:
         if any(k in text for k in keys):
             pace = val
+            provided.append("pace")
             break
 
     interests = [val for keys, val in INTEREST_RULES if any(k in text for k in keys)]
+    if interests:
+        provided.append("interests")
+    must_visit, avoid_pois = _poi_constraints(text, scenic)
+    if must_visit:
+        provided.append("must_visit")
+    if avoid_pois:
+        provided.append("avoid_pois")
 
     start_hint = None
     if "上午" in text or "早上" in text or "早晨" in text:
@@ -154,7 +182,67 @@ def parse_constraints(text: str) -> dict:
         "pace": pace,
         "interests": interests,
         "start_hint": start_hint,
+        "must_visit": must_visit,
+        "avoid_pois": avoid_pois,
+        "scenic_candidates": scenic_names,
+        "provided": provided,
     }
+
+
+def _poi_constraints(text: str, scenic: str | None) -> tuple[list[str], list[str]]:
+    kg = kg_tools.get_kg()
+    aliases = {}
+    for poi in kg.of_label("POI"):
+        if scenic and poi["scenic"] != scenic:
+            continue
+        aliases[poi["name"]] = poi["name"]
+        aliases[re.split(r"[（(]", poi["name"])[0]] = poi["name"]
+    pattern = "|".join(re.escape(x) for x in sorted(aliases, key=len, reverse=True))
+    selected = [[], []]
+    for i, marker in enumerate((r"(?:必须|一定要|务必)(?:参观|去|看)", r"(?:不去|别去|避开|不参观|不要去)")):
+        for match in re.finditer(marker + r"\s*([^，,；;。]+)", text):
+            tail = match[1].strip()
+            # 景区的否定由景区解析负责，避免变成景点约束。
+            if tail.rstrip("了") in SCENIC_ALIASES:
+                continue
+            names = [aliases[m.group()] for m in re.finditer(pattern, tail)] if pattern else []
+            selected[i].extend(names or [tail])
+    return tuple(list(dict.fromkeys(names)) for names in selected)
+
+
+def normalize_constraints(data: dict) -> dict:
+    """规则、LLM 和工具共用的运行时 Schema；不接受布尔值、负时长或字符串列表。"""
+    if not isinstance(data, dict):
+        raise ValueError("约束必须是 JSON 对象")
+    c = dict(data)
+    scenic = c.get("scenic")
+    if scenic is not None and not isinstance(scenic, str):
+        raise ValueError("scenic 必须是字符串或 null")
+    c["scenic"] = SCENIC_ALIASES.get(scenic, scenic if scenic in kg_tools.get_kg().scenics() else None)
+    minutes = c.get("minutes")
+    if minutes is not None:
+        if isinstance(minutes, bool) or not re.fullmatch(r"\d+(?:\.0+)?", str(minutes)):
+            raise ValueError("minutes 必须是正整数分钟")
+        minutes = int(float(minutes))
+        if not 1 <= minutes <= 1440:
+            raise ValueError("minutes 必须在 1～1440 分钟之间；多日行程暂不支持")
+    c["minutes"] = minutes
+    for field, default, choices in (
+        ("audience", "通用", ("通用", "老人", "亲子", "情侣", "学生")),
+        ("pace", "常规", ("快速", "常规", "深度")),
+    ):
+        value = c.get(field) or default
+        if value not in choices:
+            raise ValueError(f"{field} 只能是 {'、'.join(choices)}")
+        c[field] = value
+    for field in ("interests", "must_visit", "avoid_pois"):
+        value = c.get(field) or []
+        if not isinstance(value, list) or len(value) > 20 or any(not isinstance(x, str) or not x.strip() for x in value):
+            raise ValueError(f"{field} 必须是至多 20 个非空字符串组成的数组")
+        if field == "interests" and any(x not in INTEREST_KEYWORDS for x in value):
+            raise ValueError("interests 只能包含拍照、历史、建筑、园林、祈福")
+        c[field] = list(dict.fromkeys(x.strip() for x in value))
+    return c
 
 
 def missing(constraints: dict) -> list[str]:
@@ -168,26 +256,22 @@ def missing(constraints: dict) -> list[str]:
 
 
 # ---------------------------------------------------------------- 路线规划
-def _route_cost(steps: list[dict]) -> int:
+def _route_cost(steps: list[dict], poi_min: int = MIN_PER_POI, transfer_min: int = MIN_TRANSFER) -> int:
     n = len(steps)
-    return n * MIN_PER_POI + max(0, n - 1) * MIN_TRANSFER
+    return n * poi_min + max(0, n - 1) * transfer_min
 
 
-def fit_route(steps: list[dict], budget: int) -> dict:
+def fit_route(steps: list[dict], budget: int, poi_min: int = MIN_PER_POI, transfer_min: int = MIN_TRANSFER) -> dict:
     """在时间预算内截断一条路线：优先保住前半程（入口→核心景点），末尾给出取舍说明。"""
     if not steps or budget <= 0:
         return {"steps": [], "minutes": 0, "leftover": budget, "truncated": False}
     kept, cum = [], 0
     for s in steps:
-        cost = MIN_PER_POI + (MIN_TRANSFER if kept else 0)
+        cost = poi_min + (transfer_min if kept else 0)
         if cum + cost > budget:
             break
         kept.append(s)
         cum += cost
-    if len(kept) < 2 and len(steps) >= 2:
-        # 至少给两个点，否则"路线"没有意义；同时把预算冲突如实报出来
-        kept = steps[:2]
-        cum = _route_cost(kept)
     return {
         "steps": kept,
         "minutes": cum,
@@ -214,6 +298,11 @@ def plan(kg, constraints: dict) -> dict:
         "caveats": [],
         "reason": "",
     }
+    try:
+        constraints = normalize_constraints(constraints)
+    except ValueError as exc:
+        result["reason"] = str(exc)
+        return result
     if not constraints.get("scenic"):
         result["reason"] = "缺少景区，无法规划"
         return result
@@ -221,7 +310,17 @@ def plan(kg, constraints: dict) -> dict:
         result["reason"] = "缺少可用时长，无法判断该走几步"
         return result
 
-    budget = int(constraints["minutes"])
+    budget = constraints["minutes"]
+    poi_min = {"快速": 4, "常规": 6, "深度": 10}[constraints["pace"]]
+    transfer_min = MIN_TRANSFER
+    if constraints["audience"] in ("老人", "亲子"):
+        poi_min = max(poi_min, 8)
+        transfer_min = 4
+    result.update({key: constraints[key] for key in PLAN_FIELDS})
+    result["time_policy"] = {"poi_min": poi_min, "transfer_min": transfer_min, "source": "本地启发式估算，非实测"}
+    if budget < poi_min:
+        result["reason"] = f"预算仅 {budget} 分钟，小于单点估算停留 {poi_min} 分钟，无法给出不超时方案；请增加时间"
+        return result
     routes = kg_tools.query_route(scenic=constraints["scenic"], with_steps=True)
     if not routes["ok"] or not routes["data"]:
         result["reason"] = f"{constraints['scenic']} 在图谱里没有可用路线"
@@ -230,11 +329,19 @@ def plan(kg, constraints: dict) -> dict:
     scored = []
     for r in routes["data"]:
         steps = r.get("steps", [])
-        full = _route_cost(steps)
-        # 目标：整条路线估算时长尽量贴近预算（不超预算优先，其次别浪费预算）；
-        # 超预算重罚，剩余时间多也算浪费；游记路线额外加 45 分让官方路线优先。
-        over = max(0, full - budget)
-        idle = max(0, budget - full)
+        full = _route_cost(steps, poi_min, transfer_min)
+        fitted = fit_route(steps, budget, poi_min, transfer_min)
+        visited = {s["poi_name"] for s in fitted["steps"]}
+        if not fitted["steps"] or not set(constraints["must_visit"]).issubset(visited):
+            continue
+        if set(constraints["avoid_pois"]) & visited:
+            continue
+        hits = [
+            s["poi_name"] for s in fitted["steps"]
+            if any(word in s["poi_name"] for interest in constraints["interests"] for word in INTEREST_KEYWORDS[interest])
+        ]
+        # 先满足时间/必去/避开等硬约束；同类来源内按空余时间、截断惩罚和兴趣命中评分。
+        score = fitted["leftover"] + (20 if fitted["truncated"] else 0) - 20 * len(hits)
         scored.append(
             {
                 "route_id": r["route_id"],
@@ -242,33 +349,40 @@ def plan(kg, constraints: dict) -> dict:
                 "route_type": r["route_type"],
                 "step_count": len(steps),
                 "full_minutes": full,
-                "over_budget": over,
-                "idle_minutes": idle,
-                "score": over * 10 + idle,
+                "over_budget": max(0, full - budget),
+                "idle_minutes": max(0, budget - full),
+                "score": score,
                 "steps": steps,
+                "fitted": fitted,
+                "interest_hits": hits,
+                "source_doc_id": r.get("source_doc_id"),
+                "quality_flag": r.get("quality_flag"),
             }
         )
     # 官方路线优先（游记链路是单篇游记抽出来的，实验6 已标注可能有拼接问题），
     # 同类里再比"离预算多近"。
-    scored.sort(key=lambda x: (0 if x["route_type"] == "official" else 1, x["score"], -x["step_count"]))
+    if not scored:
+        result["reason"] = "现有图谱路线在时间预算内无法同时满足必去/避开约束；请调整约束或增加时间，不会自行拼造路线"
+        return result
+    scored.sort(key=lambda x: (0 if x["route_type"] == "official" else 1, x["score"], -len(x["fitted"]["steps"])))
     result["candidates"] = [
-        {k: c[k] for k in ("route_id", "name", "route_type", "step_count", "full_minutes", "over_budget")}
+        {k: c[k] for k in ("route_id", "name", "route_type", "step_count", "full_minutes", "over_budget", "score", "interest_hits", "source_doc_id")}
         for c in scored[:5]
     ]
 
     best = scored[0]
-    fitted = fit_route(best["steps"], budget)
+    fitted = best["fitted"]
     result.update(
         {
             "ok": bool(fitted["steps"]),
-            "route": {k: best[k] for k in ("route_id", "name", "route_type", "step_count", "full_minutes")},
+            "route": {k: best[k] for k in ("route_id", "name", "route_type", "step_count", "full_minutes", "source_doc_id", "quality_flag")},
             "steps": [
                 {
                     "order": s["order"],
                     "poi_name": s["poi_name"],
                     "poi_id": s["poi_id"],
-                    "est_min": MIN_PER_POI,
-                    "transport_min": MIN_TRANSFER if i else 0,
+                    "est_min": poi_min,
+                    "transport_min": transfer_min if i else 0,
                 }
                 for i, s in enumerate(fitted["steps"])
             ],
@@ -278,6 +392,7 @@ def plan(kg, constraints: dict) -> dict:
                 f"选 {best['name']}（{best['route_type']}，共 {best['step_count']} 步，"
                 f"整条估算 {best['full_minutes']} 分钟），按 {budget} 分钟预算截取前 {len(fitted['steps'])} 步"
             ),
+            "personalization": {"interests": constraints["interests"], "matched_pois": best["interest_hits"], "score": best["score"]},
         }
     )
     longest = max(c["full_minutes"] for c in scored)
@@ -299,14 +414,18 @@ def plan(kg, constraints: dict) -> dict:
     result["advices"] = adv.get("data", [])
 
     result["caveats"].append(
-        f"时间来自估算（每景点 {MIN_PER_POI} 分钟、转场 {MIN_TRANSFER} 分钟），"
+        f"时间来自估算（每景点 {poi_min} 分钟、转场 {transfer_min} 分钟），"
         "图谱里 time_slot/duration_min 上游为空，不是实测"
     )
     if constraints.get("audience") not in (None, "通用"):
         result["caveats"].append(
             f"图谱没有{constraints['audience']}受众标签（建议的 audience 全是“通用”），"
-            "该人群适配只能靠常识补充，不能算图谱结论"
+            "本方案用本地慢行耗时规则适配，不能算图谱结论，也不代表无障碍认证"
         )
+    if constraints["interests"]:
+        result["caveats"].append("兴趣评分来自景点名称关键词启发式，不是图谱固有标签；没有命中时不保证个性化效果")
+    if fitted.get("truncated"):
+        result["caveats"].append("截断方案仅保留原路线前缀，未计入离园或返回入口时间；不能据此保证完整离园预算")
     return result
 
 
@@ -324,6 +443,10 @@ def render_plan(p: dict) -> str:
         lines.append(f"{i}. {s['poi_name']}（停留约 {s['est_min']} 分钟{move}）")
     lines.append("")
     lines.append(f"合计约 {p['minutes_used']} 分钟，余 {p['leftover']} 分钟。")
+    lines.append(f"依据：图谱路线 {p['route']['route_id']}，来源文档 {p['route'].get('source_doc_id') or '未知'}。")
+    matched = p.get("personalization", {}).get("matched_pois", [])
+    if matched:
+        lines.append("兴趣名称匹配：" + "、".join(matched))
     if p.get("advices"):
         lines.append("")
         lines.append("可参考的建议：")
